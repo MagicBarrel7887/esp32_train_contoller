@@ -1,0 +1,143 @@
+\hypertarget{wireless_8h}{}\doxysection{include/wireless.h File Reference}
+\label{wireless_8h}\index{include/wireless.h@{include/wireless.h}}
+{\ttfamily \#include \char`\"{}RF24.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}engine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_payload_struct}{Payload\+Struct}}
+\item 
+class \mbox{\hyperlink{classwireless}{wireless}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{wireless_8h_aaf5573818da51325139326add42e046b_aaf5573818da51325139326add42e046b}{\+\_\+\+\_\+\+WIRELESS\+\_\+\+\_\+\+H\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+RF24 \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}} (9, 10)
+\item 
+int \mbox{\hyperlink{wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_adc0bfd52f2e4acac37bf01995d6ad166}{nrf24\+\_\+setup}} ()
+\begin{DoxyCompactList}\small\item\em initialize the transceiver \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classengen}{engen}} \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{wireless_8h_a740097df578adc0e59fe1779b29537e0_a740097df578adc0e59fe1779b29537e0}{num\+\_\+channels}} = 126
+\item 
+uint8\+\_\+t \mbox{\hyperlink{wireless_8h_a88cf61843aae33f00ad3040b141421d0_a88cf61843aae33f00ad3040b141421d0}{values}} \mbox{[}\mbox{\hyperlink{wireless_8h_a740097df578adc0e59fe1779b29537e0_a740097df578adc0e59fe1779b29537e0}{num\+\_\+channels}}\mbox{]}
+\item 
+\mbox{\hyperlink{struct_payload_struct}{Payload\+Struct}} \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\+\_\+\+RX\+\_\+\+BC}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{wireless_8h_aaf5573818da51325139326add42e046b_aaf5573818da51325139326add42e046b}\label{wireless_8h_aaf5573818da51325139326add42e046b_aaf5573818da51325139326add42e046b}} 
+\index{wireless.h@{wireless.h}!\_\_WIRELESS\_\_H\_\_@{\_\_WIRELESS\_\_H\_\_}}
+\index{\_\_WIRELESS\_\_H\_\_@{\_\_WIRELESS\_\_H\_\_}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{\_\_WIRELESS\_\_H\_\_}{\_\_WIRELESS\_\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+WIRELESS\+\_\+\+\_\+\+H\+\_\+\+\_\+}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_adc0bfd52f2e4acac37bf01995d6ad166}\label{wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_adc0bfd52f2e4acac37bf01995d6ad166}} 
+\index{wireless.h@{wireless.h}!nrf24\_setup@{nrf24\_setup}}
+\index{nrf24\_setup@{nrf24\_setup}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{nrf24\_setup()}{nrf24\_setup()}}
+{\footnotesize\ttfamily int nrf24\+\_\+setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize the transceiver 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00101}00101     \{}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00103}00103         \textcolor{comment}{// initialize the transceiver on the SPI bus}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00104}00104         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.begin())}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00105}00105         \{}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00106}00106             \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_adbcc3013f94098754e48b11c2bc7d17b_adbcc3013f94098754e48b11c2bc7d17b}{nrf24\_error}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00107}00107             Serial.println(F(\textcolor{stringliteral}{"{}radio hardware is not responding!!"{}}));}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00109}00109             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.clearDisplay();}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00111}00111             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextSize(1);              \textcolor{comment}{// Normal 1:1 pixel scale}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00112}00112             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_WHITE); \textcolor{comment}{// Draw white text}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00114}00114             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(0, 0);}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00115}00115             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}radio hardware is not responding!!"{}})); \textcolor{comment}{//L Loco Icon}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00116}00116             \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.display();}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00119}00119         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.setAutoAck(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00121}00121         \textcolor{comment}{// Get into standby mode}}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00122}00122         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.startListening();}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00123}00123         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.stopListening();}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00124}00124         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{wireless_8h_l00125}00125     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display()}}, \mbox{\hyperlink{l00020}{DT500}}, \mbox{\hyperlink{l00115}{engen\+::nrf24\+\_\+error}}, and \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio()}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00208}{wireless\+::setup()}}.
+
+\mbox{\Hypertarget{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}\label{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}} 
+\index{wireless.h@{wireless.h}!radio@{radio}}
+\index{radio@{radio}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{radio()}{radio()}}
+{\footnotesize\ttfamily RF24 radio (\begin{DoxyParamCaption}\item[{9}]{,  }\item[{10}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by \mbox{\hyperlink{l00215}{wireless\+::brodcast()}}, \mbox{\hyperlink{l00001}{nrf24\+\_\+setup()}}, \mbox{\hyperlink{l00127}{wireless\+::recieved()}}, and \mbox{\hyperlink{l00163}{wireless\+::\+Transmit()}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}\label{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}} 
+\index{wireless.h@{wireless.h}!DT500@{DT500}}
+\index{DT500@{DT500}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{DT500}{DT500}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classengen}{engen}} DT500}
+
+
+
+Referenced by \mbox{\hyperlink{l00275}{wireless\+::int\+\_\+\+Payload\+Struct()}}, \mbox{\hyperlink{l00097}{debug\+::\+IO()}}, \mbox{\hyperlink{l00063}{loop()}}, \mbox{\hyperlink{l00100}{nrf24\+\_\+setup()}}, \mbox{\hyperlink{l00133}{debug\+::nrf24error()}}, \mbox{\hyperlink{l00127}{wireless\+::recieved()}}, \mbox{\hyperlink{l00172}{debug\+::serial\+\_\+debug()}}, \mbox{\hyperlink{l00269}{wireless\+::set\+\_\+\+Payload\+Struct()}}, and \mbox{\hyperlink{l00029}{setup()}}.
+
+\mbox{\Hypertarget{wireless_8h_a740097df578adc0e59fe1779b29537e0_a740097df578adc0e59fe1779b29537e0}\label{wireless_8h_a740097df578adc0e59fe1779b29537e0_a740097df578adc0e59fe1779b29537e0}} 
+\index{wireless.h@{wireless.h}!num\_channels@{num\_channels}}
+\index{num\_channels@{num\_channels}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{num\_channels}{num\_channels}}
+{\footnotesize\ttfamily const uint8\+\_\+t num\+\_\+channels = 126}
+
+
+
+Referenced by \mbox{\hyperlink{l00001}{nrf24\+\_\+setup()}}.
+
+\mbox{\Hypertarget{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}\label{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}} 
+\index{wireless.h@{wireless.h}!TX\_RX\_BC@{TX\_RX\_BC}}
+\index{TX\_RX\_BC@{TX\_RX\_BC}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{TX\_RX\_BC}{TX\_RX\_BC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_payload_struct}{Payload\+Struct}} TX\+\_\+\+RX\+\_\+\+BC}
+
+
+
+Referenced by \mbox{\hyperlink{l00215}{wireless\+::brodcast()}}, \mbox{\hyperlink{l00275}{wireless\+::int\+\_\+\+Payload\+Struct()}}, \mbox{\hyperlink{l00127}{wireless\+::recieved()}}, \mbox{\hyperlink{l00269}{wireless\+::set\+\_\+\+Payload\+Struct()}}, and \mbox{\hyperlink{l00163}{wireless\+::\+Transmit()}}.
+
+\mbox{\Hypertarget{wireless_8h_a88cf61843aae33f00ad3040b141421d0_a88cf61843aae33f00ad3040b141421d0}\label{wireless_8h_a88cf61843aae33f00ad3040b141421d0_a88cf61843aae33f00ad3040b141421d0}} 
+\index{wireless.h@{wireless.h}!values@{values}}
+\index{values@{values}!wireless.h@{wireless.h}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily uint8\+\_\+t values\mbox{[}\mbox{\hyperlink{wireless_8h_a740097df578adc0e59fe1779b29537e0_a740097df578adc0e59fe1779b29537e0}{num\+\_\+channels}}\mbox{]}}
+

@@ -1,0 +1,373 @@
+.TH "include/config.h" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/config.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBbaud_rate\fP   115200"
+.br
+.ti -1c
+.RI "#define \fBmoter_pin\fP   0"
+.br
+.ti -1c
+.RI "#define \fBCV_moter\fP   2"
+.br
+.ti -1c
+.RI "#define \fBb2_Digi_Decoder_Address\fP   3"
+.br
+.ti -1c
+.RI "#define \fBb4_Digi_Address_H\fP   33"
+.br
+.ti -1c
+.RI "#define \fBb4_Digi_ADD_L\fP   33"
+.br
+.ti -1c
+.RI "#define \fBb4_Digi_ADD\fP   33"
+.br
+.ti -1c
+.RI "#define \fBCV_b2_Digi_Decoder_Address\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCV_b4_Digi_Address_H\fP   17"
+.br
+.ti -1c
+.RI "#define \fBCV_b4_Digi_ADD_L\fP   18"
+.br
+.ti -1c
+.RI "#define \fBCV_b4_Digi_ADD\fP   119"
+.br
+.ti -1c
+.RI "#define \fBAddress_Selection\fP   2"
+.br
+.ti -1c
+.RI "#define \fBNDOT\fP   'Fwd'"
+.br
+.ti -1c
+.RI "#define \fBSpeed_Step_Control\fP   28"
+.br
+.ti -1c
+.RI "#define \fBSpeed_Table_On_Off\fP   false"
+.br
+.ti -1c
+.RI "#define \fBAnalog_Mode_Conversion\fP   true"
+.br
+.ti -1c
+.RI "#define \fBCV_Configuration_Register\fP   29"
+.br
+.ti -1c
+.RI "#define \fBCV_Sub_ADD_S\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCV_Sub_NDOT\fP   2"
+.br
+.ti -1c
+.RI "#define \fBCV_Sub_SSC\fP   3"
+.br
+.ti -1c
+.RI "#define \fBCV_Sub_ST_ON_OFF\fP   4"
+.br
+.ti -1c
+.RI "#define \fBCV_Sub_AD_M_C\fP   5"
+.br
+.ti -1c
+.RI "#define \fBAcceleration\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDeceleration\fP   0"
+.br
+.ti -1c
+.RI "#define \fBStart_Voltage\fP   0"
+.br
+.ti -1c
+.RI "#define \fBMaximum_Voltage\fP   0"
+.br
+.ti -1c
+.RI "#define \fBMid_Point_Voltage\fP   0"
+.br
+.ti -1c
+.RI "#define \fBKick_Start_value\fP   0"
+.br
+.ti -1c
+.RI "#define \fBForward_Trim\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSwitching_Speed_Torque_Compensation\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDC\fP   Functions = true; /* Automatic \-\-\- DC Functions ON Not Used in FX3 */"
+.br
+.ti -1c
+.RI "#define \fBF0F\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF0R\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF1\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF2\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF3\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF4\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF5\fP   0"
+.br
+.ti -1c
+.RI "#define \fBF6\fP   0"
+.br
+.ti -1c
+.RI "#define \fBFX_Rate\fP   0"
+.br
+.ti -1c
+.RI "#define \fBFX_Keep_alive\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDitch_Light_Blink_hold_time\fP   0"
+.br
+.ti -1c
+.RI "#define \fBMaster_Light_Switch\fP   true"
+.br
+.ti -1c
+.RI "#define \fBCV_F0F\fP   49"
+.br
+.ti -1c
+.RI "#define \fBCV_F0R\fP   50"
+.br
+.ti -1c
+.RI "#define \fBCV_F1\fP   51"
+.br
+.ti -1c
+.RI "#define \fBCV_F2\fP   52"
+.br
+.ti -1c
+.RI "#define \fBCV_F3\fP   113"
+.br
+.ti -1c
+.RI "#define \fBCV_F4\fP   114"
+.br
+.ti -1c
+.RI "#define \fBCV_F5\fP   115"
+.br
+.ti -1c
+.RI "#define \fBCV_F6\fP   116"
+.br
+.ti -1c
+.RI "#define \fBCV_FX_Rate\fP   62"
+.br
+.ti -1c
+.RI "#define \fBCV_FX_Keep_alive\fP   63"
+.br
+.ti -1c
+.RI "#define \fBCV_Ditch_Light_Blink_hold_time\fP   117"
+.br
+.ti -1c
+.RI "#define \fBCV_Master_Light_Switch\fP   118"
+.br
+.ti -1c
+.RI "#define \fBDirectional_Headlight\fP   true /*Map F0 Forward & Reverse See CV61 Section  */ /* Not controlled by CV61 in FX3 Decoders */"
+.br
+.ti -1c
+.RI "#define \fBTransponding\fP   false"
+.br
+.ti -1c
+.RI "#define \fBSplit_Field_Motor\fP   false"
+.br
+.ti -1c
+.RI "#define \fBStatic_Compensation\fP   = 128;"
+.br
+.ti -1c
+.RI "#define \fBDynamic_Compensation\fP   = 48;"
+.br
+.ti -1c
+.RI "#define \fBSpeed_Stabilizer_Droop\fP   = 6;"
+.br
+.ti -1c
+.RI "#define \fBMotor_Frequency_SuperSonic\fP   = 255;"
+.br
+.ti -1c
+.RI "#define \fBAdvanced_Consist_Address\fP   = 0;"
+.br
+.ti -1c
+.RI "#define \fBReset_dec_to_fact\fP   128 /*Set to 08 to reset all CV Values\&. Set to 09 to reset all CV Values except 28 step speed table\&. */"
+.br
+.ti -1c
+.RI "#define \fBCV_Reset_dec_to_fact\fP   8"
+.br
+.ti -1c
+.RI "#define \fBCV_reboot\fP   2"
+.br
+.ti -1c
+.RI "#define \fBVersion\fP   ID 64 /* Digitrax Version ID Read Only */"
+.br
+.ti -1c
+.RI "#define \fBManufacturer\fP   ID 129 /* Digitrax Not affected by reset */"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBSpeed_Table_28\fP [28] = {8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 56, 62, 68, 74, 80, 87, 94, 101, 108, 116, 124, 132, 141, 150, 160, 170}"
+.br
+.ti -1c
+.RI "int \fBSpeed_Table_128\fP [128] = {0, 9, 13, 15, 22, 27, 31, 36, 40, 45, 49, 54, 58, 63, 75, 88, 100, 113, 125, 138, 151, 163, 176, 188, 201, 213, 226, 239}"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define Acceleration   0"
+
+.SS "#define Address_Selection   2"
+
+.SS "#define Advanced_Consist_Address   = 0;"
+
+.SS "#define Analog_Mode_Conversion   true"
+
+.SS "#define b2_Digi_Decoder_Address   3"
+
+.SS "#define b4_Digi_ADD   33"
+
+.SS "#define b4_Digi_ADD_L   33"
+
+.SS "#define b4_Digi_Address_H   33"
+
+.SS "#define baud_rate   115200"
+
+.SS "#define CV_b2_Digi_Decoder_Address   1"
+
+.SS "#define CV_b4_Digi_ADD   119"
+
+.SS "#define CV_b4_Digi_ADD_L   18"
+
+.SS "#define CV_b4_Digi_Address_H   17"
+
+.SS "#define CV_Configuration_Register   29"
+
+.SS "#define CV_Ditch_Light_Blink_hold_time   117"
+
+.SS "#define CV_F0F   49"
+
+.SS "#define CV_F0R   50"
+
+.SS "#define CV_F1   51"
+
+.SS "#define CV_F2   52"
+
+.SS "#define CV_F3   113"
+
+.SS "#define CV_F4   114"
+
+.SS "#define CV_F5   115"
+
+.SS "#define CV_F6   116"
+
+.SS "#define CV_FX_Keep_alive   63"
+
+.SS "#define CV_FX_Rate   62"
+
+.SS "#define CV_Master_Light_Switch   118"
+
+.SS "#define CV_moter   2"
+
+.SS "#define CV_reboot   2"
+
+.SS "#define CV_Reset_dec_to_fact   8"
+
+.SS "#define CV_Sub_AD_M_C   5"
+
+.SS "#define CV_Sub_ADD_S   1"
+
+.SS "#define CV_Sub_NDOT   2"
+
+.SS "#define CV_Sub_SSC   3"
+
+.SS "#define CV_Sub_ST_ON_OFF   4"
+
+.SS "#define DC   Functions = true; /* Automatic \-\-\- DC Functions ON Not Used in FX3 */"
+
+.SS "#define Deceleration   0"
+
+.SS "#define Directional_Headlight   true /*Map F0 Forward & Reverse See CV61 Section  */ /* Not controlled by CV61 in FX3 Decoders */"
+
+.SS "#define Ditch_Light_Blink_hold_time   0"
+
+.SS "#define Dynamic_Compensation   = 48;"
+
+.SS "#define F0F   0"
+
+.SS "#define F0R   0"
+
+.SS "#define F1   0"
+
+.SS "#define F2   0"
+
+.SS "#define F3   0"
+
+.SS "#define F4   0"
+
+.SS "#define F5   0"
+
+.SS "#define F6   0"
+
+.SS "#define Forward_Trim   0"
+
+.SS "#define FX_Keep_alive   0"
+
+.SS "#define FX_Rate   0"
+
+.SS "#define Kick_Start_value   0"
+
+.SS "#define Manufacturer   ID 129 /* Digitrax Not affected by reset */"
+
+.SS "#define Master_Light_Switch   true"
+
+.SS "#define Maximum_Voltage   0"
+
+.SS "#define Mid_Point_Voltage   0"
+
+.SS "#define moter_pin   0"
+
+.SS "#define Motor_Frequency_SuperSonic   = 255;"
+
+.SS "#define NDOT   'Fwd'"
+
+.SS "#define Reset_dec_to_fact   128 /*Set to 08 to reset all CV Values\&. Set to 09 to reset all CV Values except 28 step speed table\&. */"
+
+.SS "#define Speed_Stabilizer_Droop   = 6;"
+
+.SS "#define Speed_Step_Control   28"
+
+.SS "#define Speed_Table_On_Off   false"
+
+.SS "#define Split_Field_Motor   false"
+
+.SS "#define Start_Voltage   0"
+
+.SS "#define Static_Compensation   = 128;"
+
+.SS "#define Switching_Speed_Torque_Compensation   0"
+
+.SS "#define Transponding   false"
+
+.SS "#define Version   ID 64 /* Digitrax Version ID Read Only */"
+
+.SH "Variable Documentation"
+.PP 
+.SS "int Speed_Table_128[128] = {0, 9, 13, 15, 22, 27, 31, 36, 40, 45, 49, 54, 58, 63, 75, 88, 100, 113, 125, 138, 151, 163, 176, 188, 201, 213, 226, 239}"
+
+.SS "int Speed_Table_28[28] = {8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 56, 62, 68, 74, 80, 87, 94, 101, 108, 116, 124, 132, 141, 150, 160, 170}"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

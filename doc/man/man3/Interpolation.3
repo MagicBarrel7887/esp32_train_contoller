@@ -1,0 +1,329 @@
+.TH "Interpolation" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Interpolation
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Interpolation_math\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBStep\fP (double xValues[], double yValues[], int numValues, double pointX, double threshold=1)"
+.br
+.ti -1c
+.RI "double \fBLinear\fP (double xValues[], double yValues[], int numValues, double pointX, bool trim=true)"
+.br
+.ti -1c
+.RI "double \fBSmoothStep\fP (double xValues[], double yValues[], int numValues, double pointX, bool trim=true)"
+.br
+.ti -1c
+.RI "double \fBCatmullSpline\fP (double xValues[], double yValues[], int numValues, double pointX, bool trim=true)"
+.br
+.ti -1c
+.RI "double \fBcatmullSlope\fP (double x[], double y[], int n, int i)"
+.br
+.ti -1c
+.RI "double \fBConstrainedSpline\fP (double xValues[], double yValues[], int numValues, double pointX, bool trim=true)"
+.br
+.ti -1c
+.RI "double \fBgetFirstDerivate\fP (double x[], double y[], int n, int i)"
+.br
+.ti -1c
+.RI "double \fBgetLeftSecondDerivate\fP (double x[], double y[], int n, int i)"
+.br
+.ti -1c
+.RI "double \fBgetRightSecondDerivate\fP (double x[], double y[], int numValues, int i)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+.SH "Member Function Documentation"
+.PP 
+.SS "double Interpolation::catmullSlope (double x[], double y[], int n, int i)"
+
+.PP
+.nf
+160 {
+161     if (x[i + 1] == x[i - 1])
+162         return 0;
+163     return (y[i + 1] - y[i - 1]) / (x[i + 1] - x[i - 1]);
+164 }
+.fi
+.PP
+Referenced by \fBCatmullSpline()\fP\&.
+.SS "double Interpolation::CatmullSpline (double xValues[], double yValues[], int numValues, double pointX, bool trim = \fCtrue\fP)"
+
+.PP
+.nf
+103 {
+104     if (trim)
+105     {
+106         if (pointX <= xValues[0])
+107             return yValues[0];
+108         if (pointX >= xValues[numValues - 1])
+109             return yValues[numValues - 1];
+110     }
+111 
+112     auto i = 0;
+113     if (pointX <= xValues[0])
+114         i = 0;
+115     else if (pointX >= xValues[numValues - 1])
+116         i = numValues - 1;
+117     else
+118         while (pointX >= xValues[i + 1])
+119             i++;
+120     if (pointX == xValues[i + 1])
+121         return yValues[i + 1];
+122 
+123     auto t = (pointX - xValues[i]) / (xValues[i + 1] - xValues[i]);
+124     auto t_2 = t * t;
+125     auto t_3 = t_2 * t;
+126 
+127     auto h00 = 2 * t_3 - 3 * t_2 + 1;
+128     auto h10 = t_3 - 2 * t_2 + t;
+129     auto h01 = 3 * t_2 - 2 * t_3;
+130     auto h11 = t_3 - t_2;
+131 
+132     auto x0 = xValues[i];
+133     auto x1 = xValues[i + 1];
+134     auto y0 = yValues[i];
+135     auto y1 = yValues[i + 1];
+136 
+137     double m0;
+138     double m1;
+139     if (i == 0)
+140     {
+141         m0 = (yValues[1] - yValues[0]) / (xValues[1] - xValues[0]);
+142         m1 = (yValues[2] - yValues[0]) / (xValues[2] - xValues[0]);
+143     }
+144     else if (i == numValues - 2)
+145     {
+146         m0 = (yValues[numValues - 1] - yValues[numValues - 3]) / (xValues[numValues - 1] - xValues[numValues - 3]);
+147         m1 = (yValues[numValues - 1] - yValues[numValues - 2]) / (xValues[numValues - 1] - xValues[numValues - 2]);
+148     }
+149     else
+150     {
+151         m0 = catmullSlope(xValues, yValues, numValues, i);
+152         m1 = catmullSlope(xValues, yValues, numValues, i + 1);
+153     }
+154 
+155     auto rst = h00 * y0 + h01 * y1 + h10 * (x1 - x0) * m0 + h11 * (x1 - x0) * m1;
+156     return rst;
+157 }
+.fi
+.PP
+References \fBcatmullSlope()\fP\&.
+.SS "double Interpolation::ConstrainedSpline (double xValues[], double yValues[], int numValues, double pointX, bool trim = \fCtrue\fP)"
+
+.PP
+.nf
+167 {
+168     if (trim)
+169     {
+170         if (pointX <= xValues[0])
+171             return yValues[0];
+172         if (pointX >= xValues[numValues - 1])
+173             return yValues[numValues - 1];
+174     }
+175 
+176     //auto i = 0;
+177     //while (pointX >= xValues[i + 1]) i++;
+178     //if (pointX == xValues[i + 1]) return yValues[i + 1];
+179 
+180     auto i = 0;
+181     if (pointX <= xValues[0])
+182         i = 0;
+183     else if (pointX >= xValues[numValues - 1])
+184         i = numValues - 1;
+185     else
+186         while (pointX >= xValues[i + 1])
+187             i++;
+188     if (pointX == xValues[i + 1])
+189         return yValues[i + 1];
+190 
+191     auto x0 = xValues[i + 1];
+192     auto x1 = xValues[i];
+193     auto y0 = yValues[i + 1];
+194     auto y1 = yValues[i];
+195 
+196     auto fd2i_xl1 = getLeftSecondDerivate(xValues, yValues, numValues - 1, i + 1);
+197     auto fd2i_x = getRightSecondDerivate(xValues, yValues, numValues - 1, i + 1);
+198 
+199     auto d = (fd2i_x - fd2i_xl1) / (6\&.0f * (x0 - x1));
+200     auto c = (x0 * fd2i_xl1 - x1 * fd2i_x) / 2\&.0f / (x0 - x1);
+201     auto b = (y0 - y1 - c * (x0 * x0 - x1 * x1) - d * (x0 * x0 * x0 - x1 * x1 * x1)) / (x0 - x1);
+202     auto a = y1 - b * x1 - c * x1 * x1 - d * x1 * x1 * x1;
+203 
+204     auto rst = a + pointX * (b + pointX * (c + pointX * d));
+205     return rst;
+206 }
+.fi
+.PP
+References \fBgetLeftSecondDerivate()\fP, and \fBgetRightSecondDerivate()\fP\&.
+.SS "double Interpolation::getFirstDerivate (double x[], double y[], int n, int i)"
+
+.PP
+.nf
+209 {
+210     double fd1_x;
+211 
+212     if (i == 0)
+213     {
+214         fd1_x = 3\&.0f / 2\&.0f * (y[1] - y[0]) / (x[1] - x[0]);
+215         fd1_x -= getFirstDerivate(x, y, n, 1) / 2\&.0f;
+216     }
+217     else if (i == n)
+218     {
+219         fd1_x = 3\&.0f / 2\&.0f * (y[n] - y[n - 1]) / (x[n] - x[n - 1]);
+220         fd1_x -= getFirstDerivate(x, y, n, n - 1) / 2\&.0f;
+221     }
+222     else
+223     {
+224         if ((x[i + 1] - x[i]) / (y[i + 1] - y[i]) * (x[i] - x[i - 1]) / (y[i] - y[i - 1]) < 0)
+225         {
+226             fd1_x = 0;
+227         }
+228         else
+229         {
+230             fd1_x = 2\&.0f / ((x[i + 1] - x[i]) / (y[i + 1] - y[i]) + (x[i] - x[i - 1]) / (y[i] - y[i - 1]));
+231         }
+232     }
+233     return fd1_x;
+234 }
+.fi
+.PP
+References \fBgetFirstDerivate()\fP\&.
+.PP
+Referenced by \fBgetFirstDerivate()\fP, \fBgetLeftSecondDerivate()\fP, and \fBgetRightSecondDerivate()\fP\&.
+.SS "double Interpolation::getLeftSecondDerivate (double x[], double y[], int n, int i)"
+
+.PP
+.nf
+237 {
+238     auto fdi_x = getFirstDerivate(x, y, n, i);
+239     auto fdi_xl1 = getFirstDerivate(x, y, n, i - 1);
+240 
+241     auto fd2l_x = -2\&.0f * (fdi_x + 2\&.0f * fdi_xl1) / (x[i] - x[i - 1]);
+242     fd2l_x += 6\&.0f * (y[i] - y[i - 1]) / (x[i] - x[i - 1]) / (x[i] - x[i - 1]);
+243 
+244     return fd2l_x;
+245 }
+.fi
+.PP
+References \fBgetFirstDerivate()\fP\&.
+.PP
+Referenced by \fBConstrainedSpline()\fP\&.
+.SS "double Interpolation::getRightSecondDerivate (double x[], double y[], int numValues, int i)"
+
+.PP
+.nf
+248 {
+249     auto fdi_x = getFirstDerivate(x, y, numValues, i);
+250     auto fdi_xl1 = getFirstDerivate(x, y, numValues, i - 1);
+251 
+252     auto fd2r_x = 2\&.0f * (2\&.0f * fdi_x + fdi_xl1) / (x[i] - x[i - 1]);
+253     fd2r_x -= 6\&.0f * (y[i] - y[i - 1]) / (x[i] - x[i - 1]) / (x[i] - x[i - 1]);
+254 
+255     return fd2r_x;
+256 }
+.fi
+.PP
+References \fBgetFirstDerivate()\fP\&.
+.PP
+Referenced by \fBConstrainedSpline()\fP\&.
+.SS "double Interpolation::Linear (double xValues[], double yValues[], int numValues, double pointX, bool trim = \fCtrue\fP)"
+
+.PP
+.nf
+43 {
+44     if (trim)
+45     {
+46         if (pointX <= xValues[0])
+47             return yValues[0];
+48         if (pointX >= xValues[numValues - 1])
+49             return yValues[numValues - 1];
+50     }
+51 
+52     auto i = 0;
+53     double rst = 0;
+54     if (pointX <= xValues[0])
+55     {
+56         i = 0;
+57         auto t = (pointX - xValues[i]) / (xValues[i + 1] - xValues[i]);
+58         rst = yValues[i] * (1 - t) + yValues[i + 1] * t;
+59     }
+60     else if (pointX >= xValues[numValues - 1])
+61     {
+62         auto t = (pointX - xValues[numValues - 2]) / (xValues[numValues - 1] - xValues[numValues - 2]);
+63         rst = yValues[numValues - 2] * (1 - t) + yValues[numValues - 1] * t;
+64     }
+65     else
+66     {
+67         while (pointX >= xValues[i + 1])
+68             i++;
+69         auto t = (pointX - xValues[i]) / (xValues[i + 1] - xValues[i]);
+70         rst = yValues[i] * (1 - t) + yValues[i + 1] * t;
+71     }
+72 
+73     return rst;
+74 }
+.fi
+.SS "double Interpolation::SmoothStep (double xValues[], double yValues[], int numValues, double pointX, bool trim = \fCtrue\fP)"
+
+.PP
+.nf
+77 {
+78     if (trim)
+79     {
+80         if (pointX <= xValues[0])
+81             return yValues[0];
+82         if (pointX >= xValues[numValues - 1])
+83             return yValues[numValues - 1];
+84     }
+85 
+86     auto i = 0;
+87     if (pointX <= xValues[0])
+88         i = 0;
+89     else if (pointX >= xValues[numValues - 1])
+90         i = numValues - 1;
+91     else
+92         while (pointX >= xValues[i + 1])
+93             i++;
+94     if (pointX == xValues[i + 1])
+95         return yValues[i + 1];
+96 
+97     auto t = (pointX - xValues[i]) / (xValues[i + 1] - xValues[i]);
+98     t = t * t * (3 - 2 * t);
+99     return yValues[i] * (1 - t) + yValues[i + 1] * t;
+100 }
+.fi
+.SS "double Interpolation::Step (double xValues[], double yValues[], int numValues, double pointX, double threshold = \fC1\fP)"
+
+.PP
+.nf
+25 {
+26     // extremos
+27     if (pointX <= xValues[0])
+28         return yValues[0];
+29     if (pointX >= xValues[numValues - 1])
+30         return yValues[numValues - 1];
+31 
+32     auto i = 0;
+33     while (pointX >= xValues[i + 1])
+34         i++;
+35     if (pointX == xValues[i + 1])
+36         return yValues[i + 1]; // coincidencia exacta
+37 
+38     auto t = (pointX - xValues[i]) / (xValues[i + 1] - xValues[i]); // punto relativo en el intervalo
+39     return t < threshold ? yValues[i] : yValues[i + 1];
+40 }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

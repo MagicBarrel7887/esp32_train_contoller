@@ -1,0 +1,139 @@
+.TH "src/main.cpp" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Arduino\&.h'\fP
+.br
+\fC#include 'SPI\&.h'\fP
+.br
+\fC#include <Wire\&.h>\fP
+.br
+\fC#include 'Adafruit_Keypad\&.h'\fP
+.br
+\fC#include <TTP229\&.h>\fP
+.br
+\fC#include 'RF24\&.h'\fP
+.br
+\fC#include 'printf\&.h'\fP
+.br
+\fC#include 'DT500\-MID\&.h'\fP
+.br
+\fC#include <engine\&.h>\fP
+.br
+\fC#include <wireless\&.h>\fP
+.br
+\fC#include <debug\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetup\fP ()"
+.br
+.ti -1c
+.RI "void \fBloop\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBwireless\fP \fBDH500_radio\fP"
+.br
+.ti -1c
+.RI "\fBdebug\fP \fBDEBUG\fP"
+.br
+.ti -1c
+.RI "int \fBrole\fP = 0"
+.br
+.ti -1c
+.RI "int \fBresponding\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void loop ()"
+
+.PP
+.nf
+63             {
+64   // put your main code here, to run repeatedly:
+65   DT500\&.lastDebounceTime = millis();
+66 
+67   DT500\&.loopCount++;
+68 
+69   DT500\&.get_count();
+70 
+71   DT500\&.error = DT500\&.push_buttons_joystick();
+72 
+73   DH500_radio\&.set_PayloadStruct();
+74 
+75   DH500_radio\&.Transmit();
+76 
+77   DEBUG\&.display_time_DEBUG();
+78 }
+.fi
+.PP
+References \fBDEBUG\fP, \fBDH500_radio\fP, \fBdebug::display_time_DEBUG()\fP, \fBDT500\fP, \fBengen::error\fP, \fBengen::get_count()\fP, \fBengen::lastDebounceTime\fP, \fBengen::loopCount\fP, \fBengen::push_buttons_joystick()\fP, \fBwireless::set_PayloadStruct()\fP, and \fBwireless::Transmit()\fP\&.
+.SS "void setup ()"
+
+.PP
+.nf
+29              {
+30   // put your setup code here, to run once:
+31     pinMode(LED_BUILTIN, OUTPUT);
+32 
+33     digitalWrite(LED_BUILTIN, 255);
+34 
+35     // SSD1306_SWITCHCAPVCC = generate display voltage from 3\&.3V internally
+36     if (!display\&.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))
+37     {
+38         Serial\&.println(F("SSD1306 allocation failed"));
+39         for (;;)
+40             ; // Don't proceed, loop forever
+41     }
+42 
+43 // Show initial display buffer contents on the screen --
+44 // the library initializes this with an Adafruit splash screen\&.
+45     digitalWrite(LED_BUILTIN, 0);
+46     digitalWrite(LED_BUILTIN, 255);
+47 
+48     nrf24_setup();
+49     
+50     DH500_radio\&.int_PayloadStruct();
+51       
+52     DT500\&.Arduino_digital_analog_int();
+53 
+54     delay(500);
+55 
+56     // Clear the buffer
+57     display\&.clearDisplay();
+58 
+59 
+60     Serial\&.begin(9600);
+61 }
+.fi
+.PP
+References \fBengen::Arduino_digital_analog_int()\fP, \fBDH500_radio\fP, \fBdisplay()\fP, \fBDT500\fP, \fBwireless::int_PayloadStruct()\fP, \fBnrf24_setup()\fP, and \fBSCREEN_ADDRESS\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBdebug\fP DEBUG"
+
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "\fBwireless\fP DH500_radio"
+
+.PP
+Referenced by \fBloop()\fP, and \fBsetup()\fP\&.
+.SS "int responding"
+
+.SS "int role = 0"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

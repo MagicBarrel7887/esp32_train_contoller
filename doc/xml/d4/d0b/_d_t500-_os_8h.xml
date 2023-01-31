@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="d4/d0b/_d_t500-_os_8h" kind="file" language="C++">
+    <compoundname>DT500-Os.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a0f4e9c3eac099e66ef1ec2d5217721ee_1a0f4e9c3eac099e66ef1ec2d5217721ee" prot="public" static="no">
+        <name>Drf</name>
+        <initializer>= Duplex_RF;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="2" column="9" bodyfile="include/DT500-Os.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a6e10995a22b67357bfb1380ec69eef5b_1a6e10995a22b67357bfb1380ec69eef5b" prot="public" static="no">
+        <name>IRm</name>
+        <initializer>= IR_mode;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="3" column="9" bodyfile="include/DT500-Os.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_aed92e293a2838d8274408294e8343643_1aed92e293a2838d8274408294e8343643" prot="public" static="no">
+        <name>Tid</name>
+        <initializer>= Throt_ID;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="4" column="9" bodyfile="include/DT500-Os.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_ace32597ccc4bbfe542ecf249fdf134ee_1ace32597ccc4bbfe542ecf249fdf134ee" prot="public" static="no">
+        <name>XPs</name>
+        <initializer>= XP Slots;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="5" column="9" bodyfile="include/DT500-Os.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_ad30e8cabae860d52f5bf80b36589b32d_1ad30e8cabae860d52f5bf80b36589b32d" prot="public" static="no">
+        <name>RPd</name>
+        <initializer>= RPdn_20m;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="6" column="9" bodyfile="include/DT500-Os.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a919867cb60a5955d118121c1a08ed90b_1a919867cb60a5955d118121c1a08ed90b" prot="public" static="no">
+        <name>XPf</name>
+        <initializer>= XPFnHold;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="7" column="9" bodyfile="include/DT500-Os.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a32ae29162af66fe72e495dc112e7818e_1a32ae29162af66fe72e495dc112e7818e" prot="public" static="no">
+        <name>NIS</name>
+        <initializer>= noIDLSho;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="8" column="9" bodyfile="include/DT500-Os.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a230bc3f28f7c757450eb0f7a3d30a1b9_1a230bc3f28f7c757450eb0f7a3d30a1b9" prot="public" static="no">
+        <name>Cl</name>
+        <initializer>= Clicks;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="9" column="9" bodyfile="include/DT500-Os.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a707e2c762661cbee1f1f65d9478d305b_1a707e2c762661cbee1f1f65d9478d305b" prot="public" static="no">
+        <name>Fcl</name>
+        <initializer>= Fclock;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="10" column="9" bodyfile="include/DT500-Os.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a2e69eaae4f6c944b49491ccabd36cc3f_1a2e69eaae4f6c944b49491ccabd36cc3f" prot="public" static="no">
+        <name>HR12</name>
+        <initializer>= Clock_12Hr;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="11" column="9" bodyfile="include/DT500-Os.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a58e95dc1eb9d6ce16f515e77beeadd58_1a58e95dc1eb9d6ce16f515e77beeadd58" prot="public" static="no">
+        <name>NB</name>
+        <initializer>= NoBlstic;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="12" column="9" bodyfile="include/DT500-Os.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_ab52cdc475a6866d1be7b5807fb623f50_1ab52cdc475a6866d1be7b5807fb623f50" prot="public" static="no">
+        <name>ST</name>
+        <initializer>= STimeout;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="13" column="9" bodyfile="include/DT500-Os.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a7f8de88c74a014b05f04eb1527083206_1a7f8de88c74a014b05f04eb1527083206" prot="public" static="no">
+        <name>Fs</name>
+        <initializer>= F3_Static;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="14" column="9" bodyfile="include/DT500-Os.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a47d9722c6842fed0f3cf85f577133b89_1a47d9722c6842fed0f3cf85f577133b89" prot="public" static="no">
+        <name>Fm</name>
+        <initializer>= F2_Mom;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="15" column="9" bodyfile="include/DT500-Os.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a76967af6c9df3613cffb24417463473a_1a76967af6c9df3613cffb24417463473a" prot="public" static="no">
+        <name>Fa</name>
+        <initializer>= F2_Analog;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="16" column="9" bodyfile="include/DT500-Os.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a0c719c414608ef14852670b063876c07_1a0c719c414608ef14852670b063876c07" prot="public" static="no">
+        <name>MSG</name>
+        <initializer>= MsgFilter;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="17" column="9" bodyfile="include/DT500-Os.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_abf42029e3412aca430f1a7c0a35f89b5_1abf42029e3412aca430f1a7c0a35f89b5" prot="public" static="no">
+        <name>SLF</name>
+        <initializer>= SLFollow;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="18" column="9" bodyfile="include/DT500-Os.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_ad4c46ad303098e5253b9216faff99d48_1ad4c46ad303098e5253b9216faff99d48" prot="public" static="no">
+        <name>ESI</name>
+        <initializer>= ES_Idle;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="19" column="9" bodyfile="include/DT500-Os.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a8397acedb06c1832f583d8660807e826_1a8397acedb06c1832f583d8660807e826" prot="public" static="no">
+        <name>PRS</name>
+        <initializer>= PWRSaver;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="20" column="9" bodyfile="include/DT500-Os.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a68e22635ff207d8ca10459833856bd75_1a68e22635ff207d8ca10459833856bd75" prot="public" static="no">
+        <name>IR</name>
+        <initializer>= IRRelease;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="21" column="9" bodyfile="include/DT500-Os.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_aa88e13d9b19457bcb49fb760fc75225f_1aa88e13d9b19457bcb49fb760fc75225f" prot="public" static="no">
+        <name>Dp</name>
+        <initializer>= DplxBad;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="22" column="9" bodyfile="include/DT500-Os.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_aae2aff0d0913f2e8fa353aa6131e5bf8_1aae2aff0d0913f2e8fa353aa6131e5bf8" prot="public" static="no">
+        <name>DXR</name>
+        <initializer>= DxRxLPwr;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="23" column="9" bodyfile="include/DT500-Os.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a7d5ef0de19030d43f98042e1c4a9f605_1a7d5ef0de19030d43f98042e1c4a9f605" prot="public" static="no">
+        <name>NT</name>
+        <initializer>= NewTypes;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="24" column="9" bodyfile="include/DT500-Os.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_aa7eda84d754ef54273a43124db6401d1_1aa7eda84d754ef54273a43124db6401d1" prot="public" static="no">
+        <name>NUT</name>
+        <initializer>= Nu_Type_;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="25" column="9" bodyfile="include/DT500-Os.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_adc2eea25aef730aa5d618dba722aaa8e_1adc2eea25aef730aa5d618dba722aaa8e" prot="public" static="no">
+        <name>Rec</name>
+        <initializer>= Recall_ #;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="26" column="9" bodyfile="include/DT500-Os.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d0b/_d_t500-_os_8h_a4feaced0d41894d5c5b74f1a687a1cc6_1a4feaced0d41894d5c5b74f1a687a1cc6" prot="public" static="no">
+        <name>Bl</name>
+        <initializer>= BackLite;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-Os.h" line="27" column="9" bodyfile="include/DT500-Os.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//DT500<sp/>Option<sp/>Screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="d4/d0b/_d_t500-_os_8h_a0f4e9c3eac099e66ef1ec2d5217721ee_1a0f4e9c3eac099e66ef1ec2d5217721ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Drf<sp/>=<sp/>Duplex_RF;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>RF24<sp/>to<sp/>operate<sp/>in<sp/>Duplex<sp/>mode.<sp/>Off<sp/>turns<sp/>off<sp/>Duplex<sp/>choice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="d4/d0b/_d_t500-_os_8h_a6e10995a22b67357bfb1380ec69eef5b_1a6e10995a22b67357bfb1380ec69eef5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IRm<sp/>=<sp/>IR_mode;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>IR<sp/>mode<sp/>when<sp/>disconnected<sp/>and<sp/>IR<sp/>receiver<sp/>detected<sp/>on<sp/>LocoNet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="d4/d0b/_d_t500-_os_8h_aed92e293a2838d8274408294e8343643_1aed92e293a2838d8274408294e8343643" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Tid<sp/>=<sp/>Throt_ID;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Optional<sp/>unique<sp/>throttle<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="d4/d0b/_d_t500-_os_8h_ace32597ccc4bbfe542ecf249fdf134ee_1ace32597ccc4bbfe542ecf249fdf134ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XPs<sp/>=<sp/>XP<sp/>Slots;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>or<sp/>disabel<sp/>the<sp/>use<sp/>of<sp/>Expanded<sp/>slots<sp/>when<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d4/d0b/_d_t500-_os_8h_ad30e8cabae860d52f5bf80b36589b32d_1ad30e8cabae860d52f5bf80b36589b32d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RPd<sp/>=<sp/>RPdn_20m;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>throttle<sp/>to<sp/>power<sp/>off<sp/>after<sp/>being<sp/>in<sp/>power<sp/>save<sp/>for<sp/>20<sp/>minutes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d4/d0b/_d_t500-_os_8h_a919867cb60a5955d118121c1a08ed90b_1a919867cb60a5955d118121c1a08ed90b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XPf<sp/>=<sp/>XPFnHold;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>allows<sp/>multiple<sp/>expanded<sp/>function<sp/>keys<sp/>per<sp/>X1<sp/>or<sp/>X2<sp/>choice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d4/d0b/_d_t500-_os_8h_a32ae29162af66fe72e495dc112e7818e_1a32ae29162af66fe72e495dc112e7818e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NIS<sp/>=<sp/>noIDLSho;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Off<sp/>allows<sp/>“Idle”<sp/>to<sp/>flash<sp/>in<sp/>right<sp/>hand<sp/>loco<sp/>address<sp/>area<sp/>when<sp/>system<sp/>is<sp/>Idle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d4/d0b/_d_t500-_os_8h_a230bc3f28f7c757450eb0f7a3d30a1b9_1a230bc3f28f7c757450eb0f7a3d30a1b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Cl<sp/>=<sp/>Clicks;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>clicking<sp/>when<sp/>making<sp/>any<sp/>keypad<sp/>or<sp/>knob<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d4/d0b/_d_t500-_os_8h_a707e2c762661cbee1f1f65d9478d305b_1a707e2c762661cbee1f1f65d9478d305b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fcl<sp/>=<sp/>Fclock;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>Fast<sp/>Clock<sp/>in<sp/>center<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d4/d0b/_d_t500-_os_8h_a2e69eaae4f6c944b49491ccabd36cc3f_1a2e69eaae4f6c944b49491ccabd36cc3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HR12<sp/>=<sp/>Clock_12Hr;<sp/></highlight><highlight class="comment">//<sp/>On<sp/>selects<sp/>12Hr<sp/>vs<sp/>24Hr<sp/>clock<sp/>display<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d4/d0b/_d_t500-_os_8h_a58e95dc1eb9d6ce16f515e77beeadd58_1a58e95dc1eb9d6ce16f515e77beeadd58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB<sp/>=<sp/>NoBlstic;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Off<sp/>enables<sp/>ballstic<sp/>tracking<sp/>by<sp/>proving<sp/>ratesensitive<sp/>knop<sp/>steps<sp/>so<sp/>faster<sp/>turning<sp/>gives<sp/>bigger<sp/>step<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d4/d0b/_d_t500-_os_8h_ab52cdc475a6866d1be7b5807fb623f50_1ab52cdc475a6866d1be7b5807fb623f50" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ST<sp/>=<sp/>STimeout;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>shortens<sp/>the<sp/>amoutn<sp/>of<sp/>time<sp/>before<sp/>the<sp/>throttle<sp/>kicks<sp/>into<sp/>Power<sp/>Save<sp/>when<sp/>no<sp/>changes<sp/>have<sp/>taken<sp/>place</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d4/d0b/_d_t500-_os_8h_a7f8de88c74a014b05f04eb1527083206_1a7f8de88c74a014b05f04eb1527083206" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fs<sp/>=<sp/>F3_Static;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>makes<sp/>F3<sp/>key<sp/>On/Off<sp/>action</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d4/d0b/_d_t500-_os_8h_a47d9722c6842fed0f3cf85f577133b89_1a47d9722c6842fed0f3cf85f577133b89" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fm<sp/>=<sp/>F2_Mom;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>makes<sp/>F2<sp/>key<sp/>momentary<sp/>action,<sp/>used<sp/>for<sp/>playable<sp/>whistle<sp/>where<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d4/d0b/_d_t500-_os_8h_a76967af6c9df3613cffb24417463473a_1a76967af6c9df3613cffb24417463473a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fa<sp/>=<sp/>F2_Analog;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>optional<sp/>F2<sp/>key<sp/>pressure-sensitive<sp/>analog<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d4/d0b/_d_t500-_os_8h_a0c719c414608ef14852670b063876c07_1a0c719c414608ef14852670b063876c07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG<sp/>=<sp/>MsgFilter;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>stops<sp/>throttle<sp/>messages<sp/>from<sp/>displaying<sp/>when<sp/>selecting<sp/>locomotives</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d4/d0b/_d_t500-_os_8h_abf42029e3412aca430f1a7c0a35f89b5_1abf42029e3412aca430f1a7c0a35f89b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLF<sp/>=<sp/>SLFollow;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>slot<sp/>following<sp/>mode<sp/>for<sp/>locomotives<sp/>selected<sp/>in<sp/>multiple<sp/>throttles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d4/d0b/_d_t500-_os_8h_ad4c46ad303098e5253b9216faff99d48_1ad4c46ad303098e5253b9216faff99d48" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESI<sp/>=<sp/>ES_Idle;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>freezes<sp/>all<sp/>locomotives<sp/>when<sp/>Emerg-Stop<sp/>key<sp/>pressed.<sp/>Off<sp/>stops<sp/>only<sp/>locomotive<sp/>selected<sp/>in<sp/>throttle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d4/d0b/_d_t500-_os_8h_a8397acedb06c1832f583d8660807e826_1a8397acedb06c1832f583d8660807e826" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRS<sp/>=<sp/>PWRSaver;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>Radio?IR<sp/>mode<sp/>power<sp/>save<sp/>on<sp/>throttle<sp/>inactivity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d4/d0b/_d_t500-_os_8h_a68e22635ff207d8ca10459833856bd75_1a68e22635ff207d8ca10459833856bd75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IR<sp/>=<sp/>IRRelease;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>allows<sp/>IR/Simplez<sp/>Radio<sp/>throttles<sp/>to<sp/>release<sp/>loco<sp/>addresses<sp/>when<sp/>unplugged</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d4/d0b/_d_t500-_os_8h_aa88e13d9b19457bcb49fb760fc75225f_1aa88e13d9b19457bcb49fb760fc75225f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Dp<sp/>=<sp/>DplxBad;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>white<sp/>flashlight<sp/>LED<sp/>to<sp/>blink<sp/>when<sp/>repeted<sp/>Duplex<sp/>radio<sp/>messages<sp/>fail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d4/d0b/_d_t500-_os_8h_aae2aff0d0913f2e8fa353aa6131e5bf8_1aae2aff0d0913f2e8fa353aa6131e5bf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DXR<sp/>=<sp/>DxRxLPwr;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>enables<sp/>maximum<sp/>Duplex<sp/>power<sp/>saviing,<sp/>disables<sp/>continuous<sp/>update<sp/>of<sp/>slot<sp/>following</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d4/d0b/_d_t500-_os_8h_a7d5ef0de19030d43f98042e1c4a9f605_1a7d5ef0de19030d43f98042e1c4a9f605" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NT<sp/>=<sp/>NewTypes;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>allows<sp/>throttle<sp/>to<sp/>overide<sp/>command<sp/>station<sp/>new-<sp/>type<sp/>loco<sp/>speed<sp/>step<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d4/d0b/_d_t500-_os_8h_aa7eda84d754ef54273a43124db6401d1_1aa7eda84d754ef54273a43124db6401d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUT<sp/>=<sp/>Nu_Type_;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>128<sp/>speed<sp/>step---setting<sp/>14<sp/>speed<sp/>step<sp/>setting---reserved<sp/>28<sp/>speed<sp/>step<sp/>setting---Advanced<sp/>128<sp/>speed<sp/>step<sp/>setting<sp/>reserved---Advanced<sp/>28<sp/>speed<sp/>step<sp/>setting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d4/d0b/_d_t500-_os_8h_adc2eea25aef730aa5d618dba722aaa8e_1adc2eea25aef730aa5d618dba722aaa8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Rec<sp/>=<sp/>Recall_<sp/>#;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Recall<sp/>stack<sp/>set<sp/>at<sp/>last<sp/>4<sp/>entries---Recall<sp/>stack<sp/>set<sp/>at<sp/>least<sp/>8<sp/>entries---Recall<sp/>stack<sp/>set<sp/>at<sp/>last<sp/>16<sp/>entries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d4/d0b/_d_t500-_os_8h_a4feaced0d41894d5c5b74f1a687a1cc6_1a4feaced0d41894d5c5b74f1a687a1cc6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Bl<sp/>=<sp/>BackLite;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>backlight<sp/>brightness---Maximum<sp/>backlight<sp/>brightness<sp/>-<sp/>lowest<sp/>power<sp/>usage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">#define<sp/>FD<sp/>=<sp/>FactoryD;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Select<sp/>on<sp/>and<sp/>press<sp/>enter<sp/>key<sp/>to<sp/>force<sp/>all<sp/>options<sp/>settings<sp/>to<sp/>factory<sp/>defaults</highlight></codeline>
+    </programlisting>
+    <location file="include/DT500-Os.h"/>
+  </compounddef>
+</doxygen>

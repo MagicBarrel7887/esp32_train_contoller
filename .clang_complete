@@ -1,0 +1,27 @@
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/include
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/src
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/TTP229
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/Adafruit SSD1306
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/Adafruit GFX Library
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/Adafruit BusIO
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/Adafruit Keypad
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/RF24
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/RF24/utility
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/cores/arduino
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/variants/standard
+-IC:/Users/coste/Documents/GitHub/esp32-esp8266-arduino/arduino_train_controller/.pio/libdeps/uno/Adafruit NeoPixel
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-IC:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-IC:/Users/coste/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include
+-IC:/Users/coste/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed
+-IC:/Users/coste/.platformio/packages/toolchain-atmelavr/avr/include
+-IC:/Users/coste/.platformio/packages/tool-unity
+-DPLATFORMIO=50204
+-DARDUINO_AVR_UNO
+-DF_CPU=16000000L
+-DARDUINO_ARCH_AVR
+-DARDUINO=10808
+-D__AVR_ATmega328P__

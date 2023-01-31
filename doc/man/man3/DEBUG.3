@@ -1,0 +1,264 @@
+.TH "debug" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+debug
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <debug\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdebug\fP ()"
+.br
+.ti -1c
+.RI "int \fBIO\fP ()"
+.br
+.ti -1c
+.RI "int \fBnrf24error\fP ()"
+.br
+.ti -1c
+.RI "int \fBdisplay_time_DEBUG\fP ()"
+.br
+.ti -1c
+.RI "int \fBserial_debug\fP ()"
+.br
+.ti -1c
+.RI "\fB~debug\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBdisplay_Function_DEBUG\fP = 0"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBloopCount\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fBtimer\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "debug::debug ()"
+
+.PP
+.nf
+28 {
+29 }
+.fi
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SS "debug::~debug ()"
+
+.PP
+.nf
+32 {
+33     display\&.clearDisplay();
+34 
+35     display\&.setTextSize(1);              // Normal 1:1 pixel scale
+36     display\&.setTextColor(SSD1306_WHITE); // Draw white text
+37     display\&.setCursor(0, 0);             // Start at top-left corner
+38     display\&.println(F("!_DEBUG_!"));
+39 
+40     display\&.setTextColor(SSD1306_BLACK, SSD1306_WHITE); // Draw 'inverse' text
+41     display\&.println(3\&.141592);
+42 
+43     display\&.setTextSize(2); // Draw 2X-scale text
+44     display\&.setTextColor(SSD1306_WHITE);
+45     display\&.print(F("0x"));
+46     display\&.println(0xDEADBEEF, HEX);
+47 
+48     display\&.display();
+49 
+50     return;
+51 }
+.fi
+.PP
+References \fBdisplay()\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int debug::display_time_DEBUG ()"
+
+.PP
+.nf
+54 {
+55     if ((millis() - timer) > 500)
+56     {
+57         digitalWrite(32, 100);
+58 
+59 
+60 
+61         switch (display_Function_DEBUG)
+62         {
+63         case 1:
+64             debug();
+65             break;
+66         case 2:
+67             IO();
+68             break;
+69         case 3:
+70             nrf24error();
+71             break;
+72         case 4:
+73             serial_debug();
+74             break;
+75         case 5:
+76             display_Function_DEBUG = 3;
+77             break;
+78 
+79         default:
+80             break;
+81         }
+82 
+83         display_Function_DEBUG ++;
+84 
+85         loopCount = 0;
+86         timer = millis();
+87 
+88         digitalWrite(32, 0);
+89     }
+90     loopCount++;
+91 
+92 
+93 
+94     return 0;
+95 }
+.fi
+.PP
+References \fBdebug()\fP, \fBdisplay_Function_DEBUG\fP, \fBIO()\fP, \fBloopCount\fP, \fBnrf24error()\fP, \fBserial_debug()\fP, and \fBtimer\fP\&.
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "int debug::IO ()"
+
+.PP
+.nf
+98 {
+99     display\&.clearDisplay();
+100 
+101     display\&.setTextSize(0\&.5);            // Normal 1:1 pixel scale
+102     display\&.setTextColor(SSD1306_WHITE); // Draw white text
+103 
+104     display\&.setCursor(1, 0);  // Start at top-left corner
+105     display\&.println(DT500\&.display_Function); //L Semaphore
+106 
+107     display\&.setCursor(115, 0);
+108     display\&.println(DT500\&.RX_ADD); //R Semaphore
+109 
+110     display\&.setCursor(40, 10); // Start at top-left corner
+111     display\&.println(F("IO DEBUG"));
+112 
+113     display\&.setCursor(0, 15);
+114     display\&.println(DT500\&.RX_ADD); //L Loco Icon
+115 
+116     display\&.setCursor(109, 15);
+117     display\&.println(DT500\&.temp_code); //R Loco Icon
+118 
+119     display\&.setCursor(27, 25);
+120     display\&.println(F("lta")); //L Throttle Address
+121 
+122     display\&.setCursor(75, 25);
+123     display\&.println(F("rta")); //R Throttle Address
+124 
+125     display\&.setCursor(55, 25);
+126     display\&.println(F("fn")); //Mode Indicator
+127 
+128     display\&.display();
+129 
+130     return 0;
+131 }
+.fi
+.PP
+References \fBdisplay()\fP, \fBengen::display_Function\fP, \fBDT500\fP, \fBengen::RX_ADD\fP, and \fBengen::temp_code\fP\&.
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SS "int debug::nrf24error ()"
+
+.PP
+.nf
+134 {
+135 
+136 
+137     display\&.clearDisplay();
+138 
+139     display\&.setTextSize(0\&.5);            // Normal 1:1 pixel scale
+140     display\&.setTextColor(SSD1306_WHITE); // Draw white text
+141 
+142     display\&.setCursor(1, 0);  // Start at top-left corner
+143     display\&.println(F("nrf24_error ")); //L Semaphore
+144     display\&.println(DT500\&.nrf24_error); //L Semaphore
+145 
+146     display\&.setCursor(115, 0);
+147     display\&.println(F("sr")); //R Semaphore
+148 
+149     display\&.setCursor(40, 10); // Start at top-left corner
+150     display\&.println(F("messages"));
+151 
+152     display\&.setCursor(0, 15);
+153     display\&.println(F("lli")); //L Loco Icon
+154 
+155     display\&.setCursor(109, 15);
+156     display\&.println(F("rli")); //R Loco Icon
+157 
+158     display\&.setCursor(27, 25);
+159     display\&.println(F("lta")); //L Throttle Address
+160 
+161     display\&.setCursor(75, 25);
+162     display\&.println(F("rta")); //R Throttle Address
+163 
+164     display\&.setCursor(55, 25);
+165     display\&.println(F("fn")); //Mode Indicator
+166 
+167     display\&.display();
+168 
+169     return 0;
+170 }
+.fi
+.PP
+References \fBdisplay()\fP, \fBDT500\fP, and \fBengen::nrf24_error\fP\&.
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SS "int debug::serial_debug ()"
+
+.PP
+.nf
+173 {
+174     Serial\&.println(F("Transmission failed or timed out")); // payload was not delivered
+175     DT500\&.e_db();
+176 
+177     return 0;
+178 }
+.fi
+.PP
+References \fBDT500\fP, and \fBengen::e_db()\fP\&.
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "int debug::display_Function_DEBUG = 0"
+
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SS "unsigned long debug::loopCount = 0\fC [private]\fP"
+
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+.SS "unsigned long debug::timer = 0\fC [private]\fP"
+
+.PP
+Referenced by \fBdisplay_time_DEBUG()\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

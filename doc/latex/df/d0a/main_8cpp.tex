@@ -1,0 +1,146 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SPI.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Adafruit\+\_\+\+Keypad.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$TTP229.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}RF24.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}printf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DT500-\/\+MID.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$engine.\+h$>$}\newline
+{\ttfamily \#include $<$wireless.\+h$>$}\newline
+{\ttfamily \#include $<$debug.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_afe461d27b9c48d5921c00d521181f12f_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwireless}{wireless}} \mbox{\hyperlink{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}{DH500\+\_\+radio}}
+\item 
+\mbox{\hyperlink{classdebug}{debug}} \mbox{\hyperlink{main_8cpp_a17e80c807cc3e1b4ea93287acfd818da_a17e80c807cc3e1b4ea93287acfd818da}{DEBUG}}
+\item 
+int \mbox{\hyperlink{main_8cpp_aea7921a9aa2757a88e843476848ddd55_aea7921a9aa2757a88e843476848ddd55}{role}} = 0
+\item 
+int \mbox{\hyperlink{main_8cpp_ab033255c7a34e3d68538a6ad9e2cbe07_ab033255c7a34e3d68538a6ad9e2cbe07}{responding}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_afe461d27b9c48d5921c00d521181f12f_afe461d27b9c48d5921c00d521181f12f}\label{main_8cpp_afe461d27b9c48d5921c00d521181f12f_afe461d27b9c48d5921c00d521181f12f}} 
+\index{main.cpp@{main.cpp}!loop@{loop}}
+\index{loop@{loop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00063}00063             \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00064}00064   \textcolor{comment}{// put your main code here, to run repeatedly:}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00065}00065   \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_af2b866f92748dd4d301c680739a32c63_af2b866f92748dd4d301c680739a32c63}{lastDebounceTime}} = millis();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00067}00067   \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ac3c190ef345bc7cd28e55d26e1f7e789_ac3c190ef345bc7cd28e55d26e1f7e789}{loopCount}}++;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00069}00069   \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ab0ee9e451f4a2e2006af3c864c03f988_ab0ee9e451f4a2e2006af3c864c03f988}{get\_count}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00071}00071   \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ac6e07c33cf1daa7966d97cde173a0b17_ac6e07c33cf1daa7966d97cde173a0b17}{error}} = \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_aa2f2c5305dcdd488ee2aff4cba3fab22}{push\_buttons\_joystick}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00073}00073   \mbox{\hyperlink{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}{DH500\_radio}}.\mbox{\hyperlink{classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_ab0cc2ab3c9206bb1ad7af76049cd8219}{set\_PayloadStruct}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00075}00075   \mbox{\hyperlink{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}{DH500\_radio}}.\mbox{\hyperlink{classwireless_a61da7a6c6cb2aaea8c0df55358b68496_a61da7a6c6cb2aaea8c0df55358b68496}{Transmit}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00077}00077   \mbox{\hyperlink{main_8cpp_a17e80c807cc3e1b4ea93287acfd818da_a17e80c807cc3e1b4ea93287acfd818da}{DEBUG}}.\mbox{\hyperlink{classdebug_a6f90d43ca9d45e8d855b93e941873b9a_a6f90d43ca9d45e8d855b93e941873b9a}{display\_time\_DEBUG}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00078}00078 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00019}{DEBUG}}, \mbox{\hyperlink{l00017}{DH500\+\_\+radio}}, \mbox{\hyperlink{l00053}{debug\+::display\+\_\+time\+\_\+\+DEBUG()}}, \mbox{\hyperlink{l00020}{DT500}}, \mbox{\hyperlink{l00119}{engen\+::error}}, \mbox{\hyperlink{l00294}{engen\+::get\+\_\+count()}}, \mbox{\hyperlink{l00095}{engen\+::last\+Debounce\+Time}}, \mbox{\hyperlink{l00137}{engen\+::loop\+Count}}, \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}, \mbox{\hyperlink{l00269}{wireless\+::set\+\_\+\+Payload\+Struct()}}, and \mbox{\hyperlink{l00163}{wireless\+::\+Transmit()}}.
+
+\mbox{\Hypertarget{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_a4fc01d736fe50cf5b977f755b675f11d}\label{main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{main.cpp@{main.cpp}!setup@{setup}}
+\index{setup@{setup}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00029}00029              \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00030}00030   \textcolor{comment}{// put your setup code here, to run once:}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00031}00031     pinMode(LED\_BUILTIN, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00033}00033     digitalWrite(LED\_BUILTIN, 255);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00035}00035     \textcolor{comment}{// SSD1306\_SWITCHCAPVCC = generate display voltage from 3.3V internally}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00036}00036     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.begin(SSD1306\_SWITCHCAPVCC, \mbox{\hyperlink{engine_8h_a4dc358585abdaa9531e340bab60ae0b5_a4dc358585abdaa9531e340bab60ae0b5}{SCREEN\_ADDRESS}}))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00037}00037     \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00038}00038         Serial.println(F(\textcolor{stringliteral}{"{}SSD1306 allocation failed"{}}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00039}00039         \textcolor{keywordflow}{for} (;;)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00040}00040             ; \textcolor{comment}{// Don't proceed, loop forever}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00043}00043 \textcolor{comment}{// Show initial display buffer contents on the screen -\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00044}00044 \textcolor{comment}{// the library initializes this with an Adafruit splash screen.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00045}00045     digitalWrite(LED\_BUILTIN, 0);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00046}00046     digitalWrite(LED\_BUILTIN, 255);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00048}00048     \mbox{\hyperlink{notuesd_8h_adc0bfd52f2e4acac37bf01995d6ad166_adc0bfd52f2e4acac37bf01995d6ad166}{nrf24\_setup}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00049}00049     }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00050}00050     \mbox{\hyperlink{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}{DH500\_radio}}.\mbox{\hyperlink{classwireless_aa80625c691684245d4279205e3dd7d8e_aa80625c691684245d4279205e3dd7d8e}{int\_PayloadStruct}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00051}00051       }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00052}00052     \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_a02de124f0487af9fff1443189657a797_a02de124f0487af9fff1443189657a797}{Arduino\_digital\_analog\_int}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00054}00054     delay(500);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00056}00056     \textcolor{comment}{// Clear the buffer}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00057}00057     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.clearDisplay();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00060}00060     Serial.begin(9600);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_l00061}00061 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, \mbox{\hyperlink{l00017}{DH500\+\_\+radio}}, \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display()}}, \mbox{\hyperlink{l00020}{DT500}}, \mbox{\hyperlink{l00275}{wireless\+::int\+\_\+\+Payload\+Struct()}}, \mbox{\hyperlink{l00001}{nrf24\+\_\+setup()}}, and \mbox{\hyperlink{l00030}{SCREEN\+\_\+\+ADDRESS}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a17e80c807cc3e1b4ea93287acfd818da_a17e80c807cc3e1b4ea93287acfd818da}\label{main_8cpp_a17e80c807cc3e1b4ea93287acfd818da_a17e80c807cc3e1b4ea93287acfd818da}} 
+\index{main.cpp@{main.cpp}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DEBUG}{DEBUG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdebug}{debug}} DEBUG}
+
+
+
+Referenced by \mbox{\hyperlink{l00063}{loop()}}.
+
+\mbox{\Hypertarget{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}\label{main_8cpp_aabcc19083f5ba1e4a85c6fd70561999a_aabcc19083f5ba1e4a85c6fd70561999a}} 
+\index{main.cpp@{main.cpp}!DH500\_radio@{DH500\_radio}}
+\index{DH500\_radio@{DH500\_radio}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{DH500\_radio}{DH500\_radio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classwireless}{wireless}} DH500\+\_\+radio}
+
+
+
+Referenced by \mbox{\hyperlink{l00063}{loop()}}, and \mbox{\hyperlink{l00029}{setup()}}.
+
+\mbox{\Hypertarget{main_8cpp_ab033255c7a34e3d68538a6ad9e2cbe07_ab033255c7a34e3d68538a6ad9e2cbe07}\label{main_8cpp_ab033255c7a34e3d68538a6ad9e2cbe07_ab033255c7a34e3d68538a6ad9e2cbe07}} 
+\index{main.cpp@{main.cpp}!responding@{responding}}
+\index{responding@{responding}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{responding}{responding}}
+{\footnotesize\ttfamily int responding}
+
+\mbox{\Hypertarget{main_8cpp_aea7921a9aa2757a88e843476848ddd55_aea7921a9aa2757a88e843476848ddd55}\label{main_8cpp_aea7921a9aa2757a88e843476848ddd55_aea7921a9aa2757a88e843476848ddd55}} 
+\index{main.cpp@{main.cpp}!role@{role}}
+\index{role@{role}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily int role = 0}
+

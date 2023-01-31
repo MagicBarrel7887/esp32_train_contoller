@@ -1,0 +1,285 @@
+.TH "wireless" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+wireless
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <wireless\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBrecieved\fP ()"
+.br
+.ti -1c
+.RI "int \fBsetup\fP ()"
+.br
+.ti -1c
+.RI "int \fBbrodcast\fP ()"
+.br
+.ti -1c
+.RI "int \fBTransmit\fP ()"
+.br
+.ti -1c
+.RI "int \fBset_PayloadStruct\fP ()"
+.br
+.ti -1c
+.RI "int \fBint_PayloadStruct\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int \fBrole\fP = 0"
+.br
+.ti -1c
+.RI "int \fBresponding\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBpreviousMillis1\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fBinterval1\fP = 10000"
+.br
+.ti -1c
+.RI "unsigned long \fBpreviousMillis2\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fBinterval2\fP = 5000"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+.SH "Member Function Documentation"
+.PP 
+.SS "int wireless::brodcast ()"
+
+.PP
+.nf
+216 {
+217     unsigned long currentMillis = millis();
+218     // unsigned long currentMillis3 = millis();
+219 
+220     // int report2 = 0;
+221 
+222     bool report;
+223 
+224     TX_RX_BC\&.b = 1;
+225 
+226     if (currentMillis - previousMillis1 > interval1)
+227     {
+228         radio\&.stopListening(); // put radio in TX mode
+229         radio\&.openWritingPipe(TX_RX_BC\&.Address);
+230 
+231         // According to the datasheet, the auto-retry features's delay value should
+232         // be "skewed" to allow the RX node to receive 1 transmission at a time\&.
+233         // So, use varying delay between retry attempts and 15 (at most) retry attempts
+234         radio\&.setRetries(((role * 3) % 12) + 3, 15); // maximum value is 15 for both args
+235 
+236         previousMillis1 = currentMillis; // save the last time I blinked the LED
+237 
+238         unsigned long start_timer = micros();                 // start the timer
+239         report = radio\&.write(&TX_RX_BC, sizeof(TX_RX_BC));    // transmit & save the report
+240         unsigned long end_timer = micros();                   // end the timer
+241 
+242         if (report)
+243         {
+244             // payload was delivered
+245 
+246             Serial\&.print(F("Transmission of payloadID "));
+247             Serial\&.print(TX_RX_BC\&.payloadID); // print payloadID
+248             Serial\&.print(F(" as Address "));
+249             Serial\&.print(TX_RX_BC\&.Address); // print nodeID
+250             Serial\&.print(F(" successful!"));
+251             Serial\&.print(F(" Time to transmit: "));
+252             Serial\&.print(end_timer - start_timer); // print the timer result
+253             Serial\&.println(F(" us"));
+254 
+255         }
+256         else
+257         {
+258             Serial\&.println(F("Transmission failed or timed out")); // payload was not delivered
+259 
+260         }
+261         TX_RX_BC\&.payloadID++; // increment payload number
+262     }
+263     currentMillis = millis();
+264 
+265 
+266     return report;
+267 }
+.fi
+.PP
+References \fBPayloadStruct::Address\fP, \fBPayloadStruct::b\fP, \fBinterval1\fP, \fBPayloadStruct::payloadID\fP, \fBpreviousMillis1\fP, \fBradio()\fP, \fBrole\fP, and \fBTX_RX_BC\fP\&.
+.SS "int wireless::int_PayloadStruct ()"
+
+.PP
+.nf
+276 {
+277     TX_RX_BC\&.C_L_T = DT500\&.analog_joystick_x;
+278 
+279     TX_RX_BC\&.Address = b2_Digi_Decoder_Address;
+280 
+281     TX_RX_BC\&.b4_Address = b4_Digi_ADD_L + b4_Digi_Address_H ;
+282 
+283     return 1;
+284 }
+.fi
+.PP
+References \fBPayloadStruct::Address\fP, \fBengen::analog_joystick_x\fP, \fBb2_Digi_Decoder_Address\fP, \fBPayloadStruct::b4_Address\fP, \fBb4_Digi_ADD_L\fP, \fBb4_Digi_Address_H\fP, \fBPayloadStruct::C_L_T\fP, \fBDT500\fP, and \fBTX_RX_BC\fP\&.
+.PP
+Referenced by \fBsetup()\fP\&.
+.SS "int wireless::recieved ()"
+
+.PP
+.nf
+128 {
+129     unsigned long currentMillis3 = millis();
+130 
+131     if (currentMillis3 - previousMillis2 > interval2)
+132     {
+133         previousMillis2 = currentMillis3; // save the last time I blinked the LED
+134 
+135         Serial\&.print(F("RX "));
+136 
+137         for (uint8_t i = 0; i < 5; ++i)
+138             radio\&.openReadingPipe(i, DT500\&.RX_ADD);
+139 
+140         radio\&.startListening(); // put radio in RX mode              // end the timer
+141 
+142         Serial\&.print(F("RX? "));
+143         uint8_t pipe;
+144         if (radio\&.available(&pipe))
+145         {                                           // is there a payload? get the pipe number that recieved it
+146             uint8_t bytes = radio\&.getPayloadSize(); // get the size of the payload
+147             radio\&.read(&TX_RX_BC, bytes);           // fetch payload from FIFO
+148             Serial\&.print(F("Received "));
+149             Serial\&.print(bytes); // print the size of the payload
+150             Serial\&.print(F(" bytes on pipe "));
+151             Serial\&.print(pipe); // print the pipe number
+152             Serial\&.print(F(" from node "));
+153             Serial\&.print(TX_RX_BC\&.Address); // print the payload's origin
+154             Serial\&.print(F("\&. PayloadID: "));
+155             Serial\&.println(TX_RX_BC\&.payloadID); // print the payload's number
+156         }
+157     }
+158     currentMillis3 = millis();
+159 
+160     return 0;
+161 }
+.fi
+.PP
+References \fBPayloadStruct::Address\fP, \fBDT500\fP, \fBinterval2\fP, \fBPayloadStruct::payloadID\fP, \fBpreviousMillis2\fP, \fBradio()\fP, \fBengen::RX_ADD\fP, and \fBTX_RX_BC\fP\&.
+.SS "int wireless::set_PayloadStruct ()"
+
+.PP
+.nf
+270 {
+271    TX_RX_BC\&.C_L_T = DT500\&.analog_joystick_x;
+272    return 1;
+273 }
+.fi
+.PP
+References \fBengen::analog_joystick_x\fP, \fBPayloadStruct::C_L_T\fP, \fBDT500\fP, and \fBTX_RX_BC\fP\&.
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "int wireless::setup ()"
+
+.PP
+.nf
+209 {
+210     bool report;
+211     report = nrf24_setup();
+212     return report;
+213 }
+.fi
+.PP
+References \fBnrf24_setup()\fP\&.
+.SS "int wireless::Transmit ()"
+
+.PP
+.nf
+164 {
+165     unsigned long currentMillis = millis();
+166     bool report;
+167 
+168     if (currentMillis - previousMillis1 > interval1)
+169     {
+170         radio\&.stopListening(); // put radio in TX mode
+171         radio\&.openWritingPipe(TX_RX_BC\&.Address);
+172 
+173         // According to the datasheet, the auto-retry features's delay value should
+174         // be "skewed" to allow the RX node to receive 1 transmission at a time\&.
+175         // So, use varying delay between retry attempts and 15 (at most) retry attempts
+176         radio\&.setRetries(((role * 3) % 12) + 3, 15); // maximum value is 15 for both args
+177 
+178         previousMillis1 = currentMillis; // save the last time I blinked the LED
+179 
+180         unsigned long start_timer = micros();                       // start the timer
+181         report = radio\&.write(&TX_RX_BC, sizeof(TX_RX_BC));          // transmit & save the report
+182         unsigned long end_timer = micros();                         // end the timer
+183 
+184         if (report)
+185         {
+186             // payload was delivered
+187 
+188             Serial\&.print(F("Transmission of payloadID "));
+189             Serial\&.print(TX_RX_BC\&.payloadID); // print payloadID
+190             Serial\&.print(F(" as Address "));
+191             Serial\&.print(TX_RX_BC\&.Address); // print nodeID
+192             Serial\&.print(F(" successful!"));
+193             Serial\&.print(F(" Time to transmit: "));
+194             Serial\&.print(end_timer - start_timer); // print the timer result
+195             Serial\&.println(F(" us"));
+196         }
+197         else
+198         {
+199             Serial\&.println(F("Transmission failed or timed out")); // payload was not delivered
+200         }
+201         TX_RX_BC\&.payloadID++; // increment payload number
+202     }
+203     currentMillis = millis();
+204 
+205     return report;
+206 }
+.fi
+.PP
+References \fBPayloadStruct::Address\fP, \fBinterval1\fP, \fBPayloadStruct::payloadID\fP, \fBpreviousMillis1\fP, \fBradio()\fP, \fBrole\fP, and \fBTX_RX_BC\fP\&.
+.PP
+Referenced by \fBloop()\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "unsigned long wireless::interval1 = 10000\fC [private]\fP"
+
+.PP
+Referenced by \fBbrodcast()\fP, and \fBTransmit()\fP\&.
+.SS "unsigned long wireless::interval2 = 5000\fC [private]\fP"
+
+.PP
+Referenced by \fBrecieved()\fP\&.
+.SS "unsigned long wireless::previousMillis1 = 0\fC [private]\fP"
+
+.PP
+Referenced by \fBbrodcast()\fP, and \fBTransmit()\fP\&.
+.SS "unsigned long wireless::previousMillis2 = 0\fC [private]\fP"
+
+.PP
+Referenced by \fBrecieved()\fP\&.
+.SS "int wireless::responding"
+
+.SS "int wireless::role = 0"
+
+.PP
+Referenced by \fBbrodcast()\fP, and \fBTransmit()\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

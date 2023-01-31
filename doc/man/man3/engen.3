@@ -1,0 +1,753 @@
+.TH "engen" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+engen
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <engine\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBe_db\fP ()"
+.br
+.ti -1c
+.RI "int \fBFunction\fP ()"
+.br
+.ti -1c
+.RI "int \fBArduino_digital_analog_int\fP ()"
+.br
+.ti -1c
+.RI "int \fBLoco_Selection\fP ()"
+.br
+.ti -1c
+.RI "int \fBMU\fP ()"
+.br
+.ti -1c
+.RI "int \fBSwitch\fP ()"
+.br
+.ti -1c
+.RI "int \fBPower\fP ()"
+.br
+.ti -1c
+.RI "int \fBStatus_Edit\fP ()"
+.br
+.ti -1c
+.RI "int \fBProgramming_Paged\fP ()"
+.br
+.ti -1c
+.RI "int \fBProgramming_Physical\fP ()"
+.br
+.ti -1c
+.RI "int \fBProgramming_Direct\fP ()"
+.br
+.ti -1c
+.RI "int \fBProgramming_Operations_Mode\fP ()"
+.br
+.ti -1c
+.RI "int \fBRecall\fP ()"
+.br
+.ti -1c
+.RI "int \fBFind\fP ()"
+.br
+.ti -1c
+.RI "int \fBdisplay_8\fP ()"
+.br
+.ti -1c
+.RI "int \fBpush_buttons_joystick\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_count\fP ()"
+.br
+.ti -1c
+.RI "int \fBttp229_get_states\fP ()"
+.br
+.ti -1c
+.RI "int \fBttp229_get_any_Pressed\fP ()"
+.br
+.ti -1c
+.RI "int \fBttp229_get_Pressed\fP ()"
+.br
+.ti -1c
+.RI "int \fBttp229_is_Key_Press\fP (int key)"
+.br
+.ti -1c
+.RI "int \fBengine_debug\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBlastDebounceTime\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBnrf24_error\fP = false"
+.br
+.ti -1c
+.RI "int \fBRX_ADD\fP"
+.br
+.ti -1c
+.RI "int \fBerror\fP"
+.br
+.ti -1c
+.RI "int \fBdisplay_Function\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtemp_code\fP"
+.br
+.ti -1c
+.RI "int \fBcv_code\fP"
+.br
+.ti -1c
+.RI "int \fBlts\fP"
+.br
+.ti -1c
+.RI "int \fBdata_io\fP"
+.br
+.ti -1c
+.RI "int \fBL_Throttle\fP"
+.br
+.ti -1c
+.RI "int \fBR_Throttle\fP"
+.br
+.ti -1c
+.RI "bool \fBsitch\fP"
+.br
+.ti -1c
+.RI "bool \fBPowr\fP"
+.br
+.ti -1c
+.RI "int \fBlta\fP"
+.br
+.ti -1c
+.RI "int \fBrta\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBloopCount\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBstartTime\fP"
+.br
+.ti -1c
+.RI "int \fBanalog_joystick_x\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBR_Reverse_Key\fP"
+.br
+.ti -1c
+.RI "int \fBL_Reverse_Key\fP"
+.br
+.ti -1c
+.RI "int \fBDISP_Key\fP"
+.br
+.ti -1c
+.RI "int \fBFUNC_Key\fP"
+.br
+.ti -1c
+.RI "int \fBFUNC_data\fP [9]"
+.br
+.ti -1c
+.RI "int \fBLOCO\fP"
+.br
+.ti -1c
+.RI "int \fBEMERGENCY_STOP_Key\fP"
+.br
+.ti -1c
+.RI "int \fBerror_number\fP"
+.br
+.ti -1c
+.RI "int \fBanalogPin_joy\fP = A3"
+.br
+.ti -1c
+.RI "int \fBanalog_joystick\fP"
+.br
+.ti -1c
+.RI "int \fBanalog_joystick_map\fP"
+.br
+.ti -1c
+.RI "int \fBbut_1\fP"
+.br
+.ti -1c
+.RI "int \fBbut_2\fP"
+.br
+.ti -1c
+.RI "int \fBbut_3\fP"
+.br
+.ti -1c
+.RI "int \fBbut_4\fP"
+.br
+.ti -1c
+.RI "int \fBbut_5\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBdebounceDelay\fP = 50"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+.SH "Member Function Documentation"
+.PP 
+.SS "int engen::Arduino_digital_analog_int ()"
+
+.PP
+.nf
+166                                      {
+167 
+168   pinMode(analogPin_joy_x, INPUT);
+169 
+170   pinMode(but_1_pin, INPUT_PULLUP);
+171   pinMode(but_2_pin, INPUT_PULLUP);
+172   pinMode(but_3_pin, INPUT_PULLUP);
+173   pinMode(but_4_pin, INPUT_PULLUP);
+174   pinMode(but_5_pin, INPUT_PULLUP);
+175   pinMode(but_6_pin, INPUT_PULLUP);
+176   pinMode(but_7_pin, INPUT_PULLUP);
+177 
+178 
+179   return 0;
+180 }
+.fi
+.PP
+References \fBanalogPin_joy_x\fP, \fBbut_1_pin\fP, \fBbut_2_pin\fP, \fBbut_3_pin\fP, \fBbut_4_pin\fP, \fBbut_5_pin\fP, \fBbut_6_pin\fP, and \fBbut_7_pin\fP\&.
+.PP
+Referenced by \fBsetup()\fP\&.
+.SS "int engen::display_8 ()"
+
+.PP
+.nf
+310  {
+311     if (display_Function == 0)
+312     {
+313 
+314         display\&.clearDisplay();
+315 
+316         display\&.setTextSize(0\&.5);            // Normal 1:1 pixel scale
+317         display\&.setTextColor(SSD1306_WHITE); // Draw white text
+318 
+319         display\&.setCursor(1, 0);  // Start at top-left corner
+320         display\&.println(F("sl")); //L Semaphore
+321 
+322         display\&.setCursor(115, 0);
+323         display\&.println(F("sr")); //R Semaphore
+324 
+325         display\&.setCursor(40, 10); // Start at top-left corner
+326         display\&.println(F("messages"));
+327 
+328         display\&.setCursor(0, 15);
+329         display\&.println(lts); //L Loco Icon
+330 
+331         display\&.setCursor(109, 15);
+332         display\&.println(F("rli")); //R Loco Icon
+333 
+334         display\&.setCursor(27, 25);
+335         display\&.println(F("lta")); //L Throttle Address
+336 
+337         display\&.setCursor(75, 25);
+338         display\&.println(F("rta")); //R Throttle Address
+339 
+340         display\&.setCursor(55, 25);
+341         display\&.println(temp_code); //Mode Indicator
+342 
+343         display\&.display();
+344     }
+345 
+346     if (display_Function == 1){
+347         display\&.clearDisplay();
+348 
+349         display\&.setTextSize(1);              // Normal 1:1 pixel scale
+350         display\&.setTextColor(SSD1306_WHITE); // Draw white text
+351 
+352         display\&.setCursor(0, 10);
+353         display\&.println(F("enter Fn_code:")); //L Loco Icon
+354 
+355         display\&.setCursor(55, 20);
+356         display\&.println(temp_code); //Mode Indicator
+357 
+358         display\&.display();
+359     }
+360 
+361         return 0;
+362  }
+.fi
+.PP
+References \fBdisplay()\fP, \fBdisplay_Function\fP, \fBlts\fP, and \fBtemp_code\fP\&.
+.SS "int engen::e_db ()"
+
+.PP
+.nf
+460  {
+461     engine_debug(L_Throttle, "L_Throttle");
+462     engine_debug(R_Throttle, "R_Throttle");
+463     engine_debug(R_Reverse_Key, "R_Reverse_Key");
+464     engine_debug(L_Reverse_Key, "L_Reverse_Key");
+465 
+466     engine_debug(DISP_Key, "DISP_Key");
+467     engine_debug(FUNC_Key, "FUNC_Key");
+468 
+469     engine_debug(sitch, "sitch");
+470     engine_debug(Powr, "Powr");
+471 
+472     engine_debug(0, "FUNC_data unavalbel");
+473     engine_debug(LOCO, "LOCO");
+474 
+475     engine_debug(EMERGENCY_STOP_Key, "EMERGENCY_STOP_Key");
+476     engine_debug(error_number, "error_number");
+477 
+478     engine_debug(lta, "lta");
+479     engine_debug(lta, "rta");
+480 
+481     engine_debug(analog_joystick_x, "analog_joystick");
+482 
+483     engine_debug(but_1, "but_1");
+484     engine_debug(but_2, "but_2");
+485     engine_debug(but_3, "but_3");
+486     engine_debug(but_4, "but_4");
+487     engine_debug(but_5, "but_5");
+488     
+489     engine_debug(error, "error");
+490 
+491     return 1;
+492  }
+.fi
+.PP
+References \fBanalog_joystick_x\fP, \fBbut_1\fP, \fBbut_2\fP, \fBbut_3\fP, \fBbut_4\fP, \fBbut_5\fP, \fBDISP_Key\fP, \fBEMERGENCY_STOP_Key\fP, \fBengine_debug()\fP, \fBerror\fP, \fBerror_number\fP, \fBFUNC_Key\fP, \fBL_Reverse_Key\fP, \fBL_Throttle\fP, \fBLOCO\fP, \fBlta\fP, \fBPowr\fP, \fBR_Reverse_Key\fP, \fBR_Throttle\fP, and \fBsitch\fP\&.
+.PP
+Referenced by \fBdebug::serial_debug()\fP\&.
+.SS "int engen::engine_debug ()"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::Find ()"
+
+.PP
+.nf
+285  {
+286     return 0;
+287  }
+.fi
+.SS "int engen::Function ()"
+
+.PP
+.nf
+214  {
+215     for (int i = 0; i < 9; ++i) {
+216 
+217     }
+218 
+219     return 0;
+220  }
+.fi
+.SS "int engen::get_count ()"
+
+.PP
+.nf
+295  {
+296     if ((millis() - startTime) > 5000)
+297     {
+298         Serial\&.print("Average loops per second = ");
+299         Serial\&.println(loopCount / 5);
+300         startTime = millis();
+301         loopCount = 0;
+302     }
+303 
+304     return 1; // or some valid int
+305  }
+.fi
+.PP
+References \fBloopCount\fP, and \fBstartTime\fP\&.
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "int engen::Loco_Selection ()"
+
+.PP
+.nf
+223  {
+224   // lcd\&.home();
+225   //  lcd\&.clear();
+226   //  lcd\&.print(Lo);
+227     return 0;
+228  }
+.fi
+.SS "int engen::MU ()"
+
+.PP
+.nf
+231  {
+232   //  lcd\&.home();
+233   //  lcd\&.clear();
+234   //  lcd\&.print(Mu);
+235     return 0;
+236  }
+.fi
+.SS "int engen::Power ()"
+
+.PP
+.nf
+247  {
+248   //  lcd\&.home();
+249   //  lcd\&.clear();
+250   //  lcd\&.print(Pw);
+251     return 0;
+252  }
+.fi
+.SS "int engen::Programming_Direct ()"
+
+.PP
+.nf
+270  {
+271     return 0;
+272  }
+.fi
+.SS "int engen::Programming_Operations_Mode ()"
+
+.PP
+.nf
+275  {
+276     return 0;
+277  }
+.fi
+.SS "int engen::Programming_Paged ()"
+
+.PP
+.nf
+260  {
+261     return 0;
+262  }
+.fi
+.SS "int engen::Programming_Physical ()"
+
+.PP
+.nf
+265  {
+266     return 0;
+267  }
+.fi
+.SS "int engen::push_buttons_joystick ()"
+
+.PP
+.nf
+183                                 {
+184 
+185 
+186 
+187 
+188    analog_joystick_x = analogRead(analogPin_joy_x);
+189    analog_joystick_map = analogRead(analogPin_joy);
+190 
+191    if(analog_joystick_map >= 0){
+192       analog_joystick_map = map(analog_joystick_map, 0, 1023, 0, 255);
+193    }
+194    if(analog_joystick_map <= 0){
+195       analog_joystick_map = map(analog_joystick_map, -1023, 0, -255, 0);
+196    }
+197 
+198 
+199    
+200 
+201    but_1 = digitalRead(but_1_pin);
+202    but_2 = digitalRead(but_2_pin);
+203    but_3 = digitalRead(but_3_pin);
+204    but_4 = digitalRead(but_4_pin);
+205    but_5 = digitalRead(but_5_pin);
+206    return 0;
+207    }
+.fi
+.PP
+References \fBanalog_joystick_map\fP, \fBanalog_joystick_x\fP, \fBanalogPin_joy\fP, \fBanalogPin_joy_x\fP, \fBbut_1\fP, \fBbut_1_pin\fP, \fBbut_2\fP, \fBbut_2_pin\fP, \fBbut_3\fP, \fBbut_3_pin\fP, \fBbut_4\fP, \fBbut_4_pin\fP, \fBbut_5\fP, and \fBbut_5_pin\fP\&.
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "int engen::Recall ()"
+
+.PP
+.nf
+280  {
+281     return 0;
+282  }
+.fi
+.SS "int engen::Status_Edit ()"
+
+.PP
+.nf
+255  {
+256     return 0;
+257  }
+.fi
+.SS "int engen::Switch ()"
+
+.PP
+.nf
+239  {
+240   //  lcd\&.home();
+241   // lcd\&.clear();
+242   // lcd\&.print(Sw);
+243     return 0;
+244  }
+.fi
+.SS "int engen::ttp229_get_any_Pressed ()"
+
+.PP
+.nf
+413                                       {
+414 
+415      ttp229\&.readKeys();
+416      bool gb;
+417      int key = ttp229\&.getKey(); // gets Pressed key out put int
+418      Serial\&.print("Pressed key: ");
+419      Serial\&.print(key);
+420 
+421      for(int g = 0; g < 16; g++){
+422      bool ga = ttp229\&.isKeyDown(g);
+423 
+424      if(!ga){
+425         gb = false;
+426          break;
+427        }
+428 
+429      if (ga) {
+430         gb = true;
+431      }
+432      }
+433 
+434 
+435      Serial\&.print("   ");
+436      if (ttp229\&.isKeyDown(0)) {
+437 
+438         Serial\&.print("Key 0 is down");
+439      } else if (ttp229\&.isKeyUp(0)) {
+440 
+441         Serial\&.print("Key 0 is up");
+442      }
+443 
+444         return gb;
+445      }
+.fi
+.PP
+References \fBttp229\fP\&.
+.SS "int engen::ttp229_get_Pressed ()"
+Return true if key is pressed 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Number of key 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if key is pressed 
+.RE
+.PP
+
+.PP
+.nf
+381                                   {
+382 
+383      ttp229\&.readKeys();
+384 
+385      int key = ttp229\&.getKey(); // gets Pressed key out put int
+386      Serial\&.print("Pressed key: ");
+387      Serial\&.print(key);
+388 
+389      Serial\&.print("   ");
+390      if (ttp229\&.isKeyDown(0)) {
+391 
+392         Serial\&.print("Key 0 is down");
+393      } else if (ttp229\&.isKeyUp(0)) {
+394 
+395         Serial\&.print("Key 0 is up");
+396      }
+397 
+398      return key;
+399      }
+.fi
+.PP
+References \fBttp229\fP\&.
+.SS "int engen::ttp229_get_states ()"
+
+.PP
+.nf
+367                                     {
+368         ttp229\&.readKeys();
+369 
+370         Serial\&.print("Key states: ");
+371         for (int i = 0; i < 16; ++i) {
+372         if (ttp229\&.isKeyPress(i)) {
+373             Serial\&.print("1 ");
+374             } else {
+375             Serial\&.print("0 ");
+376             }
+377      }
+378      return 0;
+379      }
+.fi
+.PP
+References \fBttp229\fP\&.
+.SS "int engen::ttp229_is_Key_Press (int key)"
+Return true if key is pressed 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Number of key 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if key is pressed 
+.RE
+.PP
+
+.PP
+.nf
+402                                           {
+403      ttp229\&.readKeys();
+404 
+405      // int keys = ttp229\&.getKey(); // gets Pressed key out put int
+406      int keys = ttp229\&.isKeyDown(key);
+407 
+408 
+409      return keys;
+410      }
+.fi
+.PP
+References \fBttp229\fP\&.
+.SH "Field Documentation"
+.PP 
+.SS "int engen::analog_joystick\fC [private]\fP"
+
+.SS "int engen::analog_joystick_map\fC [private]\fP"
+
+.PP
+Referenced by \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::analog_joystick_x"
+
+.PP
+Referenced by \fBe_db()\fP, \fBwireless::int_PayloadStruct()\fP, \fBpush_buttons_joystick()\fP, and \fBwireless::set_PayloadStruct()\fP\&.
+.SS "int engen::analogPin_joy = A3\fC [private]\fP"
+
+.PP
+Referenced by \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::but_1\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::but_2\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::but_3\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::but_4\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::but_5\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBpush_buttons_joystick()\fP\&.
+.SS "int engen::cv_code"
+
+.SS "int engen::data_io"
+
+.SS "unsigned long engen::debounceDelay = 50\fC [private]\fP"
+
+.SS "int engen::DISP_Key\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::display_Function = 0"
+
+.PP
+Referenced by \fBdisplay_8()\fP, and \fBdebug::IO()\fP\&.
+.SS "int engen::EMERGENCY_STOP_Key\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::error"
+
+.PP
+Referenced by \fBe_db()\fP, and \fBloop()\fP\&.
+.SS "int engen::error_number\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::FUNC_data[9]\fC [private]\fP"
+
+.SS "int engen::FUNC_Key\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::L_Reverse_Key\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::L_Throttle"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "unsigned long engen::lastDebounceTime = 0"
+
+.PP
+Referenced by \fBloop()\fP\&.
+.SS "int engen::LOCO\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "unsigned long engen::loopCount"
+
+.PP
+Referenced by \fBget_count()\fP, and \fBloop()\fP\&.
+.SS "int engen::lta"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::lts"
+
+.PP
+Referenced by \fBdisplay_8()\fP\&.
+.SS "bool engen::nrf24_error = false"
+
+.PP
+Referenced by \fBnrf24_setup()\fP, and \fBdebug::nrf24error()\fP\&.
+.SS "bool engen::Powr"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::R_Reverse_Key\fC [private]\fP"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::R_Throttle"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "int engen::rta"
+
+.SS "int engen::RX_ADD"
+
+.PP
+Referenced by \fBdebug::IO()\fP, and \fBwireless::recieved()\fP\&.
+.SS "bool engen::sitch"
+
+.PP
+Referenced by \fBe_db()\fP\&.
+.SS "unsigned long engen::startTime"
+
+.PP
+Referenced by \fBget_count()\fP\&.
+.SS "int engen::temp_code"
+
+.PP
+Referenced by \fBdisplay_8()\fP, and \fBdebug::IO()\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

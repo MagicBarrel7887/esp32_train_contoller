@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="d1/db2/classwireless" kind="class" language="C++" prot="public">
+    <compoundname>wireless</compoundname>
+    <includes refid="d5/d1f/wireless_8h" local="no">wireless.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/db2/classwireless_a408337ac8947811dbdc7a484c238f12e_1a408337ac8947811dbdc7a484c238f12e" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long wireless::previousMillis1</definition>
+        <argsstring></argsstring>
+        <name>previousMillis1</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="80" column="19" bodyfile="include/wireless.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="d1/db2/classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_1a527a8f5e11ddfd076906b0bbd2eb4e43" compoundref="d5/d1f/wireless_8h" startline="215" endline="267">brodcast</referencedby>
+        <referencedby refid="d1/db2/classwireless_a61da7a6c6cb2aaea8c0df55358b68496_1a61da7a6c6cb2aaea8c0df55358b68496" compoundref="d5/d1f/wireless_8h" startline="163" endline="206">Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db2/classwireless_ae45c26680fa2676fbbf674ff3c1311ae_1ae45c26680fa2676fbbf674ff3c1311ae" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long wireless::interval1</definition>
+        <argsstring></argsstring>
+        <name>interval1</name>
+        <initializer>= 10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="81" column="19" bodyfile="include/wireless.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="d1/db2/classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_1a527a8f5e11ddfd076906b0bbd2eb4e43" compoundref="d5/d1f/wireless_8h" startline="215" endline="267">brodcast</referencedby>
+        <referencedby refid="d1/db2/classwireless_a61da7a6c6cb2aaea8c0df55358b68496_1a61da7a6c6cb2aaea8c0df55358b68496" compoundref="d5/d1f/wireless_8h" startline="163" endline="206">Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db2/classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_1a9fc64b7f6c12f98e1a6c6a9e18731573" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long wireless::previousMillis2</definition>
+        <argsstring></argsstring>
+        <name>previousMillis2</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="83" column="19" bodyfile="include/wireless.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="d1/db2/classwireless_a24b45d4e3b063fc0b506e3515913c152_1a24b45d4e3b063fc0b506e3515913c152" compoundref="d5/d1f/wireless_8h" startline="127" endline="161">recieved</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db2/classwireless_a05c9f31e554407f1d44327c8a7ede2f2_1a05c9f31e554407f1d44327c8a7ede2f2" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long wireless::interval2</definition>
+        <argsstring></argsstring>
+        <name>interval2</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="84" column="19" bodyfile="include/wireless.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="d1/db2/classwireless_a24b45d4e3b063fc0b506e3515913c152_1a24b45d4e3b063fc0b506e3515913c152" compoundref="d5/d1f/wireless_8h" startline="127" endline="161">recieved</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/db2/classwireless_a52435e1747ea6bce1751d1b0c37d8220_1a52435e1747ea6bce1751d1b0c37d8220" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wireless::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="89" column="9" bodyfile="include/wireless.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="d1/db2/classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_1a527a8f5e11ddfd076906b0bbd2eb4e43" compoundref="d5/d1f/wireless_8h" startline="215" endline="267">brodcast</referencedby>
+        <referencedby refid="d1/db2/classwireless_a61da7a6c6cb2aaea8c0df55358b68496_1a61da7a6c6cb2aaea8c0df55358b68496" compoundref="d5/d1f/wireless_8h" startline="163" endline="206">Transmit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db2/classwireless_a3b2e51d44d428cfee4f510464d4f87f9_1a3b2e51d44d428cfee4f510464d4f87f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wireless::responding</definition>
+        <argsstring></argsstring>
+        <name>responding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="90" column="9" bodyfile="include/wireless.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/db2/classwireless_a24b45d4e3b063fc0b506e3515913c152_1a24b45d4e3b063fc0b506e3515913c152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::recieved</definition>
+        <argsstring>()</argsstring>
+        <name>recieved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="92" column="9" bodyfile="include/wireless.h" bodystart="127" bodyend="161"/>
+        <references refid="d5/d1e/struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_1a0679c63816a9da3c2fce8b556d496652" compoundref="d5/d1f/wireless_8h" startline="48">PayloadStruct::Address</references>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d1/db2/classwireless_a05c9f31e554407f1d44327c8a7ede2f2_1a05c9f31e554407f1d44327c8a7ede2f2" compoundref="d5/d1f/wireless_8h" startline="84">interval2</references>
+        <references refid="d5/d1e/struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_1a90671d2588cececb7d5dc0fcf0242b5c" compoundref="d5/d1f/wireless_8h" startline="49">PayloadStruct::payloadID</references>
+        <references refid="d1/db2/classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_1a9fc64b7f6c12f98e1a6c6a9e18731573" compoundref="d5/d1f/wireless_8h" startline="83">previousMillis2</references>
+        <references refid="d5/d1f/wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_1a53cdd46f95419ffdcd44d3f0d6147b54">radio</references>
+        <references refid="d3/d4c/classengen_ae469e13ec6aa1c460a1f91feeea10f01_1ae469e13ec6aa1c460a1f91feeea10f01" compoundref="d1/d55/engine_8h" startline="117">engen::RX_ADD</references>
+        <references refid="d5/d1f/wireless_8h_a108f4434da4791c8a2898ad68ea3350b_1a108f4434da4791c8a2898ad68ea3350b" compoundref="d5/d1f/wireless_8h" startline="73">TX_RX_BC</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/db2/classwireless_a2377739cac8d3a6d846d327bd44ed360_1a2377739cac8d3a6d846d327bd44ed360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="93" column="9" bodyfile="include/wireless.h" bodystart="208" bodyend="213"/>
+        <references refid="d5/d1f/wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_1adc0bfd52f2e4acac37bf01995d6ad166" compoundref="d5/d1f/wireless_8h" startline="100" endline="125">nrf24_setup</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/db2/classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_1a527a8f5e11ddfd076906b0bbd2eb4e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::brodcast</definition>
+        <argsstring>()</argsstring>
+        <name>brodcast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="94" column="9" bodyfile="include/wireless.h" bodystart="215" bodyend="267"/>
+        <references refid="d5/d1e/struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_1a0679c63816a9da3c2fce8b556d496652" compoundref="d5/d1f/wireless_8h" startline="48">PayloadStruct::Address</references>
+        <references refid="d5/d1e/struct_payload_struct_aff12feef6f558b0cd84c47521f9d982a_1aff12feef6f558b0cd84c47521f9d982a" compoundref="d5/d1f/wireless_8h" startline="53">PayloadStruct::b</references>
+        <references refid="d1/db2/classwireless_ae45c26680fa2676fbbf674ff3c1311ae_1ae45c26680fa2676fbbf674ff3c1311ae" compoundref="d5/d1f/wireless_8h" startline="81">interval1</references>
+        <references refid="d5/d1e/struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_1a90671d2588cececb7d5dc0fcf0242b5c" compoundref="d5/d1f/wireless_8h" startline="49">PayloadStruct::payloadID</references>
+        <references refid="d1/db2/classwireless_a408337ac8947811dbdc7a484c238f12e_1a408337ac8947811dbdc7a484c238f12e" compoundref="d5/d1f/wireless_8h" startline="80">previousMillis1</references>
+        <references refid="d5/d1f/wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_1a53cdd46f95419ffdcd44d3f0d6147b54">radio</references>
+        <references refid="d1/db2/classwireless_a52435e1747ea6bce1751d1b0c37d8220_1a52435e1747ea6bce1751d1b0c37d8220" compoundref="d5/d1f/wireless_8h" startline="89">role</references>
+        <references refid="d5/d1f/wireless_8h_a108f4434da4791c8a2898ad68ea3350b_1a108f4434da4791c8a2898ad68ea3350b" compoundref="d5/d1f/wireless_8h" startline="73">TX_RX_BC</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/db2/classwireless_a61da7a6c6cb2aaea8c0df55358b68496_1a61da7a6c6cb2aaea8c0df55358b68496" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::Transmit</definition>
+        <argsstring>()</argsstring>
+        <name>Transmit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="95" column="9" bodyfile="include/wireless.h" bodystart="163" bodyend="206"/>
+        <references refid="d5/d1e/struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_1a0679c63816a9da3c2fce8b556d496652" compoundref="d5/d1f/wireless_8h" startline="48">PayloadStruct::Address</references>
+        <references refid="d1/db2/classwireless_ae45c26680fa2676fbbf674ff3c1311ae_1ae45c26680fa2676fbbf674ff3c1311ae" compoundref="d5/d1f/wireless_8h" startline="81">interval1</references>
+        <references refid="d5/d1e/struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_1a90671d2588cececb7d5dc0fcf0242b5c" compoundref="d5/d1f/wireless_8h" startline="49">PayloadStruct::payloadID</references>
+        <references refid="d1/db2/classwireless_a408337ac8947811dbdc7a484c238f12e_1a408337ac8947811dbdc7a484c238f12e" compoundref="d5/d1f/wireless_8h" startline="80">previousMillis1</references>
+        <references refid="d5/d1f/wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_1a53cdd46f95419ffdcd44d3f0d6147b54">radio</references>
+        <references refid="d1/db2/classwireless_a52435e1747ea6bce1751d1b0c37d8220_1a52435e1747ea6bce1751d1b0c37d8220" compoundref="d5/d1f/wireless_8h" startline="89">role</references>
+        <references refid="d5/d1f/wireless_8h_a108f4434da4791c8a2898ad68ea3350b_1a108f4434da4791c8a2898ad68ea3350b" compoundref="d5/d1f/wireless_8h" startline="73">TX_RX_BC</references>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/db2/classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_1ab0cc2ab3c9206bb1ad7af76049cd8219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::set_PayloadStruct</definition>
+        <argsstring>()</argsstring>
+        <name>set_PayloadStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="96" column="9" bodyfile="include/wireless.h" bodystart="269" bodyend="273"/>
+        <references refid="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" compoundref="d1/d55/engine_8h" startline="163">engen::analog_joystick_x</references>
+        <references refid="d5/d1e/struct_payload_struct_ababedd4ff01d1327bc9a2a1af8b3b40e_1ababedd4ff01d1327bc9a2a1af8b3b40e" compoundref="d5/d1f/wireless_8h" startline="59">PayloadStruct::C_L_T</references>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d5/d1f/wireless_8h_a108f4434da4791c8a2898ad68ea3350b_1a108f4434da4791c8a2898ad68ea3350b" compoundref="d5/d1f/wireless_8h" startline="73">TX_RX_BC</references>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/db2/classwireless_aa80625c691684245d4279205e3dd7d8e_1aa80625c691684245d4279205e3dd7d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wireless::int_PayloadStruct</definition>
+        <argsstring>()</argsstring>
+        <name>int_PayloadStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/wireless.h" line="97" column="9" bodyfile="include/wireless.h" bodystart="275" bodyend="284"/>
+        <references refid="d5/d1e/struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_1a0679c63816a9da3c2fce8b556d496652" compoundref="d5/d1f/wireless_8h" startline="48">PayloadStruct::Address</references>
+        <references refid="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" compoundref="d1/d55/engine_8h" startline="163">engen::analog_joystick_x</references>
+        <references refid="db/d16/config_8h_a600a130a29498eef8857a8ca1960ba20_1a600a130a29498eef8857a8ca1960ba20" compoundref="db/d16/config_8h" startline="10">b2_Digi_Decoder_Address</references>
+        <references refid="d5/d1e/struct_payload_struct_a64ad4db0050f02e2f3ad1cce30938b3f_1a64ad4db0050f02e2f3ad1cce30938b3f" compoundref="d5/d1f/wireless_8h" startline="50">PayloadStruct::b4_Address</references>
+        <references refid="db/d16/config_8h_a337e2cd784aeaee1229d40184069a6b9_1a337e2cd784aeaee1229d40184069a6b9" compoundref="db/d16/config_8h" startline="12">b4_Digi_ADD_L</references>
+        <references refid="db/d16/config_8h_a479ca343c417bcb421cb8a6fc1d6f0da_1a479ca343c417bcb421cb8a6fc1d6f0da" compoundref="db/d16/config_8h" startline="11">b4_Digi_Address_H</references>
+        <references refid="d5/d1e/struct_payload_struct_ababedd4ff01d1327bc9a2a1af8b3b40e_1ababedd4ff01d1327bc9a2a1af8b3b40e" compoundref="d5/d1f/wireless_8h" startline="59">PayloadStruct::C_L_T</references>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d5/d1f/wireless_8h_a108f4434da4791c8a2898ad68ea3350b_1a108f4434da4791c8a2898ad68ea3350b" compoundref="d5/d1f/wireless_8h" startline="73">TX_RX_BC</references>
+        <referencedby refid="df/d0a/main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="df/d0a/main_8cpp" startline="29" endline="61">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/wireless.h" line="75" column="1" bodyfile="include/wireless.h" bodystart="76" bodyend="98"/>
+    <listofallmembers>
+      <member refid="d1/db2/classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_1a527a8f5e11ddfd076906b0bbd2eb4e43" prot="public" virt="non-virtual"><scope>wireless</scope><name>brodcast</name></member>
+      <member refid="d1/db2/classwireless_aa80625c691684245d4279205e3dd7d8e_1aa80625c691684245d4279205e3dd7d8e" prot="public" virt="non-virtual"><scope>wireless</scope><name>int_PayloadStruct</name></member>
+      <member refid="d1/db2/classwireless_ae45c26680fa2676fbbf674ff3c1311ae_1ae45c26680fa2676fbbf674ff3c1311ae" prot="private" virt="non-virtual"><scope>wireless</scope><name>interval1</name></member>
+      <member refid="d1/db2/classwireless_a05c9f31e554407f1d44327c8a7ede2f2_1a05c9f31e554407f1d44327c8a7ede2f2" prot="private" virt="non-virtual"><scope>wireless</scope><name>interval2</name></member>
+      <member refid="d1/db2/classwireless_a408337ac8947811dbdc7a484c238f12e_1a408337ac8947811dbdc7a484c238f12e" prot="private" virt="non-virtual"><scope>wireless</scope><name>previousMillis1</name></member>
+      <member refid="d1/db2/classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_1a9fc64b7f6c12f98e1a6c6a9e18731573" prot="private" virt="non-virtual"><scope>wireless</scope><name>previousMillis2</name></member>
+      <member refid="d1/db2/classwireless_a24b45d4e3b063fc0b506e3515913c152_1a24b45d4e3b063fc0b506e3515913c152" prot="public" virt="non-virtual"><scope>wireless</scope><name>recieved</name></member>
+      <member refid="d1/db2/classwireless_a3b2e51d44d428cfee4f510464d4f87f9_1a3b2e51d44d428cfee4f510464d4f87f9" prot="public" virt="non-virtual"><scope>wireless</scope><name>responding</name></member>
+      <member refid="d1/db2/classwireless_a52435e1747ea6bce1751d1b0c37d8220_1a52435e1747ea6bce1751d1b0c37d8220" prot="public" virt="non-virtual"><scope>wireless</scope><name>role</name></member>
+      <member refid="d1/db2/classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_1ab0cc2ab3c9206bb1ad7af76049cd8219" prot="public" virt="non-virtual"><scope>wireless</scope><name>set_PayloadStruct</name></member>
+      <member refid="d1/db2/classwireless_a2377739cac8d3a6d846d327bd44ed360_1a2377739cac8d3a6d846d327bd44ed360" prot="public" virt="non-virtual"><scope>wireless</scope><name>setup</name></member>
+      <member refid="d1/db2/classwireless_a61da7a6c6cb2aaea8c0df55358b68496_1a61da7a6c6cb2aaea8c0df55358b68496" prot="public" virt="non-virtual"><scope>wireless</scope><name>Transmit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

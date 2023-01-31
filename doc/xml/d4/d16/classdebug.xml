@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="d4/d16/classdebug" kind="class" language="C++" prot="public">
+    <compoundname>debug</compoundname>
+    <includes refid="db/d16/debug_8h" local="no">debug.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d16/classdebug_a8d34451d49ed8f95891456d25aec0753_1a8d34451d49ed8f95891456d25aec0753" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long debug::loopCount</definition>
+        <argsstring></argsstring>
+        <name>loopCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="12" column="19" bodyfile="include/debug.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d16/classdebug_aec0897d2cb117a0938e5fba6ea71310b_1aec0897d2cb117a0938e5fba6ea71310b" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long debug::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="13" column="19" bodyfile="include/debug.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d16/classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_1a3ac7c41f3ff8ca9847a589a5174380f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int debug::display_Function_DEBUG</definition>
+        <argsstring></argsstring>
+        <name>display_Function_DEBUG</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="24" column="9" bodyfile="include/debug.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d16/classdebug_ab520fb98653fc9c4eb5ea80a97098dce_1ab520fb98653fc9c4eb5ea80a97098dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>debug::debug</definition>
+        <argsstring>()</argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="17" column="5" bodyfile="include/debug.h" bodystart="27" bodyend="29"/>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int debug::IO</definition>
+        <argsstring>()</argsstring>
+        <name>IO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="18" column="9" bodyfile="include/debug.h" bodystart="97" bodyend="131"/>
+        <references refid="d1/d55/engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_1ae780a76d06cb56e14435ebfe3db3f6d3">display</references>
+        <references refid="d3/d4c/classengen_a9acce6dbb9eeeaa00c292827288bda2c_1a9acce6dbb9eeeaa00c292827288bda2c" compoundref="d1/d55/engine_8h" startline="121">engen::display_Function</references>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d3/d4c/classengen_ae469e13ec6aa1c460a1f91feeea10f01_1ae469e13ec6aa1c460a1f91feeea10f01" compoundref="d1/d55/engine_8h" startline="117">engen::RX_ADD</references>
+        <references refid="d3/d4c/classengen_a1805dba0c89d007c424e9e79502e4fa8_1a1805dba0c89d007c424e9e79502e4fa8" compoundref="d1/d55/engine_8h" startline="122">engen::temp_code</references>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d16/classdebug_a51d95021f51c9cf811ccb60615fb17a1_1a51d95021f51c9cf811ccb60615fb17a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int debug::nrf24error</definition>
+        <argsstring>()</argsstring>
+        <name>nrf24error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="19" column="9" bodyfile="include/debug.h" bodystart="133" bodyend="170"/>
+        <references refid="d1/d55/engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_1ae780a76d06cb56e14435ebfe3db3f6d3">display</references>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d3/d4c/classengen_adbcc3013f94098754e48b11c2bc7d17b_1adbcc3013f94098754e48b11c2bc7d17b" compoundref="d1/d55/engine_8h" startline="115">engen::nrf24_error</references>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int debug::display_time_DEBUG</definition>
+        <argsstring>()</argsstring>
+        <name>display_time_DEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="20" column="9" bodyfile="include/debug.h" bodystart="53" bodyend="95"/>
+        <references refid="d4/d16/classdebug_ab520fb98653fc9c4eb5ea80a97098dce_1ab520fb98653fc9c4eb5ea80a97098dce" compoundref="db/d16/debug_8h" startline="27" endline="29">debug</references>
+        <references refid="d4/d16/classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_1a3ac7c41f3ff8ca9847a589a5174380f7" compoundref="db/d16/debug_8h" startline="24">display_Function_DEBUG</references>
+        <references refid="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" compoundref="db/d16/debug_8h" startline="97" endline="131">IO</references>
+        <references refid="d4/d16/classdebug_a8d34451d49ed8f95891456d25aec0753_1a8d34451d49ed8f95891456d25aec0753" compoundref="db/d16/debug_8h" startline="12">loopCount</references>
+        <references refid="d4/d16/classdebug_a51d95021f51c9cf811ccb60615fb17a1_1a51d95021f51c9cf811ccb60615fb17a1" compoundref="db/d16/debug_8h" startline="133" endline="170">nrf24error</references>
+        <references refid="d4/d16/classdebug_ac818567c39d874400c22647291366f7b_1ac818567c39d874400c22647291366f7b" compoundref="db/d16/debug_8h" startline="172" endline="178">serial_debug</references>
+        <references refid="d4/d16/classdebug_aec0897d2cb117a0938e5fba6ea71310b_1aec0897d2cb117a0938e5fba6ea71310b" compoundref="db/d16/debug_8h" startline="13">timer</references>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d16/classdebug_ac818567c39d874400c22647291366f7b_1ac818567c39d874400c22647291366f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int debug::serial_debug</definition>
+        <argsstring>()</argsstring>
+        <name>serial_debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="21" column="9" bodyfile="include/debug.h" bodystart="172" bodyend="178"/>
+        <references refid="d5/d1f/wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_1ad77876a7ef0b7382c4c822823d7ed0d8" compoundref="d5/d1f/wireless_8h" startline="20">DT500</references>
+        <references refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">engen::e_db</references>
+        <referencedby refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" compoundref="db/d16/debug_8h" startline="53" endline="95">display_time_DEBUG</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d16/classdebug_a01797485a99920918ee5a5280e0d7155_1a01797485a99920918ee5a5280e0d7155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>debug::~debug</definition>
+        <argsstring>()</argsstring>
+        <name>~debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/debug.h" line="23" column="5" bodyfile="include/debug.h" bodystart="31" bodyend="51"/>
+        <references refid="d1/d55/engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_1ae780a76d06cb56e14435ebfe3db3f6d3">display</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/debug.h" line="8" column="1" bodyfile="include/debug.h" bodystart="9" bodyend="25"/>
+    <listofallmembers>
+      <member refid="d4/d16/classdebug_ab520fb98653fc9c4eb5ea80a97098dce_1ab520fb98653fc9c4eb5ea80a97098dce" prot="public" virt="non-virtual"><scope>debug</scope><name>debug</name></member>
+      <member refid="d4/d16/classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_1a3ac7c41f3ff8ca9847a589a5174380f7" prot="public" virt="non-virtual"><scope>debug</scope><name>display_Function_DEBUG</name></member>
+      <member refid="d4/d16/classdebug_a6f90d43ca9d45e8d855b93e941873b9a_1a6f90d43ca9d45e8d855b93e941873b9a" prot="public" virt="non-virtual"><scope>debug</scope><name>display_time_DEBUG</name></member>
+      <member refid="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" prot="public" virt="non-virtual"><scope>debug</scope><name>IO</name></member>
+      <member refid="d4/d16/classdebug_a8d34451d49ed8f95891456d25aec0753_1a8d34451d49ed8f95891456d25aec0753" prot="private" virt="non-virtual"><scope>debug</scope><name>loopCount</name></member>
+      <member refid="d4/d16/classdebug_a51d95021f51c9cf811ccb60615fb17a1_1a51d95021f51c9cf811ccb60615fb17a1" prot="public" virt="non-virtual"><scope>debug</scope><name>nrf24error</name></member>
+      <member refid="d4/d16/classdebug_ac818567c39d874400c22647291366f7b_1ac818567c39d874400c22647291366f7b" prot="public" virt="non-virtual"><scope>debug</scope><name>serial_debug</name></member>
+      <member refid="d4/d16/classdebug_aec0897d2cb117a0938e5fba6ea71310b_1aec0897d2cb117a0938e5fba6ea71310b" prot="private" virt="non-virtual"><scope>debug</scope><name>timer</name></member>
+      <member refid="d4/d16/classdebug_a01797485a99920918ee5a5280e0d7155_1a01797485a99920918ee5a5280e0d7155" prot="public" virt="non-virtual"><scope>debug</scope><name>~debug</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,380 @@
+\hypertarget{class_interpolation}{}\doxysection{Interpolation Class Reference}
+\label{class_interpolation}\index{Interpolation@{Interpolation}}
+
+
+{\ttfamily \#include $<$Interpolation\+\_\+math.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_interpolation_ae5bdbf879f8568c88ff4d8d5ae54357c_ae5bdbf879f8568c88ff4d8d5ae54357c}{Step}} (double x\+Values\mbox{[}$\,$\mbox{]}, double y\+Values\mbox{[}$\,$\mbox{]}, int num\+Values, double pointX, double threshold=1)
+\item 
+double \mbox{\hyperlink{class_interpolation_a003aef64b63497adfe6dd88788a4abc8_a003aef64b63497adfe6dd88788a4abc8}{Linear}} (double x\+Values\mbox{[}$\,$\mbox{]}, double y\+Values\mbox{[}$\,$\mbox{]}, int num\+Values, double pointX, bool trim=true)
+\item 
+double \mbox{\hyperlink{class_interpolation_a6430dfeab482b928613b57808101ceed_a6430dfeab482b928613b57808101ceed}{Smooth\+Step}} (double x\+Values\mbox{[}$\,$\mbox{]}, double y\+Values\mbox{[}$\,$\mbox{]}, int num\+Values, double pointX, bool trim=true)
+\item 
+double \mbox{\hyperlink{class_interpolation_a7fa0e414096246711d2e33be767b667a_a7fa0e414096246711d2e33be767b667a}{Catmull\+Spline}} (double x\+Values\mbox{[}$\,$\mbox{]}, double y\+Values\mbox{[}$\,$\mbox{]}, int num\+Values, double pointX, bool trim=true)
+\item 
+double \mbox{\hyperlink{class_interpolation_a6ae8fb5c62336c87a9846e974a497517_a6ae8fb5c62336c87a9846e974a497517}{catmull\+Slope}} (double x\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, int n, int i)
+\item 
+double \mbox{\hyperlink{class_interpolation_a89144a3927a624028d02cd893f4e0397_a89144a3927a624028d02cd893f4e0397}{Constrained\+Spline}} (double x\+Values\mbox{[}$\,$\mbox{]}, double y\+Values\mbox{[}$\,$\mbox{]}, int num\+Values, double pointX, bool trim=true)
+\item 
+double \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{get\+First\+Derivate}} (double x\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, int n, int i)
+\item 
+double \mbox{\hyperlink{class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_afd5c272f7dcb67b4c4daafa9a7d213f4}{get\+Left\+Second\+Derivate}} (double x\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, int n, int i)
+\item 
+double \mbox{\hyperlink{class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_a38c127b5ba304d2fb91bdcd4f7ab5966}{get\+Right\+Second\+Derivate}} (double x\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, int num\+Values, int i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interpolation_a6ae8fb5c62336c87a9846e974a497517_a6ae8fb5c62336c87a9846e974a497517}\label{class_interpolation_a6ae8fb5c62336c87a9846e974a497517_a6ae8fb5c62336c87a9846e974a497517}} 
+\index{Interpolation@{Interpolation}!catmullSlope@{catmullSlope}}
+\index{catmullSlope@{catmullSlope}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{catmullSlope()}{catmullSlope()}}
+{\footnotesize\ttfamily double Interpolation\+::catmull\+Slope (\begin{DoxyParamCaption}\item[{double}]{x\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00160}00160 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00161}00161     \textcolor{keywordflow}{if} (x[i + 1] == x[i -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00162}00162         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00163}00163     \textcolor{keywordflow}{return} (y[i + 1] -\/ y[i -\/ 1]) / (x[i + 1] -\/ x[i -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00164}00164 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{l00102}{Catmull\+Spline()}}.
+
+\mbox{\Hypertarget{class_interpolation_a7fa0e414096246711d2e33be767b667a_a7fa0e414096246711d2e33be767b667a}\label{class_interpolation_a7fa0e414096246711d2e33be767b667a_a7fa0e414096246711d2e33be767b667a}} 
+\index{Interpolation@{Interpolation}!CatmullSpline@{CatmullSpline}}
+\index{CatmullSpline@{CatmullSpline}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{CatmullSpline()}{CatmullSpline()}}
+{\footnotesize\ttfamily double Interpolation\+::\+Catmull\+Spline (\begin{DoxyParamCaption}\item[{double}]{x\+Values\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\+Values\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{double}]{pointX,  }\item[{bool}]{trim = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00103}00103 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00104}00104     \textcolor{keywordflow}{if} (trim)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00105}00105     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00106}00106         \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00107}00107             \textcolor{keywordflow}{return} yValues[0];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00108}00108         \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00109}00109             \textcolor{keywordflow}{return} yValues[numValues -\/ 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00112}00112     \textcolor{keyword}{auto} i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00113}00113     \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00114}00114         i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00115}00115     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00116}00116         i = numValues -\/ 1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00117}00117     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00118}00118         \textcolor{keywordflow}{while} (pointX >= xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00119}00119             i++;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00120}00120     \textcolor{keywordflow}{if} (pointX == xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00121}00121         \textcolor{keywordflow}{return} yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00123}00123     \textcolor{keyword}{auto} t = (pointX -\/ xValues[i]) / (xValues[i + 1] -\/ xValues[i]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00124}00124     \textcolor{keyword}{auto} t\_2 = t * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00125}00125     \textcolor{keyword}{auto} t\_3 = t\_2 * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00127}00127     \textcolor{keyword}{auto} h00 = 2 * t\_3 -\/ 3 * t\_2 + 1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00128}00128     \textcolor{keyword}{auto} h10 = t\_3 -\/ 2 * t\_2 + t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00129}00129     \textcolor{keyword}{auto} h01 = 3 * t\_2 -\/ 2 * t\_3;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00130}00130     \textcolor{keyword}{auto} h11 = t\_3 -\/ t\_2;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00132}00132     \textcolor{keyword}{auto} x0 = xValues[i];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00133}00133     \textcolor{keyword}{auto} x1 = xValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00134}00134     \textcolor{keyword}{auto} y0 = yValues[i];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00135}00135     \textcolor{keyword}{auto} y1 = yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00137}00137     \textcolor{keywordtype}{double} m0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00138}00138     \textcolor{keywordtype}{double} m1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00139}00139     \textcolor{keywordflow}{if} (i == 0)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00140}00140     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00141}00141         m0 = (yValues[1] -\/ yValues[0]) / (xValues[1] -\/ xValues[0]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00142}00142         m1 = (yValues[2] -\/ yValues[0]) / (xValues[2] -\/ xValues[0]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00143}00143     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00144}00144     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == numValues -\/ 2)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00145}00145     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00146}00146         m0 = (yValues[numValues -\/ 1] -\/ yValues[numValues -\/ 3]) / (xValues[numValues -\/ 1] -\/ xValues[numValues -\/ 3]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00147}00147         m1 = (yValues[numValues -\/ 1] -\/ yValues[numValues -\/ 2]) / (xValues[numValues -\/ 1] -\/ xValues[numValues -\/ 2]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00148}00148     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00149}00149     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00150}00150     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00151}00151         m0 = \mbox{\hyperlink{class_interpolation_a6ae8fb5c62336c87a9846e974a497517_a6ae8fb5c62336c87a9846e974a497517}{catmullSlope}}(xValues, yValues, numValues, i);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00152}00152         m1 = \mbox{\hyperlink{class_interpolation_a6ae8fb5c62336c87a9846e974a497517_a6ae8fb5c62336c87a9846e974a497517}{catmullSlope}}(xValues, yValues, numValues, i + 1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00153}00153     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00155}00155     \textcolor{keyword}{auto} rst = h00 * y0 + h01 * y1 + h10 * (x1 -\/ x0) * m0 + h11 * (x1 -\/ x0) * m1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00156}00156     \textcolor{keywordflow}{return} rst;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00157}00157 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00159}{catmull\+Slope()}}.
+
+\mbox{\Hypertarget{class_interpolation_a89144a3927a624028d02cd893f4e0397_a89144a3927a624028d02cd893f4e0397}\label{class_interpolation_a89144a3927a624028d02cd893f4e0397_a89144a3927a624028d02cd893f4e0397}} 
+\index{Interpolation@{Interpolation}!ConstrainedSpline@{ConstrainedSpline}}
+\index{ConstrainedSpline@{ConstrainedSpline}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{ConstrainedSpline()}{ConstrainedSpline()}}
+{\footnotesize\ttfamily double Interpolation\+::\+Constrained\+Spline (\begin{DoxyParamCaption}\item[{double}]{x\+Values\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\+Values\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{double}]{pointX,  }\item[{bool}]{trim = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00167}00167 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00168}00168     \textcolor{keywordflow}{if} (trim)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00169}00169     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00170}00170         \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00171}00171             \textcolor{keywordflow}{return} yValues[0];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00172}00172         \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00173}00173             \textcolor{keywordflow}{return} yValues[numValues -\/ 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00174}00174     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00176}00176     \textcolor{comment}{//auto i = 0;}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00177}00177     \textcolor{comment}{//while (pointX >= xValues[i + 1]) i++;}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00178}00178     \textcolor{comment}{//if (pointX == xValues[i + 1]) return yValues[i + 1];}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00180}00180     \textcolor{keyword}{auto} i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00181}00181     \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00182}00182         i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00183}00183     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00184}00184         i = numValues -\/ 1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00185}00185     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00186}00186         \textcolor{keywordflow}{while} (pointX >= xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00187}00187             i++;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00188}00188     \textcolor{keywordflow}{if} (pointX == xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00189}00189         \textcolor{keywordflow}{return} yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00191}00191     \textcolor{keyword}{auto} x0 = xValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00192}00192     \textcolor{keyword}{auto} x1 = xValues[i];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00193}00193     \textcolor{keyword}{auto} y0 = yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00194}00194     \textcolor{keyword}{auto} y1 = yValues[i];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00196}00196     \textcolor{keyword}{auto} fd2i\_xl1 = \mbox{\hyperlink{class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_afd5c272f7dcb67b4c4daafa9a7d213f4}{getLeftSecondDerivate}}(xValues, yValues, numValues -\/ 1, i + 1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00197}00197     \textcolor{keyword}{auto} fd2i\_x = \mbox{\hyperlink{class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_a38c127b5ba304d2fb91bdcd4f7ab5966}{getRightSecondDerivate}}(xValues, yValues, numValues -\/ 1, i + 1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00199}00199     \textcolor{keyword}{auto} d = (fd2i\_x -\/ fd2i\_xl1) / (6.0f * (x0 -\/ x1));}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00200}00200     \textcolor{keyword}{auto} c = (x0 * fd2i\_xl1 -\/ x1 * fd2i\_x) / 2.0f / (x0 -\/ x1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00201}00201     \textcolor{keyword}{auto} b = (y0 -\/ y1 -\/ c * (x0 * x0 -\/ x1 * x1) -\/ d * (x0 * x0 * x0 -\/ x1 * x1 * x1)) / (x0 -\/ x1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00202}00202     \textcolor{keyword}{auto} a = y1 -\/ b * x1 -\/ c * x1 * x1 -\/ d * x1 * x1 * x1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00204}00204     \textcolor{keyword}{auto} rst = a + pointX * (b + pointX * (c + pointX * d));}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00205}00205     \textcolor{keywordflow}{return} rst;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00206}00206 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00236}{get\+Left\+Second\+Derivate()}}, and \mbox{\hyperlink{l00247}{get\+Right\+Second\+Derivate()}}.
+
+\mbox{\Hypertarget{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}\label{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}} 
+\index{Interpolation@{Interpolation}!getFirstDerivate@{getFirstDerivate}}
+\index{getFirstDerivate@{getFirstDerivate}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{getFirstDerivate()}{getFirstDerivate()}}
+{\footnotesize\ttfamily double Interpolation\+::get\+First\+Derivate (\begin{DoxyParamCaption}\item[{double}]{x\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00209}00209 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00210}00210     \textcolor{keywordtype}{double} fd1\_x;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00212}00212     \textcolor{keywordflow}{if} (i == 0)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00213}00213     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00214}00214         fd1\_x = 3.0f / 2.0f * (y[1] -\/ y[0]) / (x[1] -\/ x[0]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00215}00215         fd1\_x -\/= \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, n, 1) / 2.0f;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00216}00216     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00217}00217     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == n)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00218}00218     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00219}00219         fd1\_x = 3.0f / 2.0f * (y[n] -\/ y[n -\/ 1]) / (x[n] -\/ x[n -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00220}00220         fd1\_x -\/= \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, n, n -\/ 1) / 2.0f;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00221}00221     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00222}00222     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00223}00223     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00224}00224         \textcolor{keywordflow}{if} ((x[i + 1] -\/ x[i]) / (y[i + 1] -\/ y[i]) * (x[i] -\/ x[i -\/ 1]) / (y[i] -\/ y[i -\/ 1]) < 0)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00225}00225         \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00226}00226             fd1\_x = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00227}00227         \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00228}00228         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00229}00229         \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00230}00230             fd1\_x = 2.0f / ((x[i + 1] -\/ x[i]) / (y[i + 1] -\/ y[i]) + (x[i] -\/ x[i -\/ 1]) / (y[i] -\/ y[i -\/ 1]));}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00231}00231         \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00232}00232     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00233}00233     \textcolor{keywordflow}{return} fd1\_x;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00234}00234 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00208}{get\+First\+Derivate()}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00208}{get\+First\+Derivate()}}, \mbox{\hyperlink{l00236}{get\+Left\+Second\+Derivate()}}, and \mbox{\hyperlink{l00247}{get\+Right\+Second\+Derivate()}}.
+
+\mbox{\Hypertarget{class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_afd5c272f7dcb67b4c4daafa9a7d213f4}\label{class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_afd5c272f7dcb67b4c4daafa9a7d213f4}} 
+\index{Interpolation@{Interpolation}!getLeftSecondDerivate@{getLeftSecondDerivate}}
+\index{getLeftSecondDerivate@{getLeftSecondDerivate}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{getLeftSecondDerivate()}{getLeftSecondDerivate()}}
+{\footnotesize\ttfamily double Interpolation\+::get\+Left\+Second\+Derivate (\begin{DoxyParamCaption}\item[{double}]{x\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00237}00237 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00238}00238     \textcolor{keyword}{auto} fdi\_x = \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, n, i);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00239}00239     \textcolor{keyword}{auto} fdi\_xl1 = \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, n, i -\/ 1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00240}00240 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00241}00241     \textcolor{keyword}{auto} fd2l\_x = -\/2.0f * (fdi\_x + 2.0f * fdi\_xl1) / (x[i] -\/ x[i -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00242}00242     fd2l\_x += 6.0f * (y[i] -\/ y[i -\/ 1]) / (x[i] -\/ x[i -\/ 1]) / (x[i] -\/ x[i -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00243}00243 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00244}00244     \textcolor{keywordflow}{return} fd2l\_x;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00245}00245 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00208}{get\+First\+Derivate()}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{Constrained\+Spline()}}.
+
+\mbox{\Hypertarget{class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_a38c127b5ba304d2fb91bdcd4f7ab5966}\label{class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_a38c127b5ba304d2fb91bdcd4f7ab5966}} 
+\index{Interpolation@{Interpolation}!getRightSecondDerivate@{getRightSecondDerivate}}
+\index{getRightSecondDerivate@{getRightSecondDerivate}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{getRightSecondDerivate()}{getRightSecondDerivate()}}
+{\footnotesize\ttfamily double Interpolation\+::get\+Right\+Second\+Derivate (\begin{DoxyParamCaption}\item[{double}]{x\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00248}00248 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00249}00249     \textcolor{keyword}{auto} fdi\_x = \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, numValues, i);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00250}00250     \textcolor{keyword}{auto} fdi\_xl1 = \mbox{\hyperlink{class_interpolation_a36f4400531624376af08f580032288fe_a36f4400531624376af08f580032288fe}{getFirstDerivate}}(x, y, numValues, i -\/ 1);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00251}00251 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00252}00252     \textcolor{keyword}{auto} fd2r\_x = 2.0f * (2.0f * fdi\_x + fdi\_xl1) / (x[i] -\/ x[i -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00253}00253     fd2r\_x -\/= 6.0f * (y[i] -\/ y[i -\/ 1]) / (x[i] -\/ x[i -\/ 1]) / (x[i] -\/ x[i -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00254}00254 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00255}00255     \textcolor{keywordflow}{return} fd2r\_x;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00256}00256 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00208}{get\+First\+Derivate()}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{Constrained\+Spline()}}.
+
+\mbox{\Hypertarget{class_interpolation_a003aef64b63497adfe6dd88788a4abc8_a003aef64b63497adfe6dd88788a4abc8}\label{class_interpolation_a003aef64b63497adfe6dd88788a4abc8_a003aef64b63497adfe6dd88788a4abc8}} 
+\index{Interpolation@{Interpolation}!Linear@{Linear}}
+\index{Linear@{Linear}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{Linear()}{Linear()}}
+{\footnotesize\ttfamily double Interpolation\+::\+Linear (\begin{DoxyParamCaption}\item[{double}]{x\+Values\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\+Values\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{double}]{pointX,  }\item[{bool}]{trim = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00043}00043 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00044}00044     \textcolor{keywordflow}{if} (trim)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00045}00045     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00046}00046         \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00047}00047             \textcolor{keywordflow}{return} yValues[0];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00048}00048         \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00049}00049             \textcolor{keywordflow}{return} yValues[numValues -\/ 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00052}00052     \textcolor{keyword}{auto} i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00053}00053     \textcolor{keywordtype}{double} rst = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00054}00054     \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00055}00055     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00056}00056         i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00057}00057         \textcolor{keyword}{auto} t = (pointX -\/ xValues[i]) / (xValues[i + 1] -\/ xValues[i]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00058}00058         rst = yValues[i] * (1 -\/ t) + yValues[i + 1] * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00060}00060     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00061}00061     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00062}00062         \textcolor{keyword}{auto} t = (pointX -\/ xValues[numValues -\/ 2]) / (xValues[numValues -\/ 1] -\/ xValues[numValues -\/ 2]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00063}00063         rst = yValues[numValues -\/ 2] * (1 -\/ t) + yValues[numValues -\/ 1] * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00065}00065     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00066}00066     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00067}00067         \textcolor{keywordflow}{while} (pointX >= xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00068}00068             i++;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00069}00069         \textcolor{keyword}{auto} t = (pointX -\/ xValues[i]) / (xValues[i + 1] -\/ xValues[i]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00070}00070         rst = yValues[i] * (1 -\/ t) + yValues[i + 1] * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00071}00071     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00073}00073     \textcolor{keywordflow}{return} rst;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00074}00074 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_interpolation_a6430dfeab482b928613b57808101ceed_a6430dfeab482b928613b57808101ceed}\label{class_interpolation_a6430dfeab482b928613b57808101ceed_a6430dfeab482b928613b57808101ceed}} 
+\index{Interpolation@{Interpolation}!SmoothStep@{SmoothStep}}
+\index{SmoothStep@{SmoothStep}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{SmoothStep()}{SmoothStep()}}
+{\footnotesize\ttfamily double Interpolation\+::\+Smooth\+Step (\begin{DoxyParamCaption}\item[{double}]{x\+Values\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\+Values\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{double}]{pointX,  }\item[{bool}]{trim = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00077}00077 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00078}00078     \textcolor{keywordflow}{if} (trim)}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00079}00079     \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00080}00080         \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00081}00081             \textcolor{keywordflow}{return} yValues[0];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00082}00082         \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00083}00083             \textcolor{keywordflow}{return} yValues[numValues -\/ 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00084}00084     \}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00086}00086     \textcolor{keyword}{auto} i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00087}00087     \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00088}00088         i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00089}00089     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00090}00090         i = numValues -\/ 1;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00091}00091     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00092}00092         \textcolor{keywordflow}{while} (pointX >= xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00093}00093             i++;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00094}00094     \textcolor{keywordflow}{if} (pointX == xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00095}00095         \textcolor{keywordflow}{return} yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00097}00097     \textcolor{keyword}{auto} t = (pointX -\/ xValues[i]) / (xValues[i + 1] -\/ xValues[i]);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00098}00098     t = t * t * (3 -\/ 2 * t);}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00099}00099     \textcolor{keywordflow}{return} yValues[i] * (1 -\/ t) + yValues[i + 1] * t;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00100}00100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_interpolation_ae5bdbf879f8568c88ff4d8d5ae54357c_ae5bdbf879f8568c88ff4d8d5ae54357c}\label{class_interpolation_ae5bdbf879f8568c88ff4d8d5ae54357c_ae5bdbf879f8568c88ff4d8d5ae54357c}} 
+\index{Interpolation@{Interpolation}!Step@{Step}}
+\index{Step@{Step}!Interpolation@{Interpolation}}
+\doxysubsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily double Interpolation\+::\+Step (\begin{DoxyParamCaption}\item[{double}]{x\+Values\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\+Values\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Values,  }\item[{double}]{pointX,  }\item[{double}]{threshold = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00025}00025 \{}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00026}00026     \textcolor{comment}{// extremos}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00027}00027     \textcolor{keywordflow}{if} (pointX <= xValues[0])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00028}00028         \textcolor{keywordflow}{return} yValues[0];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00029}00029     \textcolor{keywordflow}{if} (pointX >= xValues[numValues -\/ 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00030}00030         \textcolor{keywordflow}{return} yValues[numValues -\/ 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00032}00032     \textcolor{keyword}{auto} i = 0;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00033}00033     \textcolor{keywordflow}{while} (pointX >= xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00034}00034         i++;}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00035}00035     \textcolor{keywordflow}{if} (pointX == xValues[i + 1])}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00036}00036         \textcolor{keywordflow}{return} yValues[i + 1]; \textcolor{comment}{// coincidencia exacta}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00038}00038     \textcolor{keyword}{auto} t = (pointX -\/ xValues[i]) / (xValues[i + 1] -\/ xValues[i]); \textcolor{comment}{// punto relativo en el intervalo}}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00039}00039     \textcolor{keywordflow}{return} t < threshold ? yValues[i] : yValues[i + 1];}
+\DoxyCodeLine{\Hypertarget{class_interpolation_l00040}00040 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_interpolation__math_8h}{Interpolation\+\_\+math.\+h}}\end{DoxyCompactItemize}

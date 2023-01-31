@@ -1,0 +1,352 @@
+\hypertarget{classwireless}{}\doxysection{wireless Class Reference}
+\label{classwireless}\index{wireless@{wireless}}
+
+
+{\ttfamily \#include $<$wireless.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classwireless_a24b45d4e3b063fc0b506e3515913c152_a24b45d4e3b063fc0b506e3515913c152}{recieved}} ()
+\item 
+int \mbox{\hyperlink{classwireless_a2377739cac8d3a6d846d327bd44ed360_a2377739cac8d3a6d846d327bd44ed360}{setup}} ()
+\item 
+int \mbox{\hyperlink{classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_a527a8f5e11ddfd076906b0bbd2eb4e43}{brodcast}} ()
+\item 
+int \mbox{\hyperlink{classwireless_a61da7a6c6cb2aaea8c0df55358b68496_a61da7a6c6cb2aaea8c0df55358b68496}{Transmit}} ()
+\item 
+int \mbox{\hyperlink{classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_ab0cc2ab3c9206bb1ad7af76049cd8219}{set\+\_\+\+Payload\+Struct}} ()
+\item 
+int \mbox{\hyperlink{classwireless_aa80625c691684245d4279205e3dd7d8e_aa80625c691684245d4279205e3dd7d8e}{int\+\_\+\+Payload\+Struct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classwireless_a52435e1747ea6bce1751d1b0c37d8220_a52435e1747ea6bce1751d1b0c37d8220}{role}} = 0
+\item 
+int \mbox{\hyperlink{classwireless_a3b2e51d44d428cfee4f510464d4f87f9_a3b2e51d44d428cfee4f510464d4f87f9}{responding}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \mbox{\hyperlink{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}{previous\+Millis1}} = 0
+\item 
+unsigned long \mbox{\hyperlink{classwireless_ae45c26680fa2676fbbf674ff3c1311ae_ae45c26680fa2676fbbf674ff3c1311ae}{interval1}} = 10000
+\item 
+unsigned long \mbox{\hyperlink{classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_a9fc64b7f6c12f98e1a6c6a9e18731573}{previous\+Millis2}} = 0
+\item 
+unsigned long \mbox{\hyperlink{classwireless_a05c9f31e554407f1d44327c8a7ede2f2_a05c9f31e554407f1d44327c8a7ede2f2}{interval2}} = 5000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_a527a8f5e11ddfd076906b0bbd2eb4e43}\label{classwireless_a527a8f5e11ddfd076906b0bbd2eb4e43_a527a8f5e11ddfd076906b0bbd2eb4e43}} 
+\index{wireless@{wireless}!brodcast@{brodcast}}
+\index{brodcast@{brodcast}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{brodcast()}{brodcast()}}
+{\footnotesize\ttfamily int wireless\+::brodcast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00216}00216 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00217}00217     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} currentMillis = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00218}00218     \textcolor{comment}{// unsigned long currentMillis3 = millis();}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00220}00220     \textcolor{comment}{// int report2 = 0;}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00222}00222     \textcolor{keywordtype}{bool} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00224}00224     \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_aff12feef6f558b0cd84c47521f9d982a_aff12feef6f558b0cd84c47521f9d982a}{b}} = 1;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00226}00226     \textcolor{keywordflow}{if} (currentMillis -\/ \mbox{\hyperlink{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}{previousMillis1}} > \mbox{\hyperlink{classwireless_ae45c26680fa2676fbbf674ff3c1311ae_ae45c26680fa2676fbbf674ff3c1311ae}{interval1}})}
+\DoxyCodeLine{\Hypertarget{classwireless_l00227}00227     \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00228}00228         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.stopListening(); \textcolor{comment}{// put radio in TX mode}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00229}00229         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.openWritingPipe(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}});}
+\DoxyCodeLine{\Hypertarget{classwireless_l00230}00230 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00231}00231         \textcolor{comment}{// According to the datasheet, the auto-\/retry features's delay value should}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00232}00232         \textcolor{comment}{// be "{}skewed"{} to allow the RX node to receive 1 transmission at a time.}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00233}00233         \textcolor{comment}{// So, use varying delay between retry attempts and 15 (at most) retry attempts}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00234}00234         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.setRetries(((\mbox{\hyperlink{classwireless_a52435e1747ea6bce1751d1b0c37d8220_a52435e1747ea6bce1751d1b0c37d8220}{role}} * 3) \% 12) + 3, 15); \textcolor{comment}{// maximum value is 15 for both args}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00236}00236         \mbox{\hyperlink{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}{previousMillis1}} = currentMillis; \textcolor{comment}{// save the last time I blinked the LED}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00238}00238         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} start\_timer = micros();                 \textcolor{comment}{// start the timer}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00239}00239         report = \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.write(\&\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}));    \textcolor{comment}{// transmit \& save the report}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00240}00240         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} end\_timer = micros();                   \textcolor{comment}{// end the timer}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00242}00242         \textcolor{keywordflow}{if} (report)}
+\DoxyCodeLine{\Hypertarget{classwireless_l00243}00243         \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00244}00244             \textcolor{comment}{// payload was delivered}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00245}00245 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00246}00246             Serial.print(F(\textcolor{stringliteral}{"{}Transmission of payloadID "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00247}00247             Serial.print(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_a90671d2588cececb7d5dc0fcf0242b5c}{payloadID}}); \textcolor{comment}{// print payloadID}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00248}00248             Serial.print(F(\textcolor{stringliteral}{"{} as Address "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00249}00249             Serial.print(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}}); \textcolor{comment}{// print nodeID}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00250}00250             Serial.print(F(\textcolor{stringliteral}{"{} successful!"{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00251}00251             Serial.print(F(\textcolor{stringliteral}{"{} Time to transmit: "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00252}00252             Serial.print(end\_timer -\/ start\_timer); \textcolor{comment}{// print the timer result}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00253}00253             Serial.println(F(\textcolor{stringliteral}{"{} us"{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00254}00254 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00255}00255         \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00256}00256         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00257}00257         \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00258}00258             Serial.println(F(\textcolor{stringliteral}{"{}Transmission failed or timed out"{}})); \textcolor{comment}{// payload was not delivered}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00259}00259 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00260}00260         \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00261}00261         \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_a90671d2588cececb7d5dc0fcf0242b5c}{payloadID}}++; \textcolor{comment}{// increment payload number}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00262}00262     \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00263}00263     currentMillis = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00264}00264 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00265}00265 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00266}00266     \textcolor{keywordflow}{return} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00267}00267 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00048}{Payload\+Struct\+::\+Address}}, \mbox{\hyperlink{l00053}{Payload\+Struct\+::b}}, \mbox{\hyperlink{l00081}{interval1}}, \mbox{\hyperlink{l00049}{Payload\+Struct\+::payload\+ID}}, \mbox{\hyperlink{l00080}{previous\+Millis1}}, \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio()}}, \mbox{\hyperlink{l00089}{role}}, and \mbox{\hyperlink{l00073}{TX\+\_\+\+RX\+\_\+\+BC}}.
+
+\mbox{\Hypertarget{classwireless_aa80625c691684245d4279205e3dd7d8e_aa80625c691684245d4279205e3dd7d8e}\label{classwireless_aa80625c691684245d4279205e3dd7d8e_aa80625c691684245d4279205e3dd7d8e}} 
+\index{wireless@{wireless}!int\_PayloadStruct@{int\_PayloadStruct}}
+\index{int\_PayloadStruct@{int\_PayloadStruct}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{int\_PayloadStruct()}{int\_PayloadStruct()}}
+{\footnotesize\ttfamily int wireless\+::int\+\_\+\+Payload\+Struct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00276}00276 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00277}00277     \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_ababedd4ff01d1327bc9a2a1af8b3b40e_ababedd4ff01d1327bc9a2a1af8b3b40e}{C\_L\_T}} = \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_a2028a93bcf2d9bdeeabf5bc65955fde5}{analog\_joystick\_x}};}
+\DoxyCodeLine{\Hypertarget{classwireless_l00278}00278 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00279}00279     \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}} = \mbox{\hyperlink{config_8h_a600a130a29498eef8857a8ca1960ba20_a600a130a29498eef8857a8ca1960ba20}{b2\_Digi\_Decoder\_Address}};}
+\DoxyCodeLine{\Hypertarget{classwireless_l00280}00280 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00281}00281     \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a64ad4db0050f02e2f3ad1cce30938b3f_a64ad4db0050f02e2f3ad1cce30938b3f}{b4\_Address}} = \mbox{\hyperlink{config_8h_a337e2cd784aeaee1229d40184069a6b9_a337e2cd784aeaee1229d40184069a6b9}{b4\_Digi\_ADD\_L}} + \mbox{\hyperlink{config_8h_a479ca343c417bcb421cb8a6fc1d6f0da_a479ca343c417bcb421cb8a6fc1d6f0da}{b4\_Digi\_Address\_H}} ;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00282}00282 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00283}00283     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00284}00284 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00048}{Payload\+Struct\+::\+Address}}, \mbox{\hyperlink{l00163}{engen\+::analog\+\_\+joystick\+\_\+x}}, \mbox{\hyperlink{l00010}{b2\+\_\+\+Digi\+\_\+\+Decoder\+\_\+\+Address}}, \mbox{\hyperlink{l00050}{Payload\+Struct\+::b4\+\_\+\+Address}}, \mbox{\hyperlink{l00012}{b4\+\_\+\+Digi\+\_\+\+ADD\+\_\+L}}, \mbox{\hyperlink{l00011}{b4\+\_\+\+Digi\+\_\+\+Address\+\_\+H}}, \mbox{\hyperlink{l00059}{Payload\+Struct\+::\+C\+\_\+\+L\+\_\+T}}, \mbox{\hyperlink{l00020}{DT500}}, and \mbox{\hyperlink{l00073}{TX\+\_\+\+RX\+\_\+\+BC}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00029}{setup()}}.
+
+\mbox{\Hypertarget{classwireless_a24b45d4e3b063fc0b506e3515913c152_a24b45d4e3b063fc0b506e3515913c152}\label{classwireless_a24b45d4e3b063fc0b506e3515913c152_a24b45d4e3b063fc0b506e3515913c152}} 
+\index{wireless@{wireless}!recieved@{recieved}}
+\index{recieved@{recieved}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{recieved()}{recieved()}}
+{\footnotesize\ttfamily int wireless\+::recieved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00128}00128 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00129}00129     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} currentMillis3 = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00131}00131     \textcolor{keywordflow}{if} (currentMillis3 -\/ \mbox{\hyperlink{classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_a9fc64b7f6c12f98e1a6c6a9e18731573}{previousMillis2}} > \mbox{\hyperlink{classwireless_a05c9f31e554407f1d44327c8a7ede2f2_a05c9f31e554407f1d44327c8a7ede2f2}{interval2}})}
+\DoxyCodeLine{\Hypertarget{classwireless_l00132}00132     \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00133}00133         \mbox{\hyperlink{classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_a9fc64b7f6c12f98e1a6c6a9e18731573}{previousMillis2}} = currentMillis3; \textcolor{comment}{// save the last time I blinked the LED}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00135}00135         Serial.print(F(\textcolor{stringliteral}{"{}RX "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00137}00137         \textcolor{keywordflow}{for} (uint8\_t i = 0; i < 5; ++i)}
+\DoxyCodeLine{\Hypertarget{classwireless_l00138}00138             \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.openReadingPipe(i, \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ae469e13ec6aa1c460a1f91feeea10f01_ae469e13ec6aa1c460a1f91feeea10f01}{RX\_ADD}});}
+\DoxyCodeLine{\Hypertarget{classwireless_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00140}00140         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.startListening(); \textcolor{comment}{// put radio in RX mode              // end the timer}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00142}00142         Serial.print(F(\textcolor{stringliteral}{"{}RX? "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00143}00143         uint8\_t pipe;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00144}00144         \textcolor{keywordflow}{if} (\mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.available(\&pipe))}
+\DoxyCodeLine{\Hypertarget{classwireless_l00145}00145         \{                                           \textcolor{comment}{// is there a payload? get the pipe number that recieved it}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00146}00146             uint8\_t bytes = \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.getPayloadSize(); \textcolor{comment}{// get the size of the payload}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00147}00147             \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.read(\&\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}, bytes);           \textcolor{comment}{// fetch payload from FIFO}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00148}00148             Serial.print(F(\textcolor{stringliteral}{"{}Received "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00149}00149             Serial.print(bytes); \textcolor{comment}{// print the size of the payload}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00150}00150             Serial.print(F(\textcolor{stringliteral}{"{} bytes on pipe "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00151}00151             Serial.print(pipe); \textcolor{comment}{// print the pipe number}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00152}00152             Serial.print(F(\textcolor{stringliteral}{"{} from node "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00153}00153             Serial.print(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}}); \textcolor{comment}{// print the payload's origin}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00154}00154             Serial.print(F(\textcolor{stringliteral}{"{}. PayloadID: "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00155}00155             Serial.println(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_a90671d2588cececb7d5dc0fcf0242b5c}{payloadID}}); \textcolor{comment}{// print the payload's number}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00156}00156         \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00157}00157     \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00158}00158     currentMillis3 = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00160}00160     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00161}00161 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00048}{Payload\+Struct\+::\+Address}}, \mbox{\hyperlink{l00020}{DT500}}, \mbox{\hyperlink{l00084}{interval2}}, \mbox{\hyperlink{l00049}{Payload\+Struct\+::payload\+ID}}, \mbox{\hyperlink{l00083}{previous\+Millis2}}, \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio()}}, \mbox{\hyperlink{l00117}{engen\+::\+RX\+\_\+\+ADD}}, and \mbox{\hyperlink{l00073}{TX\+\_\+\+RX\+\_\+\+BC}}.
+
+\mbox{\Hypertarget{classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_ab0cc2ab3c9206bb1ad7af76049cd8219}\label{classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_ab0cc2ab3c9206bb1ad7af76049cd8219}} 
+\index{wireless@{wireless}!set\_PayloadStruct@{set\_PayloadStruct}}
+\index{set\_PayloadStruct@{set\_PayloadStruct}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{set\_PayloadStruct()}{set\_PayloadStruct()}}
+{\footnotesize\ttfamily int wireless\+::set\+\_\+\+Payload\+Struct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00270}00270 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00271}00271    \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_ababedd4ff01d1327bc9a2a1af8b3b40e_ababedd4ff01d1327bc9a2a1af8b3b40e}{C\_L\_T}} = \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_a2028a93bcf2d9bdeeabf5bc65955fde5}{analog\_joystick\_x}};}
+\DoxyCodeLine{\Hypertarget{classwireless_l00272}00272    \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00273}00273 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00163}{engen\+::analog\+\_\+joystick\+\_\+x}}, \mbox{\hyperlink{l00059}{Payload\+Struct\+::\+C\+\_\+\+L\+\_\+T}}, \mbox{\hyperlink{l00020}{DT500}}, and \mbox{\hyperlink{l00073}{TX\+\_\+\+RX\+\_\+\+BC}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00063}{loop()}}.
+
+\mbox{\Hypertarget{classwireless_a2377739cac8d3a6d846d327bd44ed360_a2377739cac8d3a6d846d327bd44ed360}\label{classwireless_a2377739cac8d3a6d846d327bd44ed360_a2377739cac8d3a6d846d327bd44ed360}} 
+\index{wireless@{wireless}!setup@{setup}}
+\index{setup@{setup}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily int wireless\+::setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00209}00209 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00210}00210     \textcolor{keywordtype}{bool} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00211}00211     report = \mbox{\hyperlink{wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_adc0bfd52f2e4acac37bf01995d6ad166}{nrf24\_setup}}();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00212}00212     \textcolor{keywordflow}{return} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00213}00213 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00100}{nrf24\+\_\+setup()}}.
+
+\mbox{\Hypertarget{classwireless_a61da7a6c6cb2aaea8c0df55358b68496_a61da7a6c6cb2aaea8c0df55358b68496}\label{classwireless_a61da7a6c6cb2aaea8c0df55358b68496_a61da7a6c6cb2aaea8c0df55358b68496}} 
+\index{wireless@{wireless}!Transmit@{Transmit}}
+\index{Transmit@{Transmit}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{Transmit()}{Transmit()}}
+{\footnotesize\ttfamily int wireless\+::\+Transmit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classwireless_l00164}00164 \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00165}00165     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} currentMillis = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00166}00166     \textcolor{keywordtype}{bool} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00168}00168     \textcolor{keywordflow}{if} (currentMillis -\/ \mbox{\hyperlink{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}{previousMillis1}} > \mbox{\hyperlink{classwireless_ae45c26680fa2676fbbf674ff3c1311ae_ae45c26680fa2676fbbf674ff3c1311ae}{interval1}})}
+\DoxyCodeLine{\Hypertarget{classwireless_l00169}00169     \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00170}00170         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.stopListening(); \textcolor{comment}{// put radio in TX mode}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00171}00171         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.openWritingPipe(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}});}
+\DoxyCodeLine{\Hypertarget{classwireless_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00173}00173         \textcolor{comment}{// According to the datasheet, the auto-\/retry features's delay value should}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00174}00174         \textcolor{comment}{// be "{}skewed"{} to allow the RX node to receive 1 transmission at a time.}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00175}00175         \textcolor{comment}{// So, use varying delay between retry attempts and 15 (at most) retry attempts}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00176}00176         \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.setRetries(((\mbox{\hyperlink{classwireless_a52435e1747ea6bce1751d1b0c37d8220_a52435e1747ea6bce1751d1b0c37d8220}{role}} * 3) \% 12) + 3, 15); \textcolor{comment}{// maximum value is 15 for both args}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00178}00178         \mbox{\hyperlink{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}{previousMillis1}} = currentMillis; \textcolor{comment}{// save the last time I blinked the LED}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00180}00180         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} start\_timer = micros();                       \textcolor{comment}{// start the timer}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00181}00181         report = \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio}}.write(\&\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}));          \textcolor{comment}{// transmit \& save the report}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00182}00182         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} end\_timer = micros();                         \textcolor{comment}{// end the timer}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00184}00184         \textcolor{keywordflow}{if} (report)}
+\DoxyCodeLine{\Hypertarget{classwireless_l00185}00185         \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00186}00186             \textcolor{comment}{// payload was delivered}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00187}00187 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00188}00188             Serial.print(F(\textcolor{stringliteral}{"{}Transmission of payloadID "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00189}00189             Serial.print(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_a90671d2588cececb7d5dc0fcf0242b5c}{payloadID}}); \textcolor{comment}{// print payloadID}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00190}00190             Serial.print(F(\textcolor{stringliteral}{"{} as Address "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00191}00191             Serial.print(\mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a0679c63816a9da3c2fce8b556d496652_a0679c63816a9da3c2fce8b556d496652}{Address}}); \textcolor{comment}{// print nodeID}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00192}00192             Serial.print(F(\textcolor{stringliteral}{"{} successful!"{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00193}00193             Serial.print(F(\textcolor{stringliteral}{"{} Time to transmit: "{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00194}00194             Serial.print(end\_timer -\/ start\_timer); \textcolor{comment}{// print the timer result}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00195}00195             Serial.println(F(\textcolor{stringliteral}{"{} us"{}}));}
+\DoxyCodeLine{\Hypertarget{classwireless_l00196}00196         \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00197}00197         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00198}00198         \{}
+\DoxyCodeLine{\Hypertarget{classwireless_l00199}00199             Serial.println(F(\textcolor{stringliteral}{"{}Transmission failed or timed out"{}})); \textcolor{comment}{// payload was not delivered}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00200}00200         \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00201}00201         \mbox{\hyperlink{wireless_8h_a108f4434da4791c8a2898ad68ea3350b_a108f4434da4791c8a2898ad68ea3350b}{TX\_RX\_BC}}.\mbox{\hyperlink{struct_payload_struct_a90671d2588cececb7d5dc0fcf0242b5c_a90671d2588cececb7d5dc0fcf0242b5c}{payloadID}}++; \textcolor{comment}{// increment payload number}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00202}00202     \}}
+\DoxyCodeLine{\Hypertarget{classwireless_l00203}00203     currentMillis = millis();}
+\DoxyCodeLine{\Hypertarget{classwireless_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{classwireless_l00205}00205     \textcolor{keywordflow}{return} report;}
+\DoxyCodeLine{\Hypertarget{classwireless_l00206}00206 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00048}{Payload\+Struct\+::\+Address}}, \mbox{\hyperlink{l00081}{interval1}}, \mbox{\hyperlink{l00049}{Payload\+Struct\+::payload\+ID}}, \mbox{\hyperlink{l00080}{previous\+Millis1}}, \mbox{\hyperlink{wireless_8h_a53cdd46f95419ffdcd44d3f0d6147b54_a53cdd46f95419ffdcd44d3f0d6147b54}{radio()}}, \mbox{\hyperlink{l00089}{role}}, and \mbox{\hyperlink{l00073}{TX\+\_\+\+RX\+\_\+\+BC}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00063}{loop()}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classwireless_ae45c26680fa2676fbbf674ff3c1311ae_ae45c26680fa2676fbbf674ff3c1311ae}\label{classwireless_ae45c26680fa2676fbbf674ff3c1311ae_ae45c26680fa2676fbbf674ff3c1311ae}} 
+\index{wireless@{wireless}!interval1@{interval1}}
+\index{interval1@{interval1}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{interval1}{interval1}}
+{\footnotesize\ttfamily unsigned long wireless\+::interval1 = 10000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00215}{brodcast()}}, and \mbox{\hyperlink{l00163}{Transmit()}}.
+
+\mbox{\Hypertarget{classwireless_a05c9f31e554407f1d44327c8a7ede2f2_a05c9f31e554407f1d44327c8a7ede2f2}\label{classwireless_a05c9f31e554407f1d44327c8a7ede2f2_a05c9f31e554407f1d44327c8a7ede2f2}} 
+\index{wireless@{wireless}!interval2@{interval2}}
+\index{interval2@{interval2}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{interval2}{interval2}}
+{\footnotesize\ttfamily unsigned long wireless\+::interval2 = 5000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00127}{recieved()}}.
+
+\mbox{\Hypertarget{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}\label{classwireless_a408337ac8947811dbdc7a484c238f12e_a408337ac8947811dbdc7a484c238f12e}} 
+\index{wireless@{wireless}!previousMillis1@{previousMillis1}}
+\index{previousMillis1@{previousMillis1}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{previousMillis1}{previousMillis1}}
+{\footnotesize\ttfamily unsigned long wireless\+::previous\+Millis1 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00215}{brodcast()}}, and \mbox{\hyperlink{l00163}{Transmit()}}.
+
+\mbox{\Hypertarget{classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_a9fc64b7f6c12f98e1a6c6a9e18731573}\label{classwireless_a9fc64b7f6c12f98e1a6c6a9e18731573_a9fc64b7f6c12f98e1a6c6a9e18731573}} 
+\index{wireless@{wireless}!previousMillis2@{previousMillis2}}
+\index{previousMillis2@{previousMillis2}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{previousMillis2}{previousMillis2}}
+{\footnotesize\ttfamily unsigned long wireless\+::previous\+Millis2 = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00127}{recieved()}}.
+
+\mbox{\Hypertarget{classwireless_a3b2e51d44d428cfee4f510464d4f87f9_a3b2e51d44d428cfee4f510464d4f87f9}\label{classwireless_a3b2e51d44d428cfee4f510464d4f87f9_a3b2e51d44d428cfee4f510464d4f87f9}} 
+\index{wireless@{wireless}!responding@{responding}}
+\index{responding@{responding}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{responding}{responding}}
+{\footnotesize\ttfamily int wireless\+::responding}
+
+\mbox{\Hypertarget{classwireless_a52435e1747ea6bce1751d1b0c37d8220_a52435e1747ea6bce1751d1b0c37d8220}\label{classwireless_a52435e1747ea6bce1751d1b0c37d8220_a52435e1747ea6bce1751d1b0c37d8220}} 
+\index{wireless@{wireless}!role@{role}}
+\index{role@{role}!wireless@{wireless}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily int wireless\+::role = 0}
+
+
+
+Referenced by \mbox{\hyperlink{l00215}{brodcast()}}, and \mbox{\hyperlink{l00163}{Transmit()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{wireless_8h}{wireless.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="de/dfc/class_interpolation" kind="class" language="C++" prot="public">
+    <compoundname>Interpolation</compoundname>
+    <includes refid="dd/dfc/_interpolation__math_8h" local="no">Interpolation_math.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dfc/class_interpolation_ae5bdbf879f8568c88ff4d8d5ae54357c_1ae5bdbf879f8568c88ff4d8d5ae54357c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::Step</definition>
+        <argsstring>(double xValues[], double yValues[], int numValues, double pointX, double threshold=1)</argsstring>
+        <name>Step</name>
+        <param>
+          <type>double</type>
+          <declname>xValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>threshold</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="12" column="12" bodyfile="include/Interpolation_math.h" bodystart="24" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a003aef64b63497adfe6dd88788a4abc8_1a003aef64b63497adfe6dd88788a4abc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::Linear</definition>
+        <argsstring>(double xValues[], double yValues[], int numValues, double pointX, bool trim=true)</argsstring>
+        <name>Linear</name>
+        <param>
+          <type>double</type>
+          <declname>xValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="13" column="12" bodyfile="include/Interpolation_math.h" bodystart="42" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a6430dfeab482b928613b57808101ceed_1a6430dfeab482b928613b57808101ceed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::SmoothStep</definition>
+        <argsstring>(double xValues[], double yValues[], int numValues, double pointX, bool trim=true)</argsstring>
+        <name>SmoothStep</name>
+        <param>
+          <type>double</type>
+          <declname>xValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="14" column="12" bodyfile="include/Interpolation_math.h" bodystart="76" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a7fa0e414096246711d2e33be767b667a_1a7fa0e414096246711d2e33be767b667a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::CatmullSpline</definition>
+        <argsstring>(double xValues[], double yValues[], int numValues, double pointX, bool trim=true)</argsstring>
+        <name>CatmullSpline</name>
+        <param>
+          <type>double</type>
+          <declname>xValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="15" column="12" bodyfile="include/Interpolation_math.h" bodystart="102" bodyend="157"/>
+        <references refid="de/dfc/class_interpolation_a6ae8fb5c62336c87a9846e974a497517_1a6ae8fb5c62336c87a9846e974a497517" compoundref="dd/dfc/_interpolation__math_8h" startline="159" endline="164">catmullSlope</references>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a6ae8fb5c62336c87a9846e974a497517_1a6ae8fb5c62336c87a9846e974a497517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::catmullSlope</definition>
+        <argsstring>(double x[], double y[], int n, int i)</argsstring>
+        <name>catmullSlope</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="16" column="12" bodyfile="include/Interpolation_math.h" bodystart="159" bodyend="164"/>
+        <referencedby refid="de/dfc/class_interpolation_a7fa0e414096246711d2e33be767b667a_1a7fa0e414096246711d2e33be767b667a" compoundref="dd/dfc/_interpolation__math_8h" startline="102" endline="157">CatmullSpline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a89144a3927a624028d02cd893f4e0397_1a89144a3927a624028d02cd893f4e0397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::ConstrainedSpline</definition>
+        <argsstring>(double xValues[], double yValues[], int numValues, double pointX, bool trim=true)</argsstring>
+        <name>ConstrainedSpline</name>
+        <param>
+          <type>double</type>
+          <declname>xValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yValues</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pointX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="17" column="12" bodyfile="include/Interpolation_math.h" bodystart="166" bodyend="206"/>
+        <references refid="de/dfc/class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_1afd5c272f7dcb67b4c4daafa9a7d213f4" compoundref="dd/dfc/_interpolation__math_8h" startline="236" endline="245">getLeftSecondDerivate</references>
+        <references refid="de/dfc/class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_1a38c127b5ba304d2fb91bdcd4f7ab5966" compoundref="dd/dfc/_interpolation__math_8h" startline="247" endline="256">getRightSecondDerivate</references>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::getFirstDerivate</definition>
+        <argsstring>(double x[], double y[], int n, int i)</argsstring>
+        <name>getFirstDerivate</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="18" column="11" bodyfile="include/Interpolation_math.h" bodystart="208" bodyend="234"/>
+        <references refid="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" compoundref="dd/dfc/_interpolation__math_8h" startline="208" endline="234">getFirstDerivate</references>
+        <referencedby refid="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" compoundref="dd/dfc/_interpolation__math_8h" startline="208" endline="234">getFirstDerivate</referencedby>
+        <referencedby refid="de/dfc/class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_1afd5c272f7dcb67b4c4daafa9a7d213f4" compoundref="dd/dfc/_interpolation__math_8h" startline="236" endline="245">getLeftSecondDerivate</referencedby>
+        <referencedby refid="de/dfc/class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_1a38c127b5ba304d2fb91bdcd4f7ab5966" compoundref="dd/dfc/_interpolation__math_8h" startline="247" endline="256">getRightSecondDerivate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_1afd5c272f7dcb67b4c4daafa9a7d213f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::getLeftSecondDerivate</definition>
+        <argsstring>(double x[], double y[], int n, int i)</argsstring>
+        <name>getLeftSecondDerivate</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="19" column="11" bodyfile="include/Interpolation_math.h" bodystart="236" bodyend="245"/>
+        <references refid="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" compoundref="dd/dfc/_interpolation__math_8h" startline="208" endline="234">getFirstDerivate</references>
+        <referencedby refid="de/dfc/class_interpolation_a89144a3927a624028d02cd893f4e0397_1a89144a3927a624028d02cd893f4e0397" compoundref="dd/dfc/_interpolation__math_8h" startline="166" endline="206">ConstrainedSpline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/dfc/class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_1a38c127b5ba304d2fb91bdcd4f7ab5966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Interpolation::getRightSecondDerivate</definition>
+        <argsstring>(double x[], double y[], int numValues, int i)</argsstring>
+        <name>getRightSecondDerivate</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numValues</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Interpolation_math.h" line="20" column="11" bodyfile="include/Interpolation_math.h" bodystart="247" bodyend="256"/>
+        <references refid="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" compoundref="dd/dfc/_interpolation__math_8h" startline="208" endline="234">getFirstDerivate</references>
+        <referencedby refid="de/dfc/class_interpolation_a89144a3927a624028d02cd893f4e0397_1a89144a3927a624028d02cd893f4e0397" compoundref="dd/dfc/_interpolation__math_8h" startline="166" endline="206">ConstrainedSpline</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Interpolation_math.h" line="7" column="1" bodyfile="include/Interpolation_math.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="de/dfc/class_interpolation_a6ae8fb5c62336c87a9846e974a497517_1a6ae8fb5c62336c87a9846e974a497517" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>catmullSlope</name></member>
+      <member refid="de/dfc/class_interpolation_a7fa0e414096246711d2e33be767b667a_1a7fa0e414096246711d2e33be767b667a" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>CatmullSpline</name></member>
+      <member refid="de/dfc/class_interpolation_a89144a3927a624028d02cd893f4e0397_1a89144a3927a624028d02cd893f4e0397" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>ConstrainedSpline</name></member>
+      <member refid="de/dfc/class_interpolation_a36f4400531624376af08f580032288fe_1a36f4400531624376af08f580032288fe" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>getFirstDerivate</name></member>
+      <member refid="de/dfc/class_interpolation_afd5c272f7dcb67b4c4daafa9a7d213f4_1afd5c272f7dcb67b4c4daafa9a7d213f4" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>getLeftSecondDerivate</name></member>
+      <member refid="de/dfc/class_interpolation_a38c127b5ba304d2fb91bdcd4f7ab5966_1a38c127b5ba304d2fb91bdcd4f7ab5966" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>getRightSecondDerivate</name></member>
+      <member refid="de/dfc/class_interpolation_a003aef64b63497adfe6dd88788a4abc8_1a003aef64b63497adfe6dd88788a4abc8" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>Linear</name></member>
+      <member refid="de/dfc/class_interpolation_a6430dfeab482b928613b57808101ceed_1a6430dfeab482b928613b57808101ceed" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>SmoothStep</name></member>
+      <member refid="de/dfc/class_interpolation_ae5bdbf879f8568c88ff4d8d5ae54357c_1ae5bdbf879f8568c88ff4d8d5ae54357c" prot="public" virt="non-virtual"><scope>Interpolation</scope><name>Step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

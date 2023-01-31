@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="db/d16/config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includedby refid="d5/d1f/wireless_8h" local="yes">include/wireless.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/config.h</label>
+        <link refid="db/d16/config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/wireless.h</label>
+        <link refid="d5/d1f/wireless_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="db/d16/config_8h_ab3b41f451796af5f3abe58ee77748fe8_1ab3b41f451796af5f3abe58ee77748fe8" prot="public" static="no">
+        <name>baud_rate</name>
+        <initializer>115200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="3" column="9" bodyfile="include/config.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_acb0683c16ae7f448a27db80c3ff2e37c_1acb0683c16ae7f448a27db80c3ff2e37c" prot="public" static="no">
+        <name>moter_pin</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="5" column="9" bodyfile="include/config.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ab295903f0bf6d2479e787bcea7a35aaa_1ab295903f0bf6d2479e787bcea7a35aaa" prot="public" static="no">
+        <name>CV_moter</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="6" column="9" bodyfile="include/config.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a600a130a29498eef8857a8ca1960ba20_1a600a130a29498eef8857a8ca1960ba20" prot="public" static="no">
+        <name>b2_Digi_Decoder_Address</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="10" column="9" bodyfile="include/config.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a479ca343c417bcb421cb8a6fc1d6f0da_1a479ca343c417bcb421cb8a6fc1d6f0da" prot="public" static="no">
+        <name>b4_Digi_Address_H</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="11" column="9" bodyfile="include/config.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a337e2cd784aeaee1229d40184069a6b9_1a337e2cd784aeaee1229d40184069a6b9" prot="public" static="no">
+        <name>b4_Digi_ADD_L</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="12" column="9" bodyfile="include/config.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a191336e7877d6fcbba721d2ba06cb06d_1a191336e7877d6fcbba721d2ba06cb06d" prot="public" static="no">
+        <name>b4_Digi_ADD</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="13" column="9" bodyfile="include/config.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_af9a44a65750364679b4a58feef570a42_1af9a44a65750364679b4a58feef570a42" prot="public" static="no">
+        <name>CV_b2_Digi_Decoder_Address</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="17" column="9" bodyfile="include/config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a3494ff8e4d3fb1bdfc41c780c0cad00b_1a3494ff8e4d3fb1bdfc41c780c0cad00b" prot="public" static="no">
+        <name>CV_b4_Digi_Address_H</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="18" column="9" bodyfile="include/config.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a0ce7dbcf4463c6be57a7a8ad9a750db0_1a0ce7dbcf4463c6be57a7a8ad9a750db0" prot="public" static="no">
+        <name>CV_b4_Digi_ADD_L</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="19" column="9" bodyfile="include/config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a447383a83f36b6acf96aa43a01967aa0_1a447383a83f36b6acf96aa43a01967aa0" prot="public" static="no">
+        <name>CV_b4_Digi_ADD</name>
+        <initializer>119</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="20" column="9" bodyfile="include/config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a350fc9489f942ad591b7ab9a3fc9b770_1a350fc9489f942ad591b7ab9a3fc9b770" prot="public" static="no">
+        <name>Address_Selection</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="27" column="9" bodyfile="include/config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a4022bb117b4f90c4424bc4f0653a223d_1a4022bb117b4f90c4424bc4f0653a223d" prot="public" static="no">
+        <name>NDOT</name>
+        <initializer>&quot;Fwd&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="28" column="9" bodyfile="include/config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a9302567c0e5ab59ecdce6f7a7c22afa5_1a9302567c0e5ab59ecdce6f7a7c22afa5" prot="public" static="no">
+        <name>Speed_Step_Control</name>
+        <initializer>28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="29" column="9" bodyfile="include/config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a4a0611d1ddac9126944559ead1f585ed_1a4a0611d1ddac9126944559ead1f585ed" prot="public" static="no">
+        <name>Speed_Table_On_Off</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="30" column="9" bodyfile="include/config.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ae4886b60fed0ba24b01b3f3e86f847af_1ae4886b60fed0ba24b01b3f3e86f847af" prot="public" static="no">
+        <name>Analog_Mode_Conversion</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="31" column="9" bodyfile="include/config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a26fbc8031218c4d7891abcd94d847a4b_1a26fbc8031218c4d7891abcd94d847a4b" prot="public" static="no">
+        <name>CV_Configuration_Register</name>
+        <initializer>29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="34" column="9" bodyfile="include/config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_af0b0e49ce00c42d08256e00da7ce6449_1af0b0e49ce00c42d08256e00da7ce6449" prot="public" static="no">
+        <name>CV_Sub_ADD_S</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="35" column="9" bodyfile="include/config.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_aecf64a3d46a2f3ad18cfab8ced0e07e8_1aecf64a3d46a2f3ad18cfab8ced0e07e8" prot="public" static="no">
+        <name>CV_Sub_NDOT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="36" column="9" bodyfile="include/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_acf2229905d2476dac636e34349ebcf2a_1acf2229905d2476dac636e34349ebcf2a" prot="public" static="no">
+        <name>CV_Sub_SSC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="37" column="9" bodyfile="include/config.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ae5ca6cfb71c9aed59d27aa14b21bb96f_1ae5ca6cfb71c9aed59d27aa14b21bb96f" prot="public" static="no">
+        <name>CV_Sub_ST_ON_OFF</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="38" column="9" bodyfile="include/config.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ae379ac595e1028bf5e3ab83f3ab21b01_1ae379ac595e1028bf5e3ab83f3ab21b01" prot="public" static="no">
+        <name>CV_Sub_AD_M_C</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="39" column="9" bodyfile="include/config.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a6130767538be1158cf4078815447620f_1a6130767538be1158cf4078815447620f" prot="public" static="no">
+        <name>Acceleration</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="45" column="9" bodyfile="include/config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_acf71e10f530e8a90b3f876fd6539f98e_1acf71e10f530e8a90b3f876fd6539f98e" prot="public" static="no">
+        <name>Deceleration</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="46" column="9" bodyfile="include/config.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_aa9c4e583ce8384b602be326a75a7383e_1aa9c4e583ce8384b602be326a75a7383e" prot="public" static="no">
+        <name>Start_Voltage</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="49" column="9" bodyfile="include/config.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a1e4c1d395df7ca1063446ff9622424df_1a1e4c1d395df7ca1063446ff9622424df" prot="public" static="no">
+        <name>Maximum_Voltage</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="50" column="9" bodyfile="include/config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a4ccbcfe90273ad1a6ca9d7156a355f09_1a4ccbcfe90273ad1a6ca9d7156a355f09" prot="public" static="no">
+        <name>Mid_Point_Voltage</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="51" column="9" bodyfile="include/config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a6d6c62f2a714318a75442b9e9612a7ca_1a6d6c62f2a714318a75442b9e9612a7ca" prot="public" static="no">
+        <name>Kick_Start_value</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="54" column="9" bodyfile="include/config.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a91eb5c419fa7633d70c7c95d1f15361d_1a91eb5c419fa7633d70c7c95d1f15361d" prot="public" static="no">
+        <name>Forward_Trim</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="55" column="9" bodyfile="include/config.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ad1846abc09fab41162401127dee3df9c_1ad1846abc09fab41162401127dee3df9c" prot="public" static="no">
+        <name>Switching_Speed_Torque_Compensation</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="58" column="9" bodyfile="include/config.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a0caba21dab832e280875be65012b30fc_1a0caba21dab832e280875be65012b30fc" prot="public" static="no">
+        <name>DC</name>
+        <initializer>Functions = true; /* Automatic --- DC Functions ON Not Used in FX3 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="64" column="9" bodyfile="include/config.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a7a97d4c257f660193e83b6f38918714c_1a7a97d4c257f660193e83b6f38918714c" prot="public" static="no">
+        <name>F0F</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="68" column="9" bodyfile="include/config.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ac3de5f3ddbf39ec943bc6e3fb632dbf4_1ac3de5f3ddbf39ec943bc6e3fb632dbf4" prot="public" static="no">
+        <name>F0R</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="69" column="9" bodyfile="include/config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a54af470c198f3dbe32eede2c32f3d746_1a54af470c198f3dbe32eede2c32f3d746" prot="public" static="no">
+        <name>F1</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="70" column="9" bodyfile="include/config.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a5368759862ac5fb38772b91eace1205c_1a5368759862ac5fb38772b91eace1205c" prot="public" static="no">
+        <name>F2</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="71" column="9" bodyfile="include/config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a79fc770a19406e6876ff9ffd6ce66f3d_1a79fc770a19406e6876ff9ffd6ce66f3d" prot="public" static="no">
+        <name>F3</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="72" column="9" bodyfile="include/config.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a7fd7918aa90b0ce1dc7ca9fe7a00e9fb_1a7fd7918aa90b0ce1dc7ca9fe7a00e9fb" prot="public" static="no">
+        <name>F4</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="73" column="9" bodyfile="include/config.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a33a001184d6e389fd20132f7c21cf8ca_1a33a001184d6e389fd20132f7c21cf8ca" prot="public" static="no">
+        <name>F5</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="74" column="9" bodyfile="include/config.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_adcc6c65566433e67172e375586cdb0f7_1adcc6c65566433e67172e375586cdb0f7" prot="public" static="no">
+        <name>F6</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="75" column="9" bodyfile="include/config.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_abbf2f8dfa7b7a6c1fe229cce8c91cbd6_1abbf2f8dfa7b7a6c1fe229cce8c91cbd6" prot="public" static="no">
+        <name>FX_Rate</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="76" column="9" bodyfile="include/config.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a7b3155e23af6b3fde5dc8ce21216f0f4_1a7b3155e23af6b3fde5dc8ce21216f0f4" prot="public" static="no">
+        <name>FX_Keep_alive</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="77" column="9" bodyfile="include/config.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_aa8c447166fb61a487d071ade3f6dde77_1aa8c447166fb61a487d071ade3f6dde77" prot="public" static="no">
+        <name>Ditch_Light_Blink_hold_time</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="78" column="9" bodyfile="include/config.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a3bbeb77c7e970effaa82bc94f720bef3_1a3bbeb77c7e970effaa82bc94f720bef3" prot="public" static="no">
+        <name>Master_Light_Switch</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="79" column="9" bodyfile="include/config.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a779f7a63d5d1e10875ed90cec25fe451_1a779f7a63d5d1e10875ed90cec25fe451" prot="public" static="no">
+        <name>CV_F0F</name>
+        <initializer>49</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="82" column="9" bodyfile="include/config.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a88ac1671ff4c2d17e0ff5aea684cbbee_1a88ac1671ff4c2d17e0ff5aea684cbbee" prot="public" static="no">
+        <name>CV_F0R</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="83" column="9" bodyfile="include/config.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a0be698672ff486445ec574b2f369d88e_1a0be698672ff486445ec574b2f369d88e" prot="public" static="no">
+        <name>CV_F1</name>
+        <initializer>51</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="84" column="9" bodyfile="include/config.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_afe18de0e7d516e9f7bf7b01ca91a4266_1afe18de0e7d516e9f7bf7b01ca91a4266" prot="public" static="no">
+        <name>CV_F2</name>
+        <initializer>52</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="85" column="9" bodyfile="include/config.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a7a695d2ae3095d8aa03b2ef2f37d2124_1a7a695d2ae3095d8aa03b2ef2f37d2124" prot="public" static="no">
+        <name>CV_F3</name>
+        <initializer>113</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="86" column="9" bodyfile="include/config.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a8f56c976aba73bcafb17a7e4cd4656ee_1a8f56c976aba73bcafb17a7e4cd4656ee" prot="public" static="no">
+        <name>CV_F4</name>
+        <initializer>114</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="87" column="9" bodyfile="include/config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_aa939d5e15cd6c3ff3ebb84057fc0c588_1aa939d5e15cd6c3ff3ebb84057fc0c588" prot="public" static="no">
+        <name>CV_F5</name>
+        <initializer>115</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="88" column="9" bodyfile="include/config.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ad27373e4b8dc0fcf56844166c09b5a29_1ad27373e4b8dc0fcf56844166c09b5a29" prot="public" static="no">
+        <name>CV_F6</name>
+        <initializer>116</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="89" column="9" bodyfile="include/config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a3b9f1e1ca7bf6b137026db41776aff4f_1a3b9f1e1ca7bf6b137026db41776aff4f" prot="public" static="no">
+        <name>CV_FX_Rate</name>
+        <initializer>62</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="90" column="9" bodyfile="include/config.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a331e26d20e59bdb7e6e1eebed5f5dc09_1a331e26d20e59bdb7e6e1eebed5f5dc09" prot="public" static="no">
+        <name>CV_FX_Keep_alive</name>
+        <initializer>63</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="91" column="9" bodyfile="include/config.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a822ffc1a4cc6aafc2f717b099fe5ccc3_1a822ffc1a4cc6aafc2f717b099fe5ccc3" prot="public" static="no">
+        <name>CV_Ditch_Light_Blink_hold_time</name>
+        <initializer>117</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="92" column="9" bodyfile="include/config.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ae4a481a17022c51d21f02ae108423054_1ae4a481a17022c51d21f02ae108423054" prot="public" static="no">
+        <name>CV_Master_Light_Switch</name>
+        <initializer>118</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="93" column="9" bodyfile="include/config.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a0f6c1cccc70df0062f232a960d4a51ad_1a0f6c1cccc70df0062f232a960d4a51ad" prot="public" static="no">
+        <name>Directional_Headlight</name>
+        <initializer>true /*Map F0 Forward &amp; Reverse See CV61 Section  */ /* Not controlled by CV61 in FX3 Decoders */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="96" column="9" bodyfile="include/config.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a3f25474a161ad6e8b0c0bacb655492a7_1a3f25474a161ad6e8b0c0bacb655492a7" prot="public" static="no">
+        <name>Transponding</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="97" column="9" bodyfile="include/config.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a74d338804056551e07ec13e3dc06af4a_1a74d338804056551e07ec13e3dc06af4a" prot="public" static="no">
+        <name>Split_Field_Motor</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="98" column="9" bodyfile="include/config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_add486f9ebcb731ef4b268f9b344e5283_1add486f9ebcb731ef4b268f9b344e5283" prot="public" static="no">
+        <name>Static_Compensation</name>
+        <initializer>= 128;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="101" column="9" bodyfile="include/config.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a9afc1103fb3a041c61616a26a304ade6_1a9afc1103fb3a041c61616a26a304ade6" prot="public" static="no">
+        <name>Dynamic_Compensation</name>
+        <initializer>= 48;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="102" column="9" bodyfile="include/config.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a58d11ef55664e7e7209d2074187a2bda_1a58d11ef55664e7e7209d2074187a2bda" prot="public" static="no">
+        <name>Speed_Stabilizer_Droop</name>
+        <initializer>= 6;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="103" column="9" bodyfile="include/config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a232287efbf098e0948b4d7ce00df129b_1a232287efbf098e0948b4d7ce00df129b" prot="public" static="no">
+        <name>Motor_Frequency_SuperSonic</name>
+        <initializer>= 255;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="106" column="9" bodyfile="include/config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_ac0cbe647f0fc9a9fd6c9b9b5a061c2e2_1ac0cbe647f0fc9a9fd6c9b9b5a061c2e2" prot="public" static="no">
+        <name>Advanced_Consist_Address</name>
+        <initializer>= 0;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="109" column="9" bodyfile="include/config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_acfa0748ebfc09de25300d545d2f2134b_1acfa0748ebfc09de25300d545d2f2134b" prot="public" static="no">
+        <name>Reset_dec_to_fact</name>
+        <initializer>128 /*Set to 08 to reset all CV Values. Set to 09 to reset all CV Values except 28 step speed table. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="112" column="9" bodyfile="include/config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_acebb8e0786731c1781333ec1a8bfbfa3_1acebb8e0786731c1781333ec1a8bfbfa3" prot="public" static="no">
+        <name>CV_Reset_dec_to_fact</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="113" column="9" bodyfile="include/config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a94c8b8dc0f0a64c5d5746966da6fae3e_1a94c8b8dc0f0a64c5d5746966da6fae3e" prot="public" static="no">
+        <name>CV_reboot</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="114" column="9" bodyfile="include/config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a00c9dad6cd91a4abb6062ea1efc82bd9_1a00c9dad6cd91a4abb6062ea1efc82bd9" prot="public" static="no">
+        <name>Version</name>
+        <initializer>ID 64 /* Digitrax Version ID Read Only */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="117" column="9" bodyfile="include/config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="db/d16/config_8h_a19ca4da97abc2de0a73db255f9da4e25_1a19ca4da97abc2de0a73db255f9da4e25" prot="public" static="no">
+        <name>Manufacturer</name>
+        <initializer>ID 129 /* Digitrax Not affected by reset */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="118" column="9" bodyfile="include/config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="db/d16/config_8h_a52f1d26e2f6f0c2ce1e6a4b1976ea0a2_1a52f1d26e2f6f0c2ce1e6a4b1976ea0a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Speed_Table_28[28]</definition>
+        <argsstring>[28]</argsstring>
+        <name>Speed_Table_28</name>
+        <initializer>= {8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 56, 62, 68, 74, 80, 87, 94, 101, 108, 116, 124, 132, 141, 150, 160, 170}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="122" column="5" bodyfile="include/config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d16/config_8h_a486e6c0a06073f038af80725b1ccbd4c_1a486e6c0a06073f038af80725b1ccbd4c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Speed_Table_128[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>Speed_Table_128</name>
+        <initializer>= {0, 9, 13, 15, 22, 27, 31, 36, 40, 45, 49, 54, 58, 63, 75, 88, 100, 113, 125, 138, 151, 163, 176, 188, 201, 213, 226, 239}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/config.h" line="124" column="5" bodyfile="include/config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//DH166D<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>debug<sp/>false<sp/>//<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="db/d16/config_8h_ab3b41f451796af5f3abe58ee77748fe8_1ab3b41f451796af5f3abe58ee77748fe8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>baud_rate<sp/>115200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="db/d16/config_8h_acb0683c16ae7f448a27db80c3ff2e37c_1acb0683c16ae7f448a27db80c3ff2e37c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>moter_pin<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="db/d16/config_8h_ab295903f0bf6d2479e787bcea7a35aaa_1ab295903f0bf6d2479e787bcea7a35aaa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_moter<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//Locomotive<sp/>Address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="db/d16/config_8h_a600a130a29498eef8857a8ca1960ba20_1a600a130a29498eef8857a8ca1960ba20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>b2_Digi_Decoder_Address<sp/>3<sp/></highlight><highlight class="comment">//<sp/>CV17<sp/>&amp;<sp/>18<sp/>are<sp/>used<sp/>Together<sp/>to<sp/>program<sp/>the<sp/>4<sp/>digit<sp/>address.<sp/>Current<sp/>production<sp/>Digitrax<sp/>throttles<sp/>handle<sp/>this<sp/>automatically.<sp/>See<sp/>calculator<sp/>below<sp/>if<sp/>separate<sp/>values<sp/>are<sp/>needed<sp/>by<sp/>your<sp/>system<sp/>for<sp/>programming<sp/>4<sp/>digit<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="db/d16/config_8h_a479ca343c417bcb421cb8a6fc1d6f0da_1a479ca343c417bcb421cb8a6fc1d6f0da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>b4_Digi_Address_H<sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="db/d16/config_8h_a337e2cd784aeaee1229d40184069a6b9_1a337e2cd784aeaee1229d40184069a6b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>b4_Digi_ADD_L<sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="db/d16/config_8h_a191336e7877d6fcbba721d2ba06cb06d_1a191336e7877d6fcbba721d2ba06cb06d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>b4_Digi_ADD<sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//Locomotive<sp/>Address<sp/>CVs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="db/d16/config_8h_af9a44a65750364679b4a58feef570a42_1af9a44a65750364679b4a58feef570a42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_b2_Digi_Decoder_Address<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="db/d16/config_8h_a3494ff8e4d3fb1bdfc41c780c0cad00b_1a3494ff8e4d3fb1bdfc41c780c0cad00b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_b4_Digi_Address_H<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="db/d16/config_8h_a0ce7dbcf4463c6be57a7a8ad9a750db0_1a0ce7dbcf4463c6be57a7a8ad9a750db0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_b4_Digi_ADD_L<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="db/d16/config_8h_a447383a83f36b6acf96aa43a01967aa0_1a447383a83f36b6acf96aa43a01967aa0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_b4_Digi_ADD<sp/>119</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//Together<sp/>to<sp/>program<sp/>the<sp/>4<sp/>digit<sp/>address.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//Current<sp/>production<sp/>Digitrax<sp/>throttles<sp/>handle<sp/>this<sp/>automatically.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//Configuration<sp/>Register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="db/d16/config_8h_a350fc9489f942ad591b7ab9a3fc9b770_1a350fc9489f942ad591b7ab9a3fc9b770" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Address_Selection<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Address<sp/>Selection,<sp/>2<sp/>or<sp/>4<sp/>digit<sp/>2<sp/>Digit<sp/>2<sp/>or<sp/>4<sp/>Digit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="db/d16/config_8h_a4022bb117b4f90c4424bc4f0653a223d_1a4022bb117b4f90c4424bc4f0653a223d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NDOT<sp/>&quot;Fwd&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Normal<sp/>Direction<sp/>of<sp/>Travel<sp/>::<sp/>Fwd/Rev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="db/d16/config_8h_a9302567c0e5ab59ecdce6f7a7c22afa5_1a9302567c0e5ab59ecdce6f7a7c22afa5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Speed_Step_Control<sp/>28<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//14<sp/>or<sp/>28<sp/>or<sp/>28/128<sp/>or<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="db/d16/config_8h_a4a0611d1ddac9126944559ead1f585ed_1a4a0611d1ddac9126944559ead1f585ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Speed_Table_On_Off<sp/>false<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Speed<sp/>Table<sp/>On<sp/>or<sp/>Off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="db/d16/config_8h_ae4886b60fed0ba24b01b3f3e86f847af_1ae4886b60fed0ba24b01b3f3e86f847af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Analog_Mode_Conversion<sp/>true<sp/></highlight><highlight class="comment">//<sp/>On<sp/>or<sp/>Off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//Configuration<sp/>Register<sp/>CV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="db/d16/config_8h_a26fbc8031218c4d7891abcd94d847a4b_1a26fbc8031218c4d7891abcd94d847a4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Configuration_Register<sp/>29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="db/d16/config_8h_af0b0e49ce00c42d08256e00da7ce6449_1af0b0e49ce00c42d08256e00da7ce6449" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Sub_ADD_S<sp/>1<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CV_Address<sp/>Selection,<sp/>2<sp/>or<sp/>4<sp/>digit<sp/>2<sp/>Digit<sp/>2<sp/>or<sp/>4<sp/>Digit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="db/d16/config_8h_aecf64a3d46a2f3ad18cfab8ced0e07e8_1aecf64a3d46a2f3ad18cfab8ced0e07e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Sub_NDOT<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CV_Address<sp/>Normal<sp/>Direction<sp/>of<sp/>Travel<sp/>::<sp/>Fwd/Rev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="db/d16/config_8h_acf2229905d2476dac636e34349ebcf2a_1acf2229905d2476dac636e34349ebcf2a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Sub_SSC<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CV_Address<sp/>14<sp/>or<sp/>28<sp/>or<sp/>28/128<sp/>or<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="db/d16/config_8h_ae5ca6cfb71c9aed59d27aa14b21bb96f_1ae5ca6cfb71c9aed59d27aa14b21bb96f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Sub_ST_ON_OFF<sp/>4<sp/></highlight><highlight class="comment">//CV_Address<sp/>Speed<sp/>Table<sp/>On<sp/>or<sp/>Off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="db/d16/config_8h_ae379ac595e1028bf5e3ab83f3ab21b01_1ae379ac595e1028bf5e3ab83f3ab21b01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Sub_AD_M_C<sp/>5<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CV_Address<sp/>On<sp/>or<sp/>Off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//Locomotion<sp/>CVs-Control<sp/>--<sp/>Locomotive<sp/>Motion<sp/>--<sp/>Characteristics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//Acceleration<sp/>and<sp/>Deceleration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="db/d16/config_8h_a6130767538be1158cf4078815447620f_1a6130767538be1158cf4078815447620f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Acceleration<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="db/d16/config_8h_acf71e10f530e8a90b3f876fd6539f98e_1acf71e10f530e8a90b3f876fd6539f98e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Deceleration<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//Three<sp/>Step<sp/>Simple<sp/>Speed<sp/>Table<sp/>&amp;<sp/>Start<sp/>Voltage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="db/d16/config_8h_aa9c4e583ce8384b602be326a75a7383e_1aa9c4e583ce8384b602be326a75a7383e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Start_Voltage<sp/>0<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//128<sp/>Steps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="db/d16/config_8h_a1e4c1d395df7ca1063446ff9622424df_1a1e4c1d395df7ca1063446ff9622424df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Maximum_Voltage<sp/>0<sp/><sp/><sp/></highlight><highlight class="comment">//128<sp/>Steps<sp/>00,<sp/>01<sp/>&amp;<sp/>255<sp/>=<sp/>max<sp/>voltage<sp/>at<sp/>step<sp/>28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="db/d16/config_8h_a4ccbcfe90273ad1a6ca9d7156a355f09_1a4ccbcfe90273ad1a6ca9d7156a355f09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Mid_Point_Voltage<sp/>0<sp/></highlight><highlight class="comment">//128<sp/>Steps<sp/>00<sp/>&amp;<sp/>01<sp/>=<sp/>straight<sp/>line<sp/>curve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//28<sp/>Step<sp/>Speed<sp/>Tables<sp/>with<sp/>256<sp/>Step<sp/>Resolution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="db/d16/config_8h_a6d6c62f2a714318a75442b9e9612a7ca_1a6d6c62f2a714318a75442b9e9612a7ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kick_Start_value<sp/>0<sp/></highlight><highlight class="comment">//128<sp/>Step<sp/>Interpolated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="db/d16/config_8h_a91eb5c419fa7633d70c7c95d1f15361d_1a91eb5c419fa7633d70c7c95d1f15361d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Forward_Trim<sp/>0<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//128<sp/>Step<sp/>Interpolated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//Torque<sp/>Compensation<sp/>and<sp/>Switching<sp/>Speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/d16/config_8h_ad1846abc09fab41162401127dee3df9c_1ad1846abc09fab41162401127dee3df9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Switching_Speed_Torque_Compensation<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*FX3<sp/>Decoders<sp/>use<sp/>CV54<sp/>to</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">control<sp/>Switching<sp/>Speed<sp/>&amp;</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">Torque<sp/>Compensation*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="db/d16/config_8h_a0caba21dab832e280875be65012b30fc_1a0caba21dab832e280875be65012b30fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DC<sp/>Functions<sp/>=<sp/>true;<sp/></highlight><highlight class="comment">/*<sp/>Automatic<sp/>---<sp/>DC<sp/>Functions<sp/>ON<sp/>Not<sp/>Used<sp/>in<sp/>FX3<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//FX3<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="db/d16/config_8h_a7a97d4c257f660193e83b6f38918714c_1a7a97d4c257f660193e83b6f38918714c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F0F<sp/>0<sp/></highlight><highlight class="comment">//forward<sp/>light<sp/>effect<sp/>white</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="db/d16/config_8h_ac3de5f3ddbf39ec943bc6e3fb632dbf4_1ac3de5f3ddbf39ec943bc6e3fb632dbf4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F0R<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="db/d16/config_8h_a54af470c198f3dbe32eede2c32f3d746_1a54af470c198f3dbe32eede2c32f3d746" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F1<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="db/d16/config_8h_a5368759862ac5fb38772b91eace1205c_1a5368759862ac5fb38772b91eace1205c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F2<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="db/d16/config_8h_a79fc770a19406e6876ff9ffd6ce66f3d_1a79fc770a19406e6876ff9ffd6ce66f3d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F3<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="db/d16/config_8h_a7fd7918aa90b0ce1dc7ca9fe7a00e9fb_1a7fd7918aa90b0ce1dc7ca9fe7a00e9fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F4<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="db/d16/config_8h_a33a001184d6e389fd20132f7c21cf8ca_1a33a001184d6e389fd20132f7c21cf8ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F5<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="db/d16/config_8h_adcc6c65566433e67172e375586cdb0f7_1adcc6c65566433e67172e375586cdb0f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F6<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="db/d16/config_8h_abbf2f8dfa7b7a6c1fe229cce8c91cbd6_1abbf2f8dfa7b7a6c1fe229cce8c91cbd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FX_Rate<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="db/d16/config_8h_a7b3155e23af6b3fde5dc8ce21216f0f4_1a7b3155e23af6b3fde5dc8ce21216f0f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FX_Keep_alive<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="db/d16/config_8h_aa8c447166fb61a487d071ade3f6dde77_1aa8c447166fb61a487d071ade3f6dde77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ditch_Light_Blink_hold_time<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="db/d16/config_8h_a3bbeb77c7e970effaa82bc94f720bef3_1a3bbeb77c7e970effaa82bc94f720bef3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Master_Light_Switch<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//CV_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="db/d16/config_8h_a779f7a63d5d1e10875ed90cec25fe451_1a779f7a63d5d1e10875ed90cec25fe451" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F0F<sp/>49</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="db/d16/config_8h_a88ac1671ff4c2d17e0ff5aea684cbbee_1a88ac1671ff4c2d17e0ff5aea684cbbee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F0R<sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="db/d16/config_8h_a0be698672ff486445ec574b2f369d88e_1a0be698672ff486445ec574b2f369d88e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F1<sp/>51</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="db/d16/config_8h_afe18de0e7d516e9f7bf7b01ca91a4266_1afe18de0e7d516e9f7bf7b01ca91a4266" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F2<sp/>52</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="db/d16/config_8h_a7a695d2ae3095d8aa03b2ef2f37d2124_1a7a695d2ae3095d8aa03b2ef2f37d2124" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F3<sp/>113</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="db/d16/config_8h_a8f56c976aba73bcafb17a7e4cd4656ee_1a8f56c976aba73bcafb17a7e4cd4656ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F4<sp/>114</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="db/d16/config_8h_aa939d5e15cd6c3ff3ebb84057fc0c588_1aa939d5e15cd6c3ff3ebb84057fc0c588" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F5<sp/>115</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="db/d16/config_8h_ad27373e4b8dc0fcf56844166c09b5a29_1ad27373e4b8dc0fcf56844166c09b5a29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_F6<sp/>116</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="db/d16/config_8h_a3b9f1e1ca7bf6b137026db41776aff4f_1a3b9f1e1ca7bf6b137026db41776aff4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_FX_Rate<sp/>62</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="db/d16/config_8h_a331e26d20e59bdb7e6e1eebed5f5dc09_1a331e26d20e59bdb7e6e1eebed5f5dc09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_FX_Keep_alive<sp/>63</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="db/d16/config_8h_a822ffc1a4cc6aafc2f717b099fe5ccc3_1a822ffc1a4cc6aafc2f717b099fe5ccc3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Ditch_Light_Blink_hold_time<sp/>117</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="db/d16/config_8h_ae4a481a17022c51d21f02ae108423054_1ae4a481a17022c51d21f02ae108423054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Master_Light_Switch<sp/>118</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//Directional<sp/>Headlights,<sp/>Transponding,<sp/>Split<sp/>Field<sp/>Motor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="db/d16/config_8h_a0f6c1cccc70df0062f232a960d4a51ad_1a0f6c1cccc70df0062f232a960d4a51ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Directional_Headlight<sp/>true<sp/></highlight><highlight class="comment">/*Map<sp/>F0<sp/>Forward<sp/>&amp;<sp/>Reverse<sp/>See<sp/>CV61<sp/>Section<sp/><sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>controlled<sp/>by<sp/>CV61<sp/>in<sp/>FX3<sp/>Decoders<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="db/d16/config_8h_a3f25474a161ad6e8b0c0bacb655492a7_1a3f25474a161ad6e8b0c0bacb655492a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Transponding<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="db/d16/config_8h_a74d338804056551e07ec13e3dc06af4a_1a74d338804056551e07ec13e3dc06af4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Split_Field_Motor<sp/>false<sp/></highlight><highlight class="comment">//For<sp/>AC<sp/>Motors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//Scaleable<sp/>Speed<sp/>Stabilization<sp/>(Back<sp/>EMF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="db/d16/config_8h_add486f9ebcb731ef4b268f9b344e5283_1add486f9ebcb731ef4b268f9b344e5283" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Static_Compensation<sp/>=<sp/>128;<sp/><sp/></highlight><highlight class="comment">//00<sp/>to<sp/>255</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="db/d16/config_8h_a9afc1103fb3a041c61616a26a304ade6_1a9afc1103fb3a041c61616a26a304ade6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Dynamic_Compensation<sp/>=<sp/>48;<sp/><sp/></highlight><highlight class="comment">//00<sp/>to<sp/>255</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="db/d16/config_8h_a58d11ef55664e7e7209d2074187a2bda_1a58d11ef55664e7e7209d2074187a2bda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Speed_Stabilizer_Droop<sp/>=<sp/>6;<sp/></highlight><highlight class="comment">//00<sp/>to<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SuperSonic<sp/>(Quiet<sp/>Operation)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="db/d16/config_8h_a232287efbf098e0948b4d7ce00df129b_1a232287efbf098e0948b4d7ce00df129b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Motor_Frequency_SuperSonic<sp/>=<sp/>255;<sp/></highlight><highlight class="comment">//00<sp/>to<sp/>255<sp/>//Default<sp/>is<sp/>MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//Advanced<sp/>Consisting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="db/d16/config_8h_ac0cbe647f0fc9a9fd6c9b9b5a061c2e2_1ac0cbe647f0fc9a9fd6c9b9b5a061c2e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Advanced_Consist_Address<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//Default<sp/>is<sp/>OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//Decoder<sp/>Reset<sp/>to<sp/>Default<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="db/d16/config_8h_acfa0748ebfc09de25300d545d2f2134b_1acfa0748ebfc09de25300d545d2f2134b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Reset_dec_to_fact<sp/>128<sp/></highlight><highlight class="comment">/*Set<sp/>to<sp/>08<sp/>to<sp/>reset<sp/>all<sp/>CV<sp/>Values.<sp/>Set<sp/>to<sp/>09<sp/>to<sp/>reset<sp/>all<sp/>CV<sp/>Values<sp/>except<sp/>28<sp/>step<sp/>speed<sp/>table.<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="db/d16/config_8h_acebb8e0786731c1781333ec1a8bfbfa3_1acebb8e0786731c1781333ec1a8bfbfa3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_Reset_dec_to_fact<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="db/d16/config_8h_a94c8b8dc0f0a64c5d5746966da6fae3e_1a94c8b8dc0f0a64c5d5746966da6fae3e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CV_reboot<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//Decoder<sp/>IDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="db/d16/config_8h_a00c9dad6cd91a4abb6062ea1efc82bd9_1a00c9dad6cd91a4abb6062ea1efc82bd9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Version<sp/>ID<sp/>64<sp/></highlight><highlight class="comment">/*<sp/>Digitrax<sp/>Version<sp/>ID<sp/>Read<sp/>Only<sp/>*/</highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//never<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="db/d16/config_8h_a19ca4da97abc2de0a73db255f9da4e25_1a19ca4da97abc2de0a73db255f9da4e25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Manufacturer<sp/>ID<sp/>129<sp/></highlight><highlight class="comment">/*<sp/>Digitrax<sp/>Not<sp/>affected<sp/>by<sp/>reset<sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="comment">//never<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//Speed<sp/>Table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="db/d16/config_8h_a52f1d26e2f6f0c2ce1e6a4b1976ea0a2_1a52f1d26e2f6f0c2ce1e6a4b1976ea0a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d16/config_8h_a52f1d26e2f6f0c2ce1e6a4b1976ea0a2_1a52f1d26e2f6f0c2ce1e6a4b1976ea0a2" kindref="member">Speed_Table_28</ref>[28]<sp/>=<sp/>{8,<sp/>11,<sp/>14,<sp/>17,<sp/>20,<sp/>24,<sp/>28,<sp/>32,<sp/>36,<sp/>41,<sp/>46,<sp/>51,<sp/>56,<sp/>62,<sp/>68,<sp/>74,<sp/>80,<sp/>87,<sp/>94,<sp/>101,<sp/>108,<sp/>116,<sp/>124,<sp/>132,<sp/>141,<sp/>150,<sp/>160,<sp/>170};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="db/d16/config_8h_a486e6c0a06073f038af80725b1ccbd4c_1a486e6c0a06073f038af80725b1ccbd4c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d16/config_8h_a486e6c0a06073f038af80725b1ccbd4c_1a486e6c0a06073f038af80725b1ccbd4c" kindref="member">Speed_Table_128</ref>[128]<sp/>=<sp/>{0,<sp/>9,<sp/>13,<sp/>15,<sp/>22,<sp/>27,<sp/>31,<sp/>36,<sp/>40,<sp/>45,<sp/>49,<sp/>54,<sp/>58,<sp/>63,<sp/>75,<sp/>88,<sp/>100,<sp/>113,<sp/>125,<sp/>138,<sp/>151,<sp/>163,<sp/>176,<sp/>188,<sp/>201,<sp/>213,<sp/>226,<sp/>239};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NULL<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/config.h"/>
+  </compounddef>
+</doxygen>

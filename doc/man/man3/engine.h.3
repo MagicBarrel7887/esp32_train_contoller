@@ -1,0 +1,213 @@
+.TH "include/engine.h" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/engine.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Adafruit_GFX\&.h>\fP
+.br
+\fC#include <Adafruit_SSD1306\&.h>\fP
+.br
+\fC#include <Wire\&.h>\fP
+.br
+\fC#include <TTP229\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBengen\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__ENGEN__H__\fP"
+.br
+.ti -1c
+.RI "#define \fBttp229_statue\fP   false"
+.br
+.ti -1c
+.RI "#define \fBDEBUG\fP   True"
+.br
+.ti -1c
+.RI "#define \fBSCREEN_WIDTH\fP   128"
+.br
+.ti -1c
+.RI "#define \fBSCREEN_HEIGHT\fP   32"
+.br
+.ti -1c
+.RI "#define \fBOLED_RESET\fP   4"
+.br
+.ti -1c
+.RI "#define \fBSCREEN_ADDRESS\fP   0x3C"
+.br
+.RI "See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32\&. "
+.ti -1c
+.RI "#define \fBenable_TTP229\fP   false"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "Adafruit_SSD1306 \fBdisplay\fP (\fBSCREEN_WIDTH\fP, \fBSCREEN_HEIGHT\fP, &Wire, \fBOLED_RESET\fP)"
+.br
+.ti -1c
+.RI "int \fBengine_debug\fP (int a, String b)"
+.br
+.ti -1c
+.RI "int \fBdb\fP (int a, String b)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "TTP229 \fBttp229\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBpreviousMillis1\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fBinterval1\fP = 10000"
+.br
+.ti -1c
+.RI "unsigned long \fBpreviousMillis2\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fBinterval2\fP = 5000"
+.br
+.ti -1c
+.RI "int \fBbut_1_pin\fP = 2"
+.br
+.ti -1c
+.RI "int \fBbut_2_pin\fP = 4"
+.br
+.ti -1c
+.RI "int \fBbut_3_pin\fP = 5"
+.br
+.ti -1c
+.RI "int \fBbut_4_pin\fP = 3"
+.br
+.ti -1c
+.RI "int \fBbut_5_pin\fP = 6"
+.br
+.ti -1c
+.RI "int \fBbut_6_pin\fP = 7"
+.br
+.ti -1c
+.RI "int \fBbut_7_pin\fP = 8"
+.br
+.ti -1c
+.RI "int \fBanalogPin_joy_x\fP = A0"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __ENGEN__H__"
+
+.SS "#define DEBUG   True"
+
+.SS "#define enable_TTP229   false"
+
+.SS "#define OLED_RESET   4"
+
+.SS "#define SCREEN_ADDRESS   0x3C"
+
+.PP
+See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32\&. 
+.SS "#define SCREEN_HEIGHT   32"
+
+.SS "#define SCREEN_WIDTH   128"
+
+.SS "#define ttp229_statue   false"
+
+.SH "Function Documentation"
+.PP 
+.SS "int db (int a, String b)"
+
+.PP
+.nf
+494                         {
+495 
+496     const char *c = b\&.c_str();
+497 
+498     Serial\&.print(c); // inputstring
+499     Serial\&.println(a); // payload was not delivered
+500 
+501     return 1;
+502  }
+.fi
+.SS "Adafruit_SSD1306 display (\fBSCREEN_WIDTH\fP, \fBSCREEN_HEIGHT\fP, & Wire, \fBOLED_RESET\fP)"
+
+.PP
+Referenced by \fBengen::display_8()\fP, \fBdebug::IO()\fP, \fBnrf24_setup()\fP, \fBdebug::nrf24error()\fP, \fBsetup()\fP, and \fBdebug::~debug()\fP\&.
+.SS "int engine_debug (int a, String b)"
+
+.PP
+.nf
+448                                   {
+449 
+450     const char *c = b\&.c_str();
+451 
+452     Serial\&.print(c);   // inputstring
+453     Serial\&.print(" ");   // space
+454     Serial\&.println(a); // payload was not delivered
+455 
+456     return 1;
+457  }
+.fi
+.SH "Variable Documentation"
+.PP 
+.SS "int analogPin_joy_x = A0"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_1_pin = 2"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_2_pin = 4"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_3_pin = 5"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_4_pin = 3"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_5_pin = 6"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP, and \fBengen::push_buttons_joystick()\fP\&.
+.SS "int but_6_pin = 7"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP\&.
+.SS "int but_7_pin = 8"
+
+.PP
+Referenced by \fBengen::Arduino_digital_analog_int()\fP\&.
+.SS "unsigned long interval1 = 10000"
+
+.SS "unsigned long interval2 = 5000"
+
+.SS "unsigned long previousMillis1 = 0"
+
+.SS "unsigned long previousMillis2 = 0"
+
+.SS "TTP229 ttp229"
+
+.PP
+Referenced by \fBengen::ttp229_get_any_Pressed()\fP, \fBengen::ttp229_get_Pressed()\fP, \fBengen::ttp229_get_states()\fP, and \fBengen::ttp229_is_Key_Press()\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

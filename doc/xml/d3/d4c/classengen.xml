@@ -1,0 +1,951 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="d3/d4c/classengen" kind="class" language="C++" prot="public">
+    <compoundname>engen</compoundname>
+    <includes refid="d1/d55/engine_8h" local="no">engine.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d4c/classengen_a28eae3fa9e1f547bb610793b48a5cb2d_1a28eae3fa9e1f547bb610793b48a5cb2d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::R_Reverse_Key</definition>
+        <argsstring></argsstring>
+        <name>R_Reverse_Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="61" column="9" bodyfile="include/engine.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a21159eea0e4755b0e0b1f1e33b14e2a6_1a21159eea0e4755b0e0b1f1e33b14e2a6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::L_Reverse_Key</definition>
+        <argsstring></argsstring>
+        <name>L_Reverse_Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="62" column="9" bodyfile="include/engine.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a4d1c012a0384fd097ae41a5397f7c3a1_1a4d1c012a0384fd097ae41a5397f7c3a1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::DISP_Key</definition>
+        <argsstring></argsstring>
+        <name>DISP_Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="64" column="9" bodyfile="include/engine.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a394a9f43e9fcdf7a8840ddd29e2831d3_1a394a9f43e9fcdf7a8840ddd29e2831d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::FUNC_Key</definition>
+        <argsstring></argsstring>
+        <name>FUNC_Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="65" column="9" bodyfile="include/engine.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a1f6584bab793a28d4256145127caf364_1a1f6584bab793a28d4256145127caf364" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::FUNC_data[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>FUNC_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="69" column="9" bodyfile="include/engine.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a4b9d09f3c482e424a38f5c99ba11eb5a_1a4b9d09f3c482e424a38f5c99ba11eb5a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::LOCO</definition>
+        <argsstring></argsstring>
+        <name>LOCO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="70" column="9" bodyfile="include/engine.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a1be77f4c0ced715fd7fe219a45036090_1a1be77f4c0ced715fd7fe219a45036090" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::EMERGENCY_STOP_Key</definition>
+        <argsstring></argsstring>
+        <name>EMERGENCY_STOP_Key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="72" column="9" bodyfile="include/engine.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ae2d94e6e6539baf6d04b8bfe61082cac_1ae2d94e6e6539baf6d04b8bfe61082cac" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::error_number</definition>
+        <argsstring></argsstring>
+        <name>error_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="73" column="9" bodyfile="include/engine.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ac50bff2add716d7c03ca1e56307e0cc5_1ac50bff2add716d7c03ca1e56307e0cc5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::analogPin_joy</definition>
+        <argsstring></argsstring>
+        <name>analogPin_joy</name>
+        <initializer>= A3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="79" column="9" bodyfile="include/engine.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ae5f825ba5ffb347a2d41445c7a99fac4_1ae5f825ba5ffb347a2d41445c7a99fac4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::analog_joystick</definition>
+        <argsstring></argsstring>
+        <name>analog_joystick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="80" column="9" bodyfile="include/engine.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a240be5152ea1b290490808aae8855b56_1a240be5152ea1b290490808aae8855b56" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::analog_joystick_map</definition>
+        <argsstring></argsstring>
+        <name>analog_joystick_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="81" column="9" bodyfile="include/engine.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a3b245342a99379b1ba46af826f9d516e_1a3b245342a99379b1ba46af826f9d516e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::but_1</definition>
+        <argsstring></argsstring>
+        <name>but_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="83" column="9" bodyfile="include/engine.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_aca76153c6f17a805d801858c4e4cdf12_1aca76153c6f17a805d801858c4e4cdf12" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::but_2</definition>
+        <argsstring></argsstring>
+        <name>but_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="84" column="9" bodyfile="include/engine.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a4d013b21cec06a4bdb6452e5d70570cd_1a4d013b21cec06a4bdb6452e5d70570cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::but_3</definition>
+        <argsstring></argsstring>
+        <name>but_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="85" column="9" bodyfile="include/engine.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_aa158f8d131a5a5f96b2c80c193bee15d_1aa158f8d131a5a5f96b2c80c193bee15d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::but_4</definition>
+        <argsstring></argsstring>
+        <name>but_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="86" column="9" bodyfile="include/engine.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a3d0e675d9cc3f4d0f55288c5118d9347_1a3d0e675d9cc3f4d0f55288c5118d9347" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::but_5</definition>
+        <argsstring></argsstring>
+        <name>but_5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="87" column="9" bodyfile="include/engine.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a110fca2aea7ef87bb9ce3d1bba6e87c6_1a110fca2aea7ef87bb9ce3d1bba6e87c6" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long engen::debounceDelay</definition>
+        <argsstring></argsstring>
+        <name>debounceDelay</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="89" column="18" bodyfile="include/engine.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d4c/classengen_af2b866f92748dd4d301c680739a32c63_1af2b866f92748dd4d301c680739a32c63" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long engen::lastDebounceTime</definition>
+        <argsstring></argsstring>
+        <name>lastDebounceTime</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="95" column="18" bodyfile="include/engine.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_adbcc3013f94098754e48b11c2bc7d17b_1adbcc3013f94098754e48b11c2bc7d17b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool engen::nrf24_error</definition>
+        <argsstring></argsstring>
+        <name>nrf24_error</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="115" column="9" bodyfile="include/engine.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="d5/d1f/wireless_8h_adc0bfd52f2e4acac37bf01995d6ad166_1adc0bfd52f2e4acac37bf01995d6ad166" compoundref="d5/d1f/wireless_8h" startline="100" endline="125">nrf24_setup</referencedby>
+        <referencedby refid="d4/d16/classdebug_a51d95021f51c9cf811ccb60615fb17a1_1a51d95021f51c9cf811ccb60615fb17a1" compoundref="db/d16/debug_8h" startline="133" endline="170">debug::nrf24error</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ae469e13ec6aa1c460a1f91feeea10f01_1ae469e13ec6aa1c460a1f91feeea10f01" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::RX_ADD</definition>
+        <argsstring></argsstring>
+        <name>RX_ADD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="117" column="8" bodyfile="include/engine.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" compoundref="db/d16/debug_8h" startline="97" endline="131">debug::IO</referencedby>
+        <referencedby refid="d1/db2/classwireless_a24b45d4e3b063fc0b506e3515913c152_1a24b45d4e3b063fc0b506e3515913c152" compoundref="d5/d1f/wireless_8h" startline="127" endline="161">wireless::recieved</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ac6e07c33cf1daa7966d97cde173a0b17_1ac6e07c33cf1daa7966d97cde173a0b17" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="119" column="8" bodyfile="include/engine.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a9acce6dbb9eeeaa00c292827288bda2c_1a9acce6dbb9eeeaa00c292827288bda2c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::display_Function</definition>
+        <argsstring></argsstring>
+        <name>display_Function</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="121" column="8" bodyfile="include/engine.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_a557f1d7d49e7c81da0bbd0ae7320ff7a_1a557f1d7d49e7c81da0bbd0ae7320ff7a" compoundref="d1/d55/engine_8h" startline="309" endline="362">display_8</referencedby>
+        <referencedby refid="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" compoundref="db/d16/debug_8h" startline="97" endline="131">debug::IO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a1805dba0c89d007c424e9e79502e4fa8_1a1805dba0c89d007c424e9e79502e4fa8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::temp_code</definition>
+        <argsstring></argsstring>
+        <name>temp_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="122" column="8" bodyfile="include/engine.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_a557f1d7d49e7c81da0bbd0ae7320ff7a_1a557f1d7d49e7c81da0bbd0ae7320ff7a" compoundref="d1/d55/engine_8h" startline="309" endline="362">display_8</referencedby>
+        <referencedby refid="d4/d16/classdebug_a8739641593123f521fe3ac23bdde1389_1a8739641593123f521fe3ac23bdde1389" compoundref="db/d16/debug_8h" startline="97" endline="131">debug::IO</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_af65ff5bc755806fa6a066dcd9709a54d_1af65ff5bc755806fa6a066dcd9709a54d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::cv_code</definition>
+        <argsstring></argsstring>
+        <name>cv_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="123" column="8" bodyfile="include/engine.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a8977f7463527c1717eb0dd67c601f4ce_1a8977f7463527c1717eb0dd67c601f4ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::lts</definition>
+        <argsstring></argsstring>
+        <name>lts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="124" column="8" bodyfile="include/engine.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_a557f1d7d49e7c81da0bbd0ae7320ff7a_1a557f1d7d49e7c81da0bbd0ae7320ff7a" compoundref="d1/d55/engine_8h" startline="309" endline="362">display_8</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a98bed7f370655dc60a146fc2e1b7f472_1a98bed7f370655dc60a146fc2e1b7f472" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::data_io</definition>
+        <argsstring></argsstring>
+        <name>data_io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="125" column="8" bodyfile="include/engine.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a3944c246a2b84f9bf9b6f3070a202887_1a3944c246a2b84f9bf9b6f3070a202887" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::L_Throttle</definition>
+        <argsstring></argsstring>
+        <name>L_Throttle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="127" column="8" bodyfile="include/engine.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ae7184b2f97f853c0826fb1e018c66bc6_1ae7184b2f97f853c0826fb1e018c66bc6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::R_Throttle</definition>
+        <argsstring></argsstring>
+        <name>R_Throttle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="128" column="8" bodyfile="include/engine.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_af309da29753d9c24ea61c9bf43ef3902_1af309da29753d9c24ea61c9bf43ef3902" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool engen::sitch</definition>
+        <argsstring></argsstring>
+        <name>sitch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="130" column="9" bodyfile="include/engine.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a51461035d4b383e770d27bd84354efff_1a51461035d4b383e770d27bd84354efff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool engen::Powr</definition>
+        <argsstring></argsstring>
+        <name>Powr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="131" column="9" bodyfile="include/engine.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ab3f8f758760e19a131d3cf6208cd0112_1ab3f8f758760e19a131d3cf6208cd0112" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::lta</definition>
+        <argsstring></argsstring>
+        <name>lta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="133" column="8" bodyfile="include/engine.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a2028ede5567f042561b2f1ca262d78db_1a2028ede5567f042561b2f1ca262d78db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::rta</definition>
+        <argsstring></argsstring>
+        <name>rta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="134" column="8" bodyfile="include/engine.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_ac3c190ef345bc7cd28e55d26e1f7e789_1ac3c190ef345bc7cd28e55d26e1f7e789" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long engen::loopCount</definition>
+        <argsstring></argsstring>
+        <name>loopCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="137" column="18" bodyfile="include/engine.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_ab0ee9e451f4a2e2006af3c864c03f988_1ab0ee9e451f4a2e2006af3c864c03f988" compoundref="d1/d55/engine_8h" startline="294" endline="305">get_count</referencedby>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_aa99513e14031deff434e84a67aeab7bb_1aa99513e14031deff434e84a67aeab7bb" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long engen::startTime</definition>
+        <argsstring></argsstring>
+        <name>startTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="138" column="18" bodyfile="include/engine.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_ab0ee9e451f4a2e2006af3c864c03f988_1ab0ee9e451f4a2e2006af3c864c03f988" compoundref="d1/d55/engine_8h" startline="294" endline="305">get_count</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int engen::analog_joystick_x</definition>
+        <argsstring></argsstring>
+        <name>analog_joystick_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="163" column="9" bodyfile="include/engine.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+        <referencedby refid="d1/db2/classwireless_aa80625c691684245d4279205e3dd7d8e_1aa80625c691684245d4279205e3dd7d8e" compoundref="d5/d1f/wireless_8h" startline="275" endline="284">wireless::int_PayloadStruct</referencedby>
+        <referencedby refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" compoundref="d1/d55/engine_8h" startline="183" endline="207">push_buttons_joystick</referencedby>
+        <referencedby refid="d1/db2/classwireless_ab0cc2ab3c9206bb1ad7af76049cd8219_1ab0cc2ab3c9206bb1ad7af76049cd8219" compoundref="d5/d1f/wireless_8h" startline="269" endline="273">wireless::set_PayloadStruct</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::e_db</definition>
+        <argsstring>()</argsstring>
+        <name>e_db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="96" column="8" bodyfile="include/engine.h" bodystart="459" bodyend="492"/>
+        <references refid="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" compoundref="d1/d55/engine_8h" startline="163">analog_joystick_x</references>
+        <references refid="d3/d4c/classengen_a3b245342a99379b1ba46af826f9d516e_1a3b245342a99379b1ba46af826f9d516e" compoundref="d1/d55/engine_8h" startline="83">but_1</references>
+        <references refid="d3/d4c/classengen_aca76153c6f17a805d801858c4e4cdf12_1aca76153c6f17a805d801858c4e4cdf12" compoundref="d1/d55/engine_8h" startline="84">but_2</references>
+        <references refid="d3/d4c/classengen_a4d013b21cec06a4bdb6452e5d70570cd_1a4d013b21cec06a4bdb6452e5d70570cd" compoundref="d1/d55/engine_8h" startline="85">but_3</references>
+        <references refid="d3/d4c/classengen_aa158f8d131a5a5f96b2c80c193bee15d_1aa158f8d131a5a5f96b2c80c193bee15d" compoundref="d1/d55/engine_8h" startline="86">but_4</references>
+        <references refid="d3/d4c/classengen_a3d0e675d9cc3f4d0f55288c5118d9347_1a3d0e675d9cc3f4d0f55288c5118d9347" compoundref="d1/d55/engine_8h" startline="87">but_5</references>
+        <references refid="d3/d4c/classengen_a4d1c012a0384fd097ae41a5397f7c3a1_1a4d1c012a0384fd097ae41a5397f7c3a1" compoundref="d1/d55/engine_8h" startline="64">DISP_Key</references>
+        <references refid="d3/d4c/classengen_a1be77f4c0ced715fd7fe219a45036090_1a1be77f4c0ced715fd7fe219a45036090" compoundref="d1/d55/engine_8h" startline="72">EMERGENCY_STOP_Key</references>
+        <references refid="d3/d4c/classengen_a47a9c7d6c9fdcd5339239e20ee3007a7_1a47a9c7d6c9fdcd5339239e20ee3007a7">engine_debug</references>
+        <references refid="d3/d4c/classengen_ac6e07c33cf1daa7966d97cde173a0b17_1ac6e07c33cf1daa7966d97cde173a0b17" compoundref="d1/d55/engine_8h" startline="119">error</references>
+        <references refid="d3/d4c/classengen_ae2d94e6e6539baf6d04b8bfe61082cac_1ae2d94e6e6539baf6d04b8bfe61082cac" compoundref="d1/d55/engine_8h" startline="73">error_number</references>
+        <references refid="d3/d4c/classengen_a394a9f43e9fcdf7a8840ddd29e2831d3_1a394a9f43e9fcdf7a8840ddd29e2831d3" compoundref="d1/d55/engine_8h" startline="65">FUNC_Key</references>
+        <references refid="d3/d4c/classengen_a21159eea0e4755b0e0b1f1e33b14e2a6_1a21159eea0e4755b0e0b1f1e33b14e2a6" compoundref="d1/d55/engine_8h" startline="62">L_Reverse_Key</references>
+        <references refid="d3/d4c/classengen_a3944c246a2b84f9bf9b6f3070a202887_1a3944c246a2b84f9bf9b6f3070a202887" compoundref="d1/d55/engine_8h" startline="127">L_Throttle</references>
+        <references refid="d3/d4c/classengen_a4b9d09f3c482e424a38f5c99ba11eb5a_1a4b9d09f3c482e424a38f5c99ba11eb5a" compoundref="d1/d55/engine_8h" startline="70">LOCO</references>
+        <references refid="d3/d4c/classengen_ab3f8f758760e19a131d3cf6208cd0112_1ab3f8f758760e19a131d3cf6208cd0112" compoundref="d1/d55/engine_8h" startline="133">lta</references>
+        <references refid="d3/d4c/classengen_a51461035d4b383e770d27bd84354efff_1a51461035d4b383e770d27bd84354efff" compoundref="d1/d55/engine_8h" startline="131">Powr</references>
+        <references refid="d3/d4c/classengen_a28eae3fa9e1f547bb610793b48a5cb2d_1a28eae3fa9e1f547bb610793b48a5cb2d" compoundref="d1/d55/engine_8h" startline="61">R_Reverse_Key</references>
+        <references refid="d3/d4c/classengen_ae7184b2f97f853c0826fb1e018c66bc6_1ae7184b2f97f853c0826fb1e018c66bc6" compoundref="d1/d55/engine_8h" startline="128">R_Throttle</references>
+        <references refid="d3/d4c/classengen_af309da29753d9c24ea61c9bf43ef3902_1af309da29753d9c24ea61c9bf43ef3902" compoundref="d1/d55/engine_8h" startline="130">sitch</references>
+        <referencedby refid="d4/d16/classdebug_ac818567c39d874400c22647291366f7b_1ac818567c39d874400c22647291366f7b" compoundref="db/d16/debug_8h" startline="172" endline="178">debug::serial_debug</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_afa9eec5465e81b0bd40ad26e64e80af7_1afa9eec5465e81b0bd40ad26e64e80af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Function</definition>
+        <argsstring>()</argsstring>
+        <name>Function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="98" column="8" bodyfile="include/engine.h" bodystart="213" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a02de124f0487af9fff1443189657a797_1a02de124f0487af9fff1443189657a797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Arduino_digital_analog_int</definition>
+        <argsstring>()</argsstring>
+        <name>Arduino_digital_analog_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="99" column="8" bodyfile="include/engine.h" bodystart="166" bodyend="180"/>
+        <references refid="d1/d55/engine_8h_a82c252a529dde59502ca8ff11b0cb755_1a82c252a529dde59502ca8ff11b0cb755" compoundref="d1/d55/engine_8h" startline="54">analogPin_joy_x</references>
+        <references refid="d1/d55/engine_8h_aeed94fdf8c5efd193d500b9720afb0c8_1aeed94fdf8c5efd193d500b9720afb0c8" compoundref="d1/d55/engine_8h" startline="46">but_1_pin</references>
+        <references refid="d1/d55/engine_8h_a2df4fe7fb7da042720e24435519f5f03_1a2df4fe7fb7da042720e24435519f5f03" compoundref="d1/d55/engine_8h" startline="47">but_2_pin</references>
+        <references refid="d1/d55/engine_8h_ad667f62bbd2ce19ee1e016c9c3383b2f_1ad667f62bbd2ce19ee1e016c9c3383b2f" compoundref="d1/d55/engine_8h" startline="48">but_3_pin</references>
+        <references refid="d1/d55/engine_8h_ae8932208ad6742913a30434a65ac66d3_1ae8932208ad6742913a30434a65ac66d3" compoundref="d1/d55/engine_8h" startline="49">but_4_pin</references>
+        <references refid="d1/d55/engine_8h_a4b322bdf8940aa7d9db26e1b28ba07d2_1a4b322bdf8940aa7d9db26e1b28ba07d2" compoundref="d1/d55/engine_8h" startline="50">but_5_pin</references>
+        <references refid="d1/d55/engine_8h_a8df9096af5abb2118eb9e9dcf6f6d4cd_1a8df9096af5abb2118eb9e9dcf6f6d4cd" compoundref="d1/d55/engine_8h" startline="51">but_6_pin</references>
+        <references refid="d1/d55/engine_8h_aeca4aa98a44ce5368a0e73bd7f9be1be_1aeca4aa98a44ce5368a0e73bd7f9be1be" compoundref="d1/d55/engine_8h" startline="52">but_7_pin</references>
+        <referencedby refid="df/d0a/main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="df/d0a/main_8cpp" startline="29" endline="61">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a38df9619a545e1916b58f644750408e3_1a38df9619a545e1916b58f644750408e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Loco_Selection</definition>
+        <argsstring>()</argsstring>
+        <name>Loco_Selection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="100" column="8" bodyfile="include/engine.h" bodystart="222" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a915f5ea293e61f261d31677f695b5a20_1a915f5ea293e61f261d31677f695b5a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::MU</definition>
+        <argsstring>()</argsstring>
+        <name>MU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="101" column="8" bodyfile="include/engine.h" bodystart="230" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a2198b8bca0c7d15e500903df8b8dc214_1a2198b8bca0c7d15e500903df8b8dc214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Switch</definition>
+        <argsstring>()</argsstring>
+        <name>Switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="102" column="8" bodyfile="include/engine.h" bodystart="238" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_aa401a0ec65ca57947eceb348c2b77b14_1aa401a0ec65ca57947eceb348c2b77b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Power</definition>
+        <argsstring>()</argsstring>
+        <name>Power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="103" column="8" bodyfile="include/engine.h" bodystart="246" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a8f720e15304ddf8099f5c39875227c31_1a8f720e15304ddf8099f5c39875227c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Status_Edit</definition>
+        <argsstring>()</argsstring>
+        <name>Status_Edit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="105" column="8" bodyfile="include/engine.h" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a695cdd2061b49cc78a5e6fddf3c07173_1a695cdd2061b49cc78a5e6fddf3c07173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Programming_Paged</definition>
+        <argsstring>()</argsstring>
+        <name>Programming_Paged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="106" column="8" bodyfile="include/engine.h" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_afc13521129bdab988df11ffa8ea23363_1afc13521129bdab988df11ffa8ea23363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Programming_Physical</definition>
+        <argsstring>()</argsstring>
+        <name>Programming_Physical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="107" column="8" bodyfile="include/engine.h" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a530baa466beb6f1d3ea7a4b404780ea3_1a530baa466beb6f1d3ea7a4b404780ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Programming_Direct</definition>
+        <argsstring>()</argsstring>
+        <name>Programming_Direct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="108" column="8" bodyfile="include/engine.h" bodystart="269" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a44425abe3203b0e481e3c51e504377e5_1a44425abe3203b0e481e3c51e504377e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Programming_Operations_Mode</definition>
+        <argsstring>()</argsstring>
+        <name>Programming_Operations_Mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="109" column="8" bodyfile="include/engine.h" bodystart="274" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a372af5bab8228416410fce38f34f2040_1a372af5bab8228416410fce38f34f2040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Recall</definition>
+        <argsstring>()</argsstring>
+        <name>Recall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="110" column="8" bodyfile="include/engine.h" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a17bbd4bde81ce8a63a6c5ff8c8b3e191_1a17bbd4bde81ce8a63a6c5ff8c8b3e191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::Find</definition>
+        <argsstring>()</argsstring>
+        <name>Find</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="111" column="8" bodyfile="include/engine.h" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a557f1d7d49e7c81da0bbd0ae7320ff7a_1a557f1d7d49e7c81da0bbd0ae7320ff7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::display_8</definition>
+        <argsstring>()</argsstring>
+        <name>display_8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="112" column="8" bodyfile="include/engine.h" bodystart="309" bodyend="362"/>
+        <references refid="d1/d55/engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_1ae780a76d06cb56e14435ebfe3db3f6d3">display</references>
+        <references refid="d3/d4c/classengen_a9acce6dbb9eeeaa00c292827288bda2c_1a9acce6dbb9eeeaa00c292827288bda2c" compoundref="d1/d55/engine_8h" startline="121">display_Function</references>
+        <references refid="d3/d4c/classengen_a8977f7463527c1717eb0dd67c601f4ce_1a8977f7463527c1717eb0dd67c601f4ce" compoundref="d1/d55/engine_8h" startline="124">lts</references>
+        <references refid="d3/d4c/classengen_a1805dba0c89d007c424e9e79502e4fa8_1a1805dba0c89d007c424e9e79502e4fa8" compoundref="d1/d55/engine_8h" startline="122">temp_code</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::push_buttons_joystick</definition>
+        <argsstring>()</argsstring>
+        <name>push_buttons_joystick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="113" column="8" bodyfile="include/engine.h" bodystart="183" bodyend="207"/>
+        <references refid="d3/d4c/classengen_a240be5152ea1b290490808aae8855b56_1a240be5152ea1b290490808aae8855b56" compoundref="d1/d55/engine_8h" startline="81">analog_joystick_map</references>
+        <references refid="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" compoundref="d1/d55/engine_8h" startline="163">analog_joystick_x</references>
+        <references refid="d3/d4c/classengen_ac50bff2add716d7c03ca1e56307e0cc5_1ac50bff2add716d7c03ca1e56307e0cc5" compoundref="d1/d55/engine_8h" startline="79">analogPin_joy</references>
+        <references refid="d1/d55/engine_8h_a82c252a529dde59502ca8ff11b0cb755_1a82c252a529dde59502ca8ff11b0cb755" compoundref="d1/d55/engine_8h" startline="54">analogPin_joy_x</references>
+        <references refid="d3/d4c/classengen_a3b245342a99379b1ba46af826f9d516e_1a3b245342a99379b1ba46af826f9d516e" compoundref="d1/d55/engine_8h" startline="83">but_1</references>
+        <references refid="d1/d55/engine_8h_aeed94fdf8c5efd193d500b9720afb0c8_1aeed94fdf8c5efd193d500b9720afb0c8" compoundref="d1/d55/engine_8h" startline="46">but_1_pin</references>
+        <references refid="d3/d4c/classengen_aca76153c6f17a805d801858c4e4cdf12_1aca76153c6f17a805d801858c4e4cdf12" compoundref="d1/d55/engine_8h" startline="84">but_2</references>
+        <references refid="d1/d55/engine_8h_a2df4fe7fb7da042720e24435519f5f03_1a2df4fe7fb7da042720e24435519f5f03" compoundref="d1/d55/engine_8h" startline="47">but_2_pin</references>
+        <references refid="d3/d4c/classengen_a4d013b21cec06a4bdb6452e5d70570cd_1a4d013b21cec06a4bdb6452e5d70570cd" compoundref="d1/d55/engine_8h" startline="85">but_3</references>
+        <references refid="d1/d55/engine_8h_ad667f62bbd2ce19ee1e016c9c3383b2f_1ad667f62bbd2ce19ee1e016c9c3383b2f" compoundref="d1/d55/engine_8h" startline="48">but_3_pin</references>
+        <references refid="d3/d4c/classengen_aa158f8d131a5a5f96b2c80c193bee15d_1aa158f8d131a5a5f96b2c80c193bee15d" compoundref="d1/d55/engine_8h" startline="86">but_4</references>
+        <references refid="d1/d55/engine_8h_ae8932208ad6742913a30434a65ac66d3_1ae8932208ad6742913a30434a65ac66d3" compoundref="d1/d55/engine_8h" startline="49">but_4_pin</references>
+        <references refid="d3/d4c/classengen_a3d0e675d9cc3f4d0f55288c5118d9347_1a3d0e675d9cc3f4d0f55288c5118d9347" compoundref="d1/d55/engine_8h" startline="87">but_5</references>
+        <references refid="d1/d55/engine_8h_a4b322bdf8940aa7d9db26e1b28ba07d2_1a4b322bdf8940aa7d9db26e1b28ba07d2" compoundref="d1/d55/engine_8h" startline="50">but_5_pin</references>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_ab0ee9e451f4a2e2006af3c864c03f988_1ab0ee9e451f4a2e2006af3c864c03f988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::get_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="139" column="8" bodyfile="include/engine.h" bodystart="294" bodyend="305"/>
+        <references refid="d3/d4c/classengen_ac3c190ef345bc7cd28e55d26e1f7e789_1ac3c190ef345bc7cd28e55d26e1f7e789" compoundref="d1/d55/engine_8h" startline="137">loopCount</references>
+        <references refid="d3/d4c/classengen_aa99513e14031deff434e84a67aeab7bb_1aa99513e14031deff434e84a67aeab7bb" compoundref="d1/d55/engine_8h" startline="138">startTime</references>
+        <referencedby refid="df/d0a/main_8cpp_afe461d27b9c48d5921c00d521181f12f_1afe461d27b9c48d5921c00d521181f12f" compoundref="df/d0a/main_8cpp" startline="63" endline="78">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a74fee2c04ed633d1db403447f98b8b3a_1a74fee2c04ed633d1db403447f98b8b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::ttp229_get_states</definition>
+        <argsstring>()</argsstring>
+        <name>ttp229_get_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="143" column="9" bodyfile="include/engine.h" bodystart="367" bodyend="379"/>
+        <references refid="d1/d55/engine_8h_ab4e5e4cceacd25898e01398ce2dff649_1ab4e5e4cceacd25898e01398ce2dff649" compoundref="d1/d55/engine_8h" startline="36">ttp229</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_ad41ea314974ce4af6da026ab230ef7c2_1ad41ea314974ce4af6da026ab230ef7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::ttp229_get_any_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>ttp229_get_any_Pressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="145" column="9" bodyfile="include/engine.h" bodystart="413" bodyend="445"/>
+        <references refid="d1/d55/engine_8h_ab4e5e4cceacd25898e01398ce2dff649_1ab4e5e4cceacd25898e01398ce2dff649" compoundref="d1/d55/engine_8h" startline="36">ttp229</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a5180be334e2edbaf65f652d78d9c5532_1a5180be334e2edbaf65f652d78d9c5532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::ttp229_get_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>ttp229_get_Pressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if key is pressed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if key is pressed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="150" column="9" bodyfile="include/engine.h" bodystart="381" bodyend="399"/>
+        <references refid="d1/d55/engine_8h_ab4e5e4cceacd25898e01398ce2dff649_1ab4e5e4cceacd25898e01398ce2dff649" compoundref="d1/d55/engine_8h" startline="36">ttp229</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a2de5376762758c72ca3cf20e172f4b60_1a2de5376762758c72ca3cf20e172f4b60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::ttp229_is_Key_Press</definition>
+        <argsstring>(int key)</argsstring>
+        <name>ttp229_is_Key_Press</name>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if key is pressed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if key is pressed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="155" column="9" bodyfile="include/engine.h" bodystart="402" bodyend="410"/>
+        <references refid="d1/d55/engine_8h_ab4e5e4cceacd25898e01398ce2dff649_1ab4e5e4cceacd25898e01398ce2dff649" compoundref="d1/d55/engine_8h" startline="36">ttp229</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d4c/classengen_a47a9c7d6c9fdcd5339239e20ee3007a7_1a47a9c7d6c9fdcd5339239e20ee3007a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int engen::engine_debug</definition>
+        <argsstring>()</argsstring>
+        <name>engine_debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/engine.h" line="159" column="9"/>
+        <referencedby refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" compoundref="d1/d55/engine_8h" startline="459" endline="492">e_db</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/engine.h" line="56" column="1" bodyfile="include/engine.h" bodystart="57" bodyend="164"/>
+    <listofallmembers>
+      <member refid="d3/d4c/classengen_ae5f825ba5ffb347a2d41445c7a99fac4_1ae5f825ba5ffb347a2d41445c7a99fac4" prot="private" virt="non-virtual"><scope>engen</scope><name>analog_joystick</name></member>
+      <member refid="d3/d4c/classengen_a240be5152ea1b290490808aae8855b56_1a240be5152ea1b290490808aae8855b56" prot="private" virt="non-virtual"><scope>engen</scope><name>analog_joystick_map</name></member>
+      <member refid="d3/d4c/classengen_a2028a93bcf2d9bdeeabf5bc65955fde5_1a2028a93bcf2d9bdeeabf5bc65955fde5" prot="public" virt="non-virtual"><scope>engen</scope><name>analog_joystick_x</name></member>
+      <member refid="d3/d4c/classengen_ac50bff2add716d7c03ca1e56307e0cc5_1ac50bff2add716d7c03ca1e56307e0cc5" prot="private" virt="non-virtual"><scope>engen</scope><name>analogPin_joy</name></member>
+      <member refid="d3/d4c/classengen_a02de124f0487af9fff1443189657a797_1a02de124f0487af9fff1443189657a797" prot="public" virt="non-virtual"><scope>engen</scope><name>Arduino_digital_analog_int</name></member>
+      <member refid="d3/d4c/classengen_a3b245342a99379b1ba46af826f9d516e_1a3b245342a99379b1ba46af826f9d516e" prot="private" virt="non-virtual"><scope>engen</scope><name>but_1</name></member>
+      <member refid="d3/d4c/classengen_aca76153c6f17a805d801858c4e4cdf12_1aca76153c6f17a805d801858c4e4cdf12" prot="private" virt="non-virtual"><scope>engen</scope><name>but_2</name></member>
+      <member refid="d3/d4c/classengen_a4d013b21cec06a4bdb6452e5d70570cd_1a4d013b21cec06a4bdb6452e5d70570cd" prot="private" virt="non-virtual"><scope>engen</scope><name>but_3</name></member>
+      <member refid="d3/d4c/classengen_aa158f8d131a5a5f96b2c80c193bee15d_1aa158f8d131a5a5f96b2c80c193bee15d" prot="private" virt="non-virtual"><scope>engen</scope><name>but_4</name></member>
+      <member refid="d3/d4c/classengen_a3d0e675d9cc3f4d0f55288c5118d9347_1a3d0e675d9cc3f4d0f55288c5118d9347" prot="private" virt="non-virtual"><scope>engen</scope><name>but_5</name></member>
+      <member refid="d3/d4c/classengen_af65ff5bc755806fa6a066dcd9709a54d_1af65ff5bc755806fa6a066dcd9709a54d" prot="public" virt="non-virtual"><scope>engen</scope><name>cv_code</name></member>
+      <member refid="d3/d4c/classengen_a98bed7f370655dc60a146fc2e1b7f472_1a98bed7f370655dc60a146fc2e1b7f472" prot="public" virt="non-virtual"><scope>engen</scope><name>data_io</name></member>
+      <member refid="d3/d4c/classengen_a110fca2aea7ef87bb9ce3d1bba6e87c6_1a110fca2aea7ef87bb9ce3d1bba6e87c6" prot="private" virt="non-virtual"><scope>engen</scope><name>debounceDelay</name></member>
+      <member refid="d3/d4c/classengen_a4d1c012a0384fd097ae41a5397f7c3a1_1a4d1c012a0384fd097ae41a5397f7c3a1" prot="private" virt="non-virtual"><scope>engen</scope><name>DISP_Key</name></member>
+      <member refid="d3/d4c/classengen_a557f1d7d49e7c81da0bbd0ae7320ff7a_1a557f1d7d49e7c81da0bbd0ae7320ff7a" prot="public" virt="non-virtual"><scope>engen</scope><name>display_8</name></member>
+      <member refid="d3/d4c/classengen_a9acce6dbb9eeeaa00c292827288bda2c_1a9acce6dbb9eeeaa00c292827288bda2c" prot="public" virt="non-virtual"><scope>engen</scope><name>display_Function</name></member>
+      <member refid="d3/d4c/classengen_adbec1ed93bbc847dac0409bedb64440e_1adbec1ed93bbc847dac0409bedb64440e" prot="public" virt="non-virtual"><scope>engen</scope><name>e_db</name></member>
+      <member refid="d3/d4c/classengen_a1be77f4c0ced715fd7fe219a45036090_1a1be77f4c0ced715fd7fe219a45036090" prot="private" virt="non-virtual"><scope>engen</scope><name>EMERGENCY_STOP_Key</name></member>
+      <member refid="d3/d4c/classengen_a47a9c7d6c9fdcd5339239e20ee3007a7_1a47a9c7d6c9fdcd5339239e20ee3007a7" prot="public" virt="non-virtual"><scope>engen</scope><name>engine_debug</name></member>
+      <member refid="d3/d4c/classengen_ac6e07c33cf1daa7966d97cde173a0b17_1ac6e07c33cf1daa7966d97cde173a0b17" prot="public" virt="non-virtual"><scope>engen</scope><name>error</name></member>
+      <member refid="d3/d4c/classengen_ae2d94e6e6539baf6d04b8bfe61082cac_1ae2d94e6e6539baf6d04b8bfe61082cac" prot="private" virt="non-virtual"><scope>engen</scope><name>error_number</name></member>
+      <member refid="d3/d4c/classengen_a17bbd4bde81ce8a63a6c5ff8c8b3e191_1a17bbd4bde81ce8a63a6c5ff8c8b3e191" prot="public" virt="non-virtual"><scope>engen</scope><name>Find</name></member>
+      <member refid="d3/d4c/classengen_a1f6584bab793a28d4256145127caf364_1a1f6584bab793a28d4256145127caf364" prot="private" virt="non-virtual"><scope>engen</scope><name>FUNC_data</name></member>
+      <member refid="d3/d4c/classengen_a394a9f43e9fcdf7a8840ddd29e2831d3_1a394a9f43e9fcdf7a8840ddd29e2831d3" prot="private" virt="non-virtual"><scope>engen</scope><name>FUNC_Key</name></member>
+      <member refid="d3/d4c/classengen_afa9eec5465e81b0bd40ad26e64e80af7_1afa9eec5465e81b0bd40ad26e64e80af7" prot="public" virt="non-virtual"><scope>engen</scope><name>Function</name></member>
+      <member refid="d3/d4c/classengen_ab0ee9e451f4a2e2006af3c864c03f988_1ab0ee9e451f4a2e2006af3c864c03f988" prot="public" virt="non-virtual"><scope>engen</scope><name>get_count</name></member>
+      <member refid="d3/d4c/classengen_a21159eea0e4755b0e0b1f1e33b14e2a6_1a21159eea0e4755b0e0b1f1e33b14e2a6" prot="private" virt="non-virtual"><scope>engen</scope><name>L_Reverse_Key</name></member>
+      <member refid="d3/d4c/classengen_a3944c246a2b84f9bf9b6f3070a202887_1a3944c246a2b84f9bf9b6f3070a202887" prot="public" virt="non-virtual"><scope>engen</scope><name>L_Throttle</name></member>
+      <member refid="d3/d4c/classengen_af2b866f92748dd4d301c680739a32c63_1af2b866f92748dd4d301c680739a32c63" prot="public" virt="non-virtual"><scope>engen</scope><name>lastDebounceTime</name></member>
+      <member refid="d3/d4c/classengen_a4b9d09f3c482e424a38f5c99ba11eb5a_1a4b9d09f3c482e424a38f5c99ba11eb5a" prot="private" virt="non-virtual"><scope>engen</scope><name>LOCO</name></member>
+      <member refid="d3/d4c/classengen_a38df9619a545e1916b58f644750408e3_1a38df9619a545e1916b58f644750408e3" prot="public" virt="non-virtual"><scope>engen</scope><name>Loco_Selection</name></member>
+      <member refid="d3/d4c/classengen_ac3c190ef345bc7cd28e55d26e1f7e789_1ac3c190ef345bc7cd28e55d26e1f7e789" prot="public" virt="non-virtual"><scope>engen</scope><name>loopCount</name></member>
+      <member refid="d3/d4c/classengen_ab3f8f758760e19a131d3cf6208cd0112_1ab3f8f758760e19a131d3cf6208cd0112" prot="public" virt="non-virtual"><scope>engen</scope><name>lta</name></member>
+      <member refid="d3/d4c/classengen_a8977f7463527c1717eb0dd67c601f4ce_1a8977f7463527c1717eb0dd67c601f4ce" prot="public" virt="non-virtual"><scope>engen</scope><name>lts</name></member>
+      <member refid="d3/d4c/classengen_a915f5ea293e61f261d31677f695b5a20_1a915f5ea293e61f261d31677f695b5a20" prot="public" virt="non-virtual"><scope>engen</scope><name>MU</name></member>
+      <member refid="d3/d4c/classengen_adbcc3013f94098754e48b11c2bc7d17b_1adbcc3013f94098754e48b11c2bc7d17b" prot="public" virt="non-virtual"><scope>engen</scope><name>nrf24_error</name></member>
+      <member refid="d3/d4c/classengen_aa401a0ec65ca57947eceb348c2b77b14_1aa401a0ec65ca57947eceb348c2b77b14" prot="public" virt="non-virtual"><scope>engen</scope><name>Power</name></member>
+      <member refid="d3/d4c/classengen_a51461035d4b383e770d27bd84354efff_1a51461035d4b383e770d27bd84354efff" prot="public" virt="non-virtual"><scope>engen</scope><name>Powr</name></member>
+      <member refid="d3/d4c/classengen_a530baa466beb6f1d3ea7a4b404780ea3_1a530baa466beb6f1d3ea7a4b404780ea3" prot="public" virt="non-virtual"><scope>engen</scope><name>Programming_Direct</name></member>
+      <member refid="d3/d4c/classengen_a44425abe3203b0e481e3c51e504377e5_1a44425abe3203b0e481e3c51e504377e5" prot="public" virt="non-virtual"><scope>engen</scope><name>Programming_Operations_Mode</name></member>
+      <member refid="d3/d4c/classengen_a695cdd2061b49cc78a5e6fddf3c07173_1a695cdd2061b49cc78a5e6fddf3c07173" prot="public" virt="non-virtual"><scope>engen</scope><name>Programming_Paged</name></member>
+      <member refid="d3/d4c/classengen_afc13521129bdab988df11ffa8ea23363_1afc13521129bdab988df11ffa8ea23363" prot="public" virt="non-virtual"><scope>engen</scope><name>Programming_Physical</name></member>
+      <member refid="d3/d4c/classengen_aa2f2c5305dcdd488ee2aff4cba3fab22_1aa2f2c5305dcdd488ee2aff4cba3fab22" prot="public" virt="non-virtual"><scope>engen</scope><name>push_buttons_joystick</name></member>
+      <member refid="d3/d4c/classengen_a28eae3fa9e1f547bb610793b48a5cb2d_1a28eae3fa9e1f547bb610793b48a5cb2d" prot="private" virt="non-virtual"><scope>engen</scope><name>R_Reverse_Key</name></member>
+      <member refid="d3/d4c/classengen_ae7184b2f97f853c0826fb1e018c66bc6_1ae7184b2f97f853c0826fb1e018c66bc6" prot="public" virt="non-virtual"><scope>engen</scope><name>R_Throttle</name></member>
+      <member refid="d3/d4c/classengen_a372af5bab8228416410fce38f34f2040_1a372af5bab8228416410fce38f34f2040" prot="public" virt="non-virtual"><scope>engen</scope><name>Recall</name></member>
+      <member refid="d3/d4c/classengen_a2028ede5567f042561b2f1ca262d78db_1a2028ede5567f042561b2f1ca262d78db" prot="public" virt="non-virtual"><scope>engen</scope><name>rta</name></member>
+      <member refid="d3/d4c/classengen_ae469e13ec6aa1c460a1f91feeea10f01_1ae469e13ec6aa1c460a1f91feeea10f01" prot="public" virt="non-virtual"><scope>engen</scope><name>RX_ADD</name></member>
+      <member refid="d3/d4c/classengen_af309da29753d9c24ea61c9bf43ef3902_1af309da29753d9c24ea61c9bf43ef3902" prot="public" virt="non-virtual"><scope>engen</scope><name>sitch</name></member>
+      <member refid="d3/d4c/classengen_aa99513e14031deff434e84a67aeab7bb_1aa99513e14031deff434e84a67aeab7bb" prot="public" virt="non-virtual"><scope>engen</scope><name>startTime</name></member>
+      <member refid="d3/d4c/classengen_a8f720e15304ddf8099f5c39875227c31_1a8f720e15304ddf8099f5c39875227c31" prot="public" virt="non-virtual"><scope>engen</scope><name>Status_Edit</name></member>
+      <member refid="d3/d4c/classengen_a2198b8bca0c7d15e500903df8b8dc214_1a2198b8bca0c7d15e500903df8b8dc214" prot="public" virt="non-virtual"><scope>engen</scope><name>Switch</name></member>
+      <member refid="d3/d4c/classengen_a1805dba0c89d007c424e9e79502e4fa8_1a1805dba0c89d007c424e9e79502e4fa8" prot="public" virt="non-virtual"><scope>engen</scope><name>temp_code</name></member>
+      <member refid="d3/d4c/classengen_ad41ea314974ce4af6da026ab230ef7c2_1ad41ea314974ce4af6da026ab230ef7c2" prot="public" virt="non-virtual"><scope>engen</scope><name>ttp229_get_any_Pressed</name></member>
+      <member refid="d3/d4c/classengen_a5180be334e2edbaf65f652d78d9c5532_1a5180be334e2edbaf65f652d78d9c5532" prot="public" virt="non-virtual"><scope>engen</scope><name>ttp229_get_Pressed</name></member>
+      <member refid="d3/d4c/classengen_a74fee2c04ed633d1db403447f98b8b3a_1a74fee2c04ed633d1db403447f98b8b3a" prot="public" virt="non-virtual"><scope>engen</scope><name>ttp229_get_states</name></member>
+      <member refid="d3/d4c/classengen_a2de5376762758c72ca3cf20e172f4b60_1a2de5376762758c72ca3cf20e172f4b60" prot="public" virt="non-virtual"><scope>engen</scope><name>ttp229_is_Key_Press</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

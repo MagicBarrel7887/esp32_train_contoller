@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="db/d16/config_8h">config.h</innerfile>
+    <innerfile refid="db/d16/debug_8h">debug.h</innerfile>
+    <innerfile refid="de/d71/_d_t500-_m_i_d_8h">DT500-MID.h</innerfile>
+    <innerfile refid="d4/d0b/_d_t500-_os_8h">DT500-Os.h</innerfile>
+    <innerfile refid="d1/d55/engine_8h">engine.h</innerfile>
+    <innerfile refid="dd/dfc/_interpolation__math_8h">Interpolation_math.h</innerfile>
+    <innerfile refid="db/d03/notuesd_8h">notuesd.h</innerfile>
+    <innerfile refid="d5/d1f/wireless_8h">wireless.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

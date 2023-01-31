@@ -1,0 +1,124 @@
+.TH "include/wireless.h" 3 "Thu Jan 6 2022" "Version 0.1" "arduino_train_controller" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/wireless.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'RF24\&.h'\fP
+.br
+\fC#include 'engine\&.h'\fP
+.br
+\fC#include 'config\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBPayloadStruct\fP"
+.br
+.ti -1c
+.RI "class \fBwireless\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__WIRELESS__H__\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "RF24 \fBradio\fP (9, 10)"
+.br
+.ti -1c
+.RI "int \fBnrf24_setup\fP ()"
+.br
+.RI "initialize the transceiver "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBengen\fP \fBDT500\fP"
+.br
+.ti -1c
+.RI "const uint8_t \fBnum_channels\fP = 126"
+.br
+.ti -1c
+.RI "uint8_t \fBvalues\fP [\fBnum_channels\fP]"
+.br
+.ti -1c
+.RI "\fBPayloadStruct\fP \fBTX_RX_BC\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __WIRELESS__H__"
+
+.SH "Function Documentation"
+.PP 
+.SS "int nrf24_setup ()"
+
+.PP
+initialize the transceiver 
+.PP
+.nf
+101     {
+102 
+103         // initialize the transceiver on the SPI bus
+104         if (!radio\&.begin())
+105         {
+106             DT500\&.nrf24_error = true;
+107             Serial\&.println(F("radio hardware is not responding!!"));
+108 
+109             display\&.clearDisplay();
+110 
+111             display\&.setTextSize(1);              // Normal 1:1 pixel scale
+112             display\&.setTextColor(SSD1306_WHITE); // Draw white text
+113 
+114             display\&.setCursor(0, 0);
+115             display\&.println(F("radio hardware is not responding!!")); //L Loco Icon
+116             display\&.display();
+117         }
+118 
+119         radio\&.setAutoAck(false);
+120 
+121         // Get into standby mode
+122         radio\&.startListening();
+123         radio\&.stopListening();
+124         return 1;
+125     }
+.fi
+.PP
+References \fBdisplay()\fP, \fBDT500\fP, \fBengen::nrf24_error\fP, and \fBradio()\fP\&.
+.PP
+Referenced by \fBwireless::setup()\fP\&.
+.SS "RF24 radio (9, 10)"
+
+.PP
+Referenced by \fBwireless::brodcast()\fP, \fBnrf24_setup()\fP, \fBwireless::recieved()\fP, and \fBwireless::Transmit()\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBengen\fP DT500"
+
+.PP
+Referenced by \fBwireless::int_PayloadStruct()\fP, \fBdebug::IO()\fP, \fBloop()\fP, \fBnrf24_setup()\fP, \fBdebug::nrf24error()\fP, \fBwireless::recieved()\fP, \fBdebug::serial_debug()\fP, \fBwireless::set_PayloadStruct()\fP, and \fBsetup()\fP\&.
+.SS "const uint8_t num_channels = 126"
+
+.PP
+Referenced by \fBnrf24_setup()\fP\&.
+.SS "\fBPayloadStruct\fP TX_RX_BC"
+
+.PP
+Referenced by \fBwireless::brodcast()\fP, \fBwireless::int_PayloadStruct()\fP, \fBwireless::recieved()\fP, \fBwireless::set_PayloadStruct()\fP, and \fBwireless::Transmit()\fP\&.
+.SS "uint8_t values[\fBnum_channels\fP]"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arduino_train_controller from the source code\&.

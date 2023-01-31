@@ -1,0 +1,321 @@
+\hypertarget{classdebug}{}\doxysection{debug Class Reference}
+\label{classdebug}\index{debug@{debug}}
+
+
+{\ttfamily \#include $<$debug.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdebug_ab520fb98653fc9c4eb5ea80a97098dce_ab520fb98653fc9c4eb5ea80a97098dce}{debug}} ()
+\item 
+int \mbox{\hyperlink{classdebug_a8739641593123f521fe3ac23bdde1389_a8739641593123f521fe3ac23bdde1389}{IO}} ()
+\item 
+int \mbox{\hyperlink{classdebug_a51d95021f51c9cf811ccb60615fb17a1_a51d95021f51c9cf811ccb60615fb17a1}{nrf24error}} ()
+\item 
+int \mbox{\hyperlink{classdebug_a6f90d43ca9d45e8d855b93e941873b9a_a6f90d43ca9d45e8d855b93e941873b9a}{display\+\_\+time\+\_\+\+DEBUG}} ()
+\item 
+int \mbox{\hyperlink{classdebug_ac818567c39d874400c22647291366f7b_ac818567c39d874400c22647291366f7b}{serial\+\_\+debug}} ()
+\item 
+\mbox{\hyperlink{classdebug_a01797485a99920918ee5a5280e0d7155_a01797485a99920918ee5a5280e0d7155}{$\sim$debug}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}{display\+\_\+\+Function\+\_\+\+DEBUG}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \mbox{\hyperlink{classdebug_a8d34451d49ed8f95891456d25aec0753_a8d34451d49ed8f95891456d25aec0753}{loop\+Count}} = 0
+\item 
+unsigned long \mbox{\hyperlink{classdebug_aec0897d2cb117a0938e5fba6ea71310b_aec0897d2cb117a0938e5fba6ea71310b}{timer}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdebug_ab520fb98653fc9c4eb5ea80a97098dce_ab520fb98653fc9c4eb5ea80a97098dce}\label{classdebug_ab520fb98653fc9c4eb5ea80a97098dce_ab520fb98653fc9c4eb5ea80a97098dce}} 
+\index{debug@{debug}!debug@{debug}}
+\index{debug@{debug}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily debug\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00029}00029 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+\mbox{\Hypertarget{classdebug_a01797485a99920918ee5a5280e0d7155_a01797485a99920918ee5a5280e0d7155}\label{classdebug_a01797485a99920918ee5a5280e0d7155_a01797485a99920918ee5a5280e0d7155}} 
+\index{debug@{debug}!````~debug@{$\sim$debug}}
+\index{````~debug@{$\sim$debug}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{$\sim$debug()}{~debug()}}
+{\footnotesize\ttfamily debug\+::$\sim$debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00033}00033     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.clearDisplay();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00035}00035     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextSize(1);              \textcolor{comment}{// Normal 1:1 pixel scale}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00036}00036     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_WHITE); \textcolor{comment}{// Draw white text}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00037}00037     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(0, 0);             \textcolor{comment}{// Start at top-\/left corner}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00038}00038     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}!\_DEBUG\_!"{}}));}
+\DoxyCodeLine{\Hypertarget{classdebug_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00040}00040     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_BLACK, SSD1306\_WHITE); \textcolor{comment}{// Draw 'inverse' text}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00041}00041     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(3.141592);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00043}00043     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextSize(2); \textcolor{comment}{// Draw 2X-\/scale text}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00044}00044     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_WHITE);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00045}00045     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.print(F(\textcolor{stringliteral}{"{}0x"{}}));}
+\DoxyCodeLine{\Hypertarget{classdebug_l00046}00046     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(0xDEADBEEF, HEX);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00048}00048     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.display();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00050}00050     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00051}00051 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdebug_a6f90d43ca9d45e8d855b93e941873b9a_a6f90d43ca9d45e8d855b93e941873b9a}\label{classdebug_a6f90d43ca9d45e8d855b93e941873b9a_a6f90d43ca9d45e8d855b93e941873b9a}} 
+\index{debug@{debug}!display\_time\_DEBUG@{display\_time\_DEBUG}}
+\index{display\_time\_DEBUG@{display\_time\_DEBUG}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{display\_time\_DEBUG()}{display\_time\_DEBUG()}}
+{\footnotesize\ttfamily int debug\+::display\+\_\+time\+\_\+\+DEBUG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00054}00054 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00055}00055     \textcolor{keywordflow}{if} ((millis() -\/ \mbox{\hyperlink{classdebug_aec0897d2cb117a0938e5fba6ea71310b_aec0897d2cb117a0938e5fba6ea71310b}{timer}}) > 500)}
+\DoxyCodeLine{\Hypertarget{classdebug_l00056}00056     \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00057}00057         digitalWrite(32, 100);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00061}00061         \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}{display\_Function\_DEBUG}})}
+\DoxyCodeLine{\Hypertarget{classdebug_l00062}00062         \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00063}00063         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00064}00064             \mbox{\hyperlink{classdebug_ab520fb98653fc9c4eb5ea80a97098dce_ab520fb98653fc9c4eb5ea80a97098dce}{debug}}();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00065}00065             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00066}00066         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00067}00067             \mbox{\hyperlink{classdebug_a8739641593123f521fe3ac23bdde1389_a8739641593123f521fe3ac23bdde1389}{IO}}();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00068}00068             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00069}00069         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00070}00070             \mbox{\hyperlink{classdebug_a51d95021f51c9cf811ccb60615fb17a1_a51d95021f51c9cf811ccb60615fb17a1}{nrf24error}}();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00071}00071             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00072}00072         \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00073}00073             \mbox{\hyperlink{classdebug_ac818567c39d874400c22647291366f7b_ac818567c39d874400c22647291366f7b}{serial\_debug}}();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00074}00074             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00075}00075         \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00076}00076             \mbox{\hyperlink{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}{display\_Function\_DEBUG}} = 3;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00077}00077             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00079}00079         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{classdebug_l00080}00080             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classdebug_l00081}00081         \}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00083}00083         \mbox{\hyperlink{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}{display\_Function\_DEBUG}} ++;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00085}00085         \mbox{\hyperlink{classdebug_a8d34451d49ed8f95891456d25aec0753_a8d34451d49ed8f95891456d25aec0753}{loopCount}} = 0;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00086}00086         \mbox{\hyperlink{classdebug_aec0897d2cb117a0938e5fba6ea71310b_aec0897d2cb117a0938e5fba6ea71310b}{timer}} = millis();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00088}00088         digitalWrite(32, 0);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00090}00090     \mbox{\hyperlink{classdebug_a8d34451d49ed8f95891456d25aec0753_a8d34451d49ed8f95891456d25aec0753}{loopCount}}++;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00094}00094     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00095}00095 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00027}{debug()}}, \mbox{\hyperlink{l00024}{display\+\_\+\+Function\+\_\+\+DEBUG}}, \mbox{\hyperlink{l00097}{IO()}}, \mbox{\hyperlink{l00012}{loop\+Count}}, \mbox{\hyperlink{l00133}{nrf24error()}}, \mbox{\hyperlink{l00172}{serial\+\_\+debug()}}, and \mbox{\hyperlink{l00013}{timer}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00063}{loop()}}.
+
+\mbox{\Hypertarget{classdebug_a8739641593123f521fe3ac23bdde1389_a8739641593123f521fe3ac23bdde1389}\label{classdebug_a8739641593123f521fe3ac23bdde1389_a8739641593123f521fe3ac23bdde1389}} 
+\index{debug@{debug}!IO@{IO}}
+\index{IO@{IO}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{IO()}{IO()}}
+{\footnotesize\ttfamily int debug\+::\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00098}00098 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00099}00099     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.clearDisplay();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00101}00101     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextSize(0.5);            \textcolor{comment}{// Normal 1:1 pixel scale}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00102}00102     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_WHITE); \textcolor{comment}{// Draw white text}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00104}00104     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(1, 0);  \textcolor{comment}{// Start at top-\/left corner}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00105}00105     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(\mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_a9acce6dbb9eeeaa00c292827288bda2c_a9acce6dbb9eeeaa00c292827288bda2c}{display\_Function}}); \textcolor{comment}{//L Semaphore}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00107}00107     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(115, 0);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00108}00108     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(\mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ae469e13ec6aa1c460a1f91feeea10f01_ae469e13ec6aa1c460a1f91feeea10f01}{RX\_ADD}}); \textcolor{comment}{//R Semaphore}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00110}00110     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(40, 10); \textcolor{comment}{// Start at top-\/left corner}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00111}00111     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}IO DEBUG"{}}));}
+\DoxyCodeLine{\Hypertarget{classdebug_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00113}00113     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(0, 15);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00114}00114     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(\mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_ae469e13ec6aa1c460a1f91feeea10f01_ae469e13ec6aa1c460a1f91feeea10f01}{RX\_ADD}}); \textcolor{comment}{//L Loco Icon}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00116}00116     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(109, 15);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00117}00117     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(\mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_a1805dba0c89d007c424e9e79502e4fa8_a1805dba0c89d007c424e9e79502e4fa8}{temp\_code}}); \textcolor{comment}{//R Loco Icon}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00119}00119     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(27, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00120}00120     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}lta"{}})); \textcolor{comment}{//L Throttle Address}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00122}00122     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(75, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00123}00123     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}rta"{}})); \textcolor{comment}{//R Throttle Address}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00125}00125     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(55, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00126}00126     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}fn"{}})); \textcolor{comment}{//Mode Indicator}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00128}00128     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.display();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00130}00130     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00131}00131 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display()}}, \mbox{\hyperlink{l00121}{engen\+::display\+\_\+\+Function}}, \mbox{\hyperlink{l00020}{DT500}}, \mbox{\hyperlink{l00117}{engen\+::\+RX\+\_\+\+ADD}}, and \mbox{\hyperlink{l00122}{engen\+::temp\+\_\+code}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+\mbox{\Hypertarget{classdebug_a51d95021f51c9cf811ccb60615fb17a1_a51d95021f51c9cf811ccb60615fb17a1}\label{classdebug_a51d95021f51c9cf811ccb60615fb17a1_a51d95021f51c9cf811ccb60615fb17a1}} 
+\index{debug@{debug}!nrf24error@{nrf24error}}
+\index{nrf24error@{nrf24error}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{nrf24error()}{nrf24error()}}
+{\footnotesize\ttfamily int debug\+::nrf24error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00134}00134 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00137}00137     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.clearDisplay();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00139}00139     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextSize(0.5);            \textcolor{comment}{// Normal 1:1 pixel scale}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00140}00140     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setTextColor(SSD1306\_WHITE); \textcolor{comment}{// Draw white text}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00142}00142     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(1, 0);  \textcolor{comment}{// Start at top-\/left corner}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00143}00143     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}nrf24\_error "{}})); \textcolor{comment}{//L Semaphore}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00144}00144     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(\mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_adbcc3013f94098754e48b11c2bc7d17b_adbcc3013f94098754e48b11c2bc7d17b}{nrf24\_error}}); \textcolor{comment}{//L Semaphore}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00146}00146     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(115, 0);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00147}00147     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}sr"{}})); \textcolor{comment}{//R Semaphore}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00149}00149     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(40, 10); \textcolor{comment}{// Start at top-\/left corner}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00150}00150     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}messages"{}}));}
+\DoxyCodeLine{\Hypertarget{classdebug_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00152}00152     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(0, 15);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00153}00153     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}lli"{}})); \textcolor{comment}{//L Loco Icon}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00155}00155     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(109, 15);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00156}00156     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}rli"{}})); \textcolor{comment}{//R Loco Icon}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00158}00158     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(27, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00159}00159     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}lta"{}})); \textcolor{comment}{//L Throttle Address}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00161}00161     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(75, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00162}00162     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}rta"{}})); \textcolor{comment}{//R Throttle Address}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00164}00164     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.setCursor(55, 25);}
+\DoxyCodeLine{\Hypertarget{classdebug_l00165}00165     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.println(F(\textcolor{stringliteral}{"{}fn"{}})); \textcolor{comment}{//Mode Indicator}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00167}00167     \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}}.display();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00169}00169     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00170}00170 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display()}}, \mbox{\hyperlink{l00020}{DT500}}, and \mbox{\hyperlink{l00115}{engen\+::nrf24\+\_\+error}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+\mbox{\Hypertarget{classdebug_ac818567c39d874400c22647291366f7b_ac818567c39d874400c22647291366f7b}\label{classdebug_ac818567c39d874400c22647291366f7b_ac818567c39d874400c22647291366f7b}} 
+\index{debug@{debug}!serial\_debug@{serial\_debug}}
+\index{serial\_debug@{serial\_debug}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{serial\_debug()}{serial\_debug()}}
+{\footnotesize\ttfamily int debug\+::serial\+\_\+debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classdebug_l00173}00173 \{}
+\DoxyCodeLine{\Hypertarget{classdebug_l00174}00174     Serial.println(F(\textcolor{stringliteral}{"{}Transmission failed or timed out"{}})); \textcolor{comment}{// payload was not delivered}}
+\DoxyCodeLine{\Hypertarget{classdebug_l00175}00175     \mbox{\hyperlink{wireless_8h_ad77876a7ef0b7382c4c822823d7ed0d8_ad77876a7ef0b7382c4c822823d7ed0d8}{DT500}}.\mbox{\hyperlink{classengen_adbec1ed93bbc847dac0409bedb64440e_adbec1ed93bbc847dac0409bedb64440e}{e\_db}}();}
+\DoxyCodeLine{\Hypertarget{classdebug_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{classdebug_l00177}00177     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{classdebug_l00178}00178 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{l00020}{DT500}}, and \mbox{\hyperlink{l00459}{engen\+::e\+\_\+db()}}.
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}\label{classdebug_a3ac7c41f3ff8ca9847a589a5174380f7_a3ac7c41f3ff8ca9847a589a5174380f7}} 
+\index{debug@{debug}!display\_Function\_DEBUG@{display\_Function\_DEBUG}}
+\index{display\_Function\_DEBUG@{display\_Function\_DEBUG}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{display\_Function\_DEBUG}{display\_Function\_DEBUG}}
+{\footnotesize\ttfamily int debug\+::display\+\_\+\+Function\+\_\+\+DEBUG = 0}
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+\mbox{\Hypertarget{classdebug_a8d34451d49ed8f95891456d25aec0753_a8d34451d49ed8f95891456d25aec0753}\label{classdebug_a8d34451d49ed8f95891456d25aec0753_a8d34451d49ed8f95891456d25aec0753}} 
+\index{debug@{debug}!loopCount@{loopCount}}
+\index{loopCount@{loopCount}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{loopCount}{loopCount}}
+{\footnotesize\ttfamily unsigned long debug\+::loop\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+\mbox{\Hypertarget{classdebug_aec0897d2cb117a0938e5fba6ea71310b_aec0897d2cb117a0938e5fba6ea71310b}\label{classdebug_aec0897d2cb117a0938e5fba6ea71310b_aec0897d2cb117a0938e5fba6ea71310b}} 
+\index{debug@{debug}!timer@{timer}}
+\index{timer@{timer}!debug@{debug}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily unsigned long debug\+::timer = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{l00053}{display\+\_\+time\+\_\+\+DEBUG()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{debug_8h}{debug.\+h}}\end{DoxyCompactItemize}

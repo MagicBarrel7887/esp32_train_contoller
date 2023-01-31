@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="de/d71/_d_t500-_m_i_d_8h" kind="file" language="C++">
+    <compoundname>DT500-MID.h</compoundname>
+    <includedby refid="df/d0a/main_8cpp" local="yes">src/main.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/DT500-MID.h</label>
+        <link refid="de/d71/_d_t500-_m_i_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/main.cpp</label>
+        <link refid="df/d0a/main_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_adb13eb77ad41a164c162fbaf5283041e_1adb13eb77ad41a164c162fbaf5283041e" prot="public" static="no">
+        <name>Fn</name>
+        <initializer>&quot;Function&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="2" column="9" bodyfile="include/DT500-MID.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a3201461e2320343761b6a939027d4d34_1a3201461e2320343761b6a939027d4d34" prot="public" static="no">
+        <name>Lo</name>
+        <initializer>&quot;Loco_Selection&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="3" column="9" bodyfile="include/DT500-MID.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a0be75ac3ba623b79e02c66223b585ae2_1a0be75ac3ba623b79e02c66223b585ae2" prot="public" static="no">
+        <name>Mu</name>
+        <initializer>&quot;MU&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="4" column="9" bodyfile="include/DT500-MID.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_acd8b5ad937eee2cb60c7a5c22e30ade6_1acd8b5ad937eee2cb60c7a5c22e30ade6" prot="public" static="no">
+        <name>Sw</name>
+        <initializer>&quot;Switch&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="5" column="9" bodyfile="include/DT500-MID.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a8d53749dee8abc63dd8730a250ee5eef_1a8d53749dee8abc63dd8730a250ee5eef" prot="public" static="no">
+        <name>Pw</name>
+        <initializer>&quot;Power&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="6" column="9" bodyfile="include/DT500-MID.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a65602c3f3d266f689217b30d9ecd4d1c_1a65602c3f3d266f689217b30d9ecd4d1c" prot="public" static="no">
+        <name>Se</name>
+        <initializer>&quot;Status_Edit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="7" column="9" bodyfile="include/DT500-MID.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a861c6072c173224852ce4b4ca090d364_1a861c6072c173224852ce4b4ca090d364" prot="public" static="no">
+        <name>Pg</name>
+        <initializer>&quot;Programming_Paged&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="8" column="9" bodyfile="include/DT500-MID.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a68e112907dba00bb176492c9939d583a_1a68e112907dba00bb176492c9939d583a" prot="public" static="no">
+        <name>Ph</name>
+        <initializer>&quot;Programming_Physical&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="9" column="9" bodyfile="include/DT500-MID.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_acbc1a611f7dd0ab6b7521a8d90d73733_1acbc1a611f7dd0ab6b7521a8d90d73733" prot="public" static="no">
+        <name>Pd</name>
+        <initializer>&quot;Programming_Direct&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="10" column="9" bodyfile="include/DT500-MID.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ade8a3d4ff5171c0c58d5fb1667e0a7d1_1ade8a3d4ff5171c0c58d5fb1667e0a7d1" prot="public" static="no">
+        <name>Po</name>
+        <initializer>&quot;Programming_Operations_Mode&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="11" column="9" bodyfile="include/DT500-MID.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a33d8ab1b565d14ecc7933cfc7ebede17_1a33d8ab1b565d14ecc7933cfc7ebede17" prot="public" static="no">
+        <name>Re</name>
+        <initializer>&quot;Recall&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="12" column="9" bodyfile="include/DT500-MID.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ae86e461dae69e425235fc7da6a73d2dd_1ae86e461dae69e425235fc7da6a73d2dd" prot="public" static="no">
+        <name>Fd</name>
+        <initializer>&quot;Find&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="13" column="9" bodyfile="include/DT500-MID.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a9f4a2def13c731c148036e3ea4832321_1a9f4a2def13c731c148036e3ea4832321" prot="public" static="no">
+        <name>Ec</name>
+        <initializer>&quot;Edit_clock&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="14" column="9" bodyfile="include/DT500-MID.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a4e4457f472bd0b00f5e20c80eff99118_1a4e4457f472bd0b00f5e20c80eff99118" prot="public" static="no">
+        <name>Ef</name>
+        <initializer>&quot;Edit_clock_rate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="15" column="9" bodyfile="include/DT500-MID.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_adbac503da979ccc27a492ead8a9727a3_1adbac503da979ccc27a492ead8a9727a3" prot="public" static="no">
+        <name>Ea</name>
+        <initializer>&quot;Edit_alarm&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="16" column="9" bodyfile="include/DT500-MID.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a2a1d6c6ad94f9312fbdabcac960aa64f_1a2a1d6c6ad94f9312fbdabcac960aa64f" prot="public" static="no">
+        <name>Er</name>
+        <initializer>&quot;Edit_routes&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="17" column="9" bodyfile="include/DT500-MID.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a4c255668a5679e183030290a8c4e884f_1a4c255668a5679e183030290a8c4e884f" prot="public" static="no">
+        <name>Err</name>
+        <initializer>&quot;error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="18" column="9" bodyfile="include/DT500-MID.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a9c73f041ffe2562e07a3a9f6e62de5e2_1a9c73f041ffe2562e07a3a9f6e62de5e2" prot="public" static="no">
+        <name>E1</name>
+        <initializer>&quot;Change_LocoNet_ID&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="19" column="9" bodyfile="include/DT500-MID.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_aaee5899c9365081b467da8a5ded558a1_1aaee5899c9365081b467da8a5ded558a1" prot="public" static="no">
+        <name>EQem</name>
+        <initializer>&quot;Other_edit_modes&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="20" column="9" bodyfile="include/DT500-MID.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a0a70f362825f8e95a06c782dca8a0d96_1a0a70f362825f8e95a06c782dca8a0d96" prot="public" static="no">
+        <name>Qur</name>
+        <initializer>&quot;Query&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="21" column="9" bodyfile="include/DT500-MID.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a7bd56e2c667426dfc3144f0f541b2299_1a7bd56e2c667426dfc3144f0f541b2299" prot="public" static="no">
+        <name>In</name>
+        <initializer>&quot;Input&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="22" column="9" bodyfile="include/DT500-MID.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_afa985130475d81d70a33d622c21d478f_1afa985130475d81d70a33d622c21d478f" prot="public" static="no">
+        <name>TRPOIN</name>
+        <initializer>&quot;Track_Power_Indicator&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="23" column="9" bodyfile="include/DT500-MID.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a54203df6e44de5da2f2d01823ae68d20_1a54203df6e44de5da2f2d01823ae68d20" prot="public" static="no">
+        <name>moter</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="26" column="9" bodyfile="include/DT500-MID.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ac824bc137f83f0468859b793cd882713_1ac824bc137f83f0468859b793cd882713" prot="public" static="no">
+        <name>Fn_code</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="27" column="9" bodyfile="include/DT500-MID.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_abc92e4c6f9ba27ac4fce1ddcf3eed6cd_1abc92e4c6f9ba27ac4fce1ddcf3eed6cd" prot="public" static="no">
+        <name>Lo_code</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="28" column="9" bodyfile="include/DT500-MID.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ab92cc589f867b4c1530a0d1cf382819e_1ab92cc589f867b4c1530a0d1cf382819e" prot="public" static="no">
+        <name>Mu_code</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="29" column="9" bodyfile="include/DT500-MID.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a57f7957fdcb4d2d642a8d62095bbf041_1a57f7957fdcb4d2d642a8d62095bbf041" prot="public" static="no">
+        <name>Sw_code</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="30" column="9" bodyfile="include/DT500-MID.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a4736d0470f25102fd5c303e618213a08_1a4736d0470f25102fd5c303e618213a08" prot="public" static="no">
+        <name>Pw_code</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="31" column="9" bodyfile="include/DT500-MID.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ab0a020735ded7d7ac5d672ff249198ab_1ab0a020735ded7d7ac5d672ff249198ab" prot="public" static="no">
+        <name>Se_code</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="32" column="9" bodyfile="include/DT500-MID.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a04849c94d7e1682ecd9735e0c765ab86_1a04849c94d7e1682ecd9735e0c765ab86" prot="public" static="no">
+        <name>Pg_code</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="33" column="9" bodyfile="include/DT500-MID.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_aa6cc471f4b9860b44e8b4b93e08514b1_1aa6cc471f4b9860b44e8b4b93e08514b1" prot="public" static="no">
+        <name>Ph_code</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="34" column="9" bodyfile="include/DT500-MID.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a7da592d42e212b92fc35126d7569fb77_1a7da592d42e212b92fc35126d7569fb77" prot="public" static="no">
+        <name>Pd_code</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="35" column="9" bodyfile="include/DT500-MID.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a1f5d6ab4c514d97182e3ba908f8a266e_1a1f5d6ab4c514d97182e3ba908f8a266e" prot="public" static="no">
+        <name>Po_code</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="36" column="9" bodyfile="include/DT500-MID.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_aabf75e305d69b2376b40fa93d9282eef_1aabf75e305d69b2376b40fa93d9282eef" prot="public" static="no">
+        <name>Re_code</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="37" column="9" bodyfile="include/DT500-MID.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ad17f414244a357ff19f4b414ef055b76_1ad17f414244a357ff19f4b414ef055b76" prot="public" static="no">
+        <name>Fd_code</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="38" column="9" bodyfile="include/DT500-MID.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_aaafd03b5eb85ba09ca3767cb004945fd_1aaafd03b5eb85ba09ca3767cb004945fd" prot="public" static="no">
+        <name>Ec_code</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="39" column="9" bodyfile="include/DT500-MID.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a2a2a9fc6f095556fd40cc1f4051e22c6_1a2a2a9fc6f095556fd40cc1f4051e22c6" prot="public" static="no">
+        <name>Ef_code</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="40" column="9" bodyfile="include/DT500-MID.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ac39141ebfdfb776e0e83dbd1f115bc8b_1ac39141ebfdfb776e0e83dbd1f115bc8b" prot="public" static="no">
+        <name>Ea_code</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="41" column="9" bodyfile="include/DT500-MID.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_ac14204f73faaded59b471004971eb654_1ac14204f73faaded59b471004971eb654" prot="public" static="no">
+        <name>Er_code</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="42" column="9" bodyfile="include/DT500-MID.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a575aff1dec6ba427d33362095d522303_1a575aff1dec6ba427d33362095d522303" prot="public" static="no">
+        <name>Err_code</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="43" column="9" bodyfile="include/DT500-MID.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a0b08dfb48c9de38c18bbb9b6f155e9d9_1a0b08dfb48c9de38c18bbb9b6f155e9d9" prot="public" static="no">
+        <name>E1_code</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="44" column="9" bodyfile="include/DT500-MID.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a57062c20fd22953610151658fc84fa35_1a57062c20fd22953610151658fc84fa35" prot="public" static="no">
+        <name>EQem_code</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="45" column="9" bodyfile="include/DT500-MID.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a08224999305bd57b735c9194a6ee12ef_1a08224999305bd57b735c9194a6ee12ef" prot="public" static="no">
+        <name>Qur_code</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="46" column="9" bodyfile="include/DT500-MID.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a3618c5774202f0e4043b9ff79906b179_1a3618c5774202f0e4043b9ff79906b179" prot="public" static="no">
+        <name>In_code</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="47" column="9" bodyfile="include/DT500-MID.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_adc417eb326419658c790ea43202f834a_1adc417eb326419658c790ea43202f834a" prot="public" static="no">
+        <name>TRPOIN_code</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="48" column="9" bodyfile="include/DT500-MID.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d71/_d_t500-_m_i_d_8h_a35d3544d04b1ab617a77f84a280b22c6_1a35d3544d04b1ab617a77f84a280b22c6" prot="public" static="no">
+        <name>test_moter</name>
+        <initializer>300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/DT500-MID.h" line="49" column="9" bodyfile="include/DT500-MID.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//DT500<sp/>Mode<sp/>Indicator<sp/>Display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="de/d71/_d_t500-_m_i_d_8h_adb13eb77ad41a164c162fbaf5283041e_1adb13eb77ad41a164c162fbaf5283041e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fn<sp/>&quot;Function&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Normal<sp/>locomotive<sp/>operation<sp/>functions<sp/>available<sp/>on<sp/>the<sp/>keypad</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="de/d71/_d_t500-_m_i_d_8h_a3201461e2320343761b6a939027d4d34_1a3201461e2320343761b6a939027d4d34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Lo<sp/>&quot;Loco_Selection&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Locomotive<sp/>Address<sp/>Selection<sp/>Mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="de/d71/_d_t500-_m_i_d_8h_a0be75ac3ba623b79e02c66223b585ae2_1a0be75ac3ba623b79e02c66223b585ae2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Mu<sp/>&quot;MU&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Multiple<sp/>unit<sp/>(consist)<sp/>operation<sp/>set<sp/>up<sp/>and<sp/>break<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="de/d71/_d_t500-_m_i_d_8h_acd8b5ad937eee2cb60c7a5c22e30ade6_1acd8b5ad937eee2cb60c7a5c22e30ade6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Sw<sp/>&quot;Switch&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Accessory<sp/>decoder<sp/>control<sp/>(turnouts,<sp/>etc.)<sp/>or<sp/>option<sp/>switch<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="de/d71/_d_t500-_m_i_d_8h_a8d53749dee8abc63dd8730a250ee5eef_1a8d53749dee8abc63dd8730a250ee5eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pw<sp/>&quot;Power&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Turn<sp/>track<sp/>power<sp/>on<sp/>and<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="de/d71/_d_t500-_m_i_d_8h_a65602c3f3d266f689217b30d9ecd4d1c_1a65602c3f3d266f689217b30d9ecd4d1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Se<sp/>&quot;Status_Edit&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="de/d71/_d_t500-_m_i_d_8h_a861c6072c173224852ce4b4ca090d364_1a861c6072c173224852ce4b4ca090d364" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pg<sp/>&quot;Programming_Paged&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="de/d71/_d_t500-_m_i_d_8h_a68e112907dba00bb176492c9939d583a_1a68e112907dba00bb176492c9939d583a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ph<sp/>&quot;Programming_Physical&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="de/d71/_d_t500-_m_i_d_8h_acbc1a611f7dd0ab6b7521a8d90d73733_1acbc1a611f7dd0ab6b7521a8d90d73733" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pd<sp/>&quot;Programming_Direct&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="de/d71/_d_t500-_m_i_d_8h_ade8a3d4ff5171c0c58d5fb1667e0a7d1_1ade8a3d4ff5171c0c58d5fb1667e0a7d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Po<sp/>&quot;Programming_Operations_Mode&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="de/d71/_d_t500-_m_i_d_8h_a33d8ab1b565d14ecc7933cfc7ebede17_1a33d8ab1b565d14ecc7933cfc7ebede17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Re<sp/>&quot;Recall&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="de/d71/_d_t500-_m_i_d_8h_ae86e461dae69e425235fc7da6a73d2dd_1ae86e461dae69e425235fc7da6a73d2dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fd<sp/>&quot;Find&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="de/d71/_d_t500-_m_i_d_8h_a9f4a2def13c731c148036e3ea4832321_1a9f4a2def13c731c148036e3ea4832321" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ec<sp/>&quot;Edit_clock&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="de/d71/_d_t500-_m_i_d_8h_a4e4457f472bd0b00f5e20c80eff99118_1a4e4457f472bd0b00f5e20c80eff99118" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ef<sp/>&quot;Edit_clock_rate&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="de/d71/_d_t500-_m_i_d_8h_adbac503da979ccc27a492ead8a9727a3_1adbac503da979ccc27a492ead8a9727a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ea<sp/>&quot;Edit_alarm&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="de/d71/_d_t500-_m_i_d_8h_a2a1d6c6ad94f9312fbdabcac960aa64f_1a2a1d6c6ad94f9312fbdabcac960aa64f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Er<sp/>&quot;Edit_routes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="de/d71/_d_t500-_m_i_d_8h_a4c255668a5679e183030290a8c4e884f_1a4c255668a5679e183030290a8c4e884f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Err<sp/>&quot;error&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="de/d71/_d_t500-_m_i_d_8h_a9c73f041ffe2562e07a3a9f6e62de5e2_1a9c73f041ffe2562e07a3a9f6e62de5e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E1<sp/>&quot;Change_LocoNet_ID&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="de/d71/_d_t500-_m_i_d_8h_aaee5899c9365081b467da8a5ded558a1_1aaee5899c9365081b467da8a5ded558a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EQem<sp/>&quot;Other_edit_modes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="de/d71/_d_t500-_m_i_d_8h_a0a70f362825f8e95a06c782dca8a0d96_1a0a70f362825f8e95a06c782dca8a0d96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Qur<sp/>&quot;Query&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Shows<sp/>statistics<sp/>for<sp/>compatible<sp/>devices<sp/>0-9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="de/d71/_d_t500-_m_i_d_8h_a7bd56e2c667426dfc3144f0f541b2299_1a7bd56e2c667426dfc3144f0f541b2299" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>In<sp/>&quot;Input&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Shows<sp/>changes<sp/>in<sp/>detection<sp/>sections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="de/d71/_d_t500-_m_i_d_8h_afa985130475d81d70a33d622c21d478f_1afa985130475d81d70a33d622c21d478f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRPOIN<sp/>&quot;Track_Power_Indicator&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//DT500<sp/>Mode<sp/>Indicator<sp/>Display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="de/d71/_d_t500-_m_i_d_8h_a54203df6e44de5da2f2d01823ae68d20_1a54203df6e44de5da2f2d01823ae68d20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>moter<sp/>0<sp/></highlight><highlight class="comment">//&quot;defalt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="de/d71/_d_t500-_m_i_d_8h_ac824bc137f83f0468859b793cd882713_1ac824bc137f83f0468859b793cd882713" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fn_code<sp/>1<sp/></highlight><highlight class="comment">//&quot;Function&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="de/d71/_d_t500-_m_i_d_8h_abc92e4c6f9ba27ac4fce1ddcf3eed6cd_1abc92e4c6f9ba27ac4fce1ddcf3eed6cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Lo_code<sp/>2<sp/></highlight><highlight class="comment">//&quot;Loco_Selection&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="de/d71/_d_t500-_m_i_d_8h_ab92cc589f867b4c1530a0d1cf382819e_1ab92cc589f867b4c1530a0d1cf382819e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Mu_code<sp/>3<sp/></highlight><highlight class="comment">//&quot;MU&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="de/d71/_d_t500-_m_i_d_8h_a57f7957fdcb4d2d642a8d62095bbf041_1a57f7957fdcb4d2d642a8d62095bbf041" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Sw_code<sp/>4<sp/></highlight><highlight class="comment">//&quot;Switch&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="de/d71/_d_t500-_m_i_d_8h_a4736d0470f25102fd5c303e618213a08_1a4736d0470f25102fd5c303e618213a08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pw_code<sp/>5<sp/></highlight><highlight class="comment">//&quot;Power&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="de/d71/_d_t500-_m_i_d_8h_ab0a020735ded7d7ac5d672ff249198ab_1ab0a020735ded7d7ac5d672ff249198ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Se_code<sp/>6<sp/></highlight><highlight class="comment">//&quot;Status_Edit&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="de/d71/_d_t500-_m_i_d_8h_a04849c94d7e1682ecd9735e0c765ab86_1a04849c94d7e1682ecd9735e0c765ab86" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pg_code<sp/>7<sp/></highlight><highlight class="comment">//&quot;Programming_Paged&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="de/d71/_d_t500-_m_i_d_8h_aa6cc471f4b9860b44e8b4b93e08514b1_1aa6cc471f4b9860b44e8b4b93e08514b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ph_code<sp/>8<sp/></highlight><highlight class="comment">//&quot;Programming_Physical&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="de/d71/_d_t500-_m_i_d_8h_a7da592d42e212b92fc35126d7569fb77_1a7da592d42e212b92fc35126d7569fb77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pd_code<sp/>9<sp/></highlight><highlight class="comment">//&quot;Programming_Direct&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="de/d71/_d_t500-_m_i_d_8h_a1f5d6ab4c514d97182e3ba908f8a266e_1a1f5d6ab4c514d97182e3ba908f8a266e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Po_code<sp/>10<sp/></highlight><highlight class="comment">//&quot;Programming_Operations_Mode&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="de/d71/_d_t500-_m_i_d_8h_aabf75e305d69b2376b40fa93d9282eef_1aabf75e305d69b2376b40fa93d9282eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Re_code<sp/>11<sp/></highlight><highlight class="comment">//&quot;Recall&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="de/d71/_d_t500-_m_i_d_8h_ad17f414244a357ff19f4b414ef055b76_1ad17f414244a357ff19f4b414ef055b76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fd_code<sp/>12<sp/></highlight><highlight class="comment">//&quot;Find&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="de/d71/_d_t500-_m_i_d_8h_aaafd03b5eb85ba09ca3767cb004945fd_1aaafd03b5eb85ba09ca3767cb004945fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ec_code<sp/>13<sp/></highlight><highlight class="comment">//&quot;Edit_clock&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="de/d71/_d_t500-_m_i_d_8h_a2a2a9fc6f095556fd40cc1f4051e22c6_1a2a2a9fc6f095556fd40cc1f4051e22c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ef_code<sp/>14<sp/></highlight><highlight class="comment">//&quot;Edit_clock_rate&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="de/d71/_d_t500-_m_i_d_8h_ac39141ebfdfb776e0e83dbd1f115bc8b_1ac39141ebfdfb776e0e83dbd1f115bc8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ea_code<sp/>15<sp/></highlight><highlight class="comment">//&quot;Edit_alarm&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="de/d71/_d_t500-_m_i_d_8h_ac14204f73faaded59b471004971eb654_1ac14204f73faaded59b471004971eb654" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Er_code<sp/>16<sp/></highlight><highlight class="comment">//&quot;Edit_routes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="de/d71/_d_t500-_m_i_d_8h_a575aff1dec6ba427d33362095d522303_1a575aff1dec6ba427d33362095d522303" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Err_code<sp/>17<sp/></highlight><highlight class="comment">//&quot;error&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="de/d71/_d_t500-_m_i_d_8h_a0b08dfb48c9de38c18bbb9b6f155e9d9_1a0b08dfb48c9de38c18bbb9b6f155e9d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E1_code<sp/>18<sp/></highlight><highlight class="comment">//&quot;Change_LocoNet_ID&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="de/d71/_d_t500-_m_i_d_8h_a57062c20fd22953610151658fc84fa35_1a57062c20fd22953610151658fc84fa35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EQem_code<sp/>19<sp/></highlight><highlight class="comment">//&quot;Other_edit_modes&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="de/d71/_d_t500-_m_i_d_8h_a08224999305bd57b735c9194a6ee12ef_1a08224999305bd57b735c9194a6ee12ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Qur_code<sp/>20<sp/></highlight><highlight class="comment">//&quot;Query&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="de/d71/_d_t500-_m_i_d_8h_a3618c5774202f0e4043b9ff79906b179_1a3618c5774202f0e4043b9ff79906b179" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>In_code<sp/>21<sp/></highlight><highlight class="comment">//&quot;Input&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="de/d71/_d_t500-_m_i_d_8h_adc417eb326419658c790ea43202f834a_1adc417eb326419658c790ea43202f834a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRPOIN_code<sp/>22<sp/></highlight><highlight class="comment">//&quot;Track_Power_Indicator&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="de/d71/_d_t500-_m_i_d_8h_a35d3544d04b1ab617a77f84a280b22c6_1a35d3544d04b1ab617a77f84a280b22c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>test_moter<sp/>300<sp/></highlight><highlight class="comment">//test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">#define<sp/>E_ST_KY<sp/>255<sp/></highlight><highlight class="comment">//&quot;EMERGENCY_STOP_Key&quot;</highlight></codeline>
+    </programlisting>
+    <location file="include/DT500-MID.h"/>
+  </compounddef>
+</doxygen>

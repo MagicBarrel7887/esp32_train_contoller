@@ -1,0 +1,292 @@
+\hypertarget{engine_8h}{}\doxysection{include/engine.h File Reference}
+\label{engine_8h}\index{include/engine.h@{include/engine.h}}
+{\ttfamily \#include $<$Adafruit\+\_\+\+GFX.\+h$>$}\newline
+{\ttfamily \#include $<$Adafruit\+\_\+\+SSD1306.\+h$>$}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include $<$TTP229.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classengen}{engen}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{engine_8h_a2d3d3f1b67e817d6f48fb923de30f989_a2d3d3f1b67e817d6f48fb923de30f989}{\+\_\+\+\_\+\+ENGEN\+\_\+\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{engine_8h_a891962bc36e10a714150026f133d0977_a891962bc36e10a714150026f133d0977}{ttp229\+\_\+statue}}~false
+\item 
+\#define \mbox{\hyperlink{engine_8h_ad72dbcf6d0153db1b8d8a58001feed83_ad72dbcf6d0153db1b8d8a58001feed83}{DEBUG}}~True
+\item 
+\#define \mbox{\hyperlink{engine_8h_a2cd109632a6dcccaa80b43561b1ab700_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}~128
+\item 
+\#define \mbox{\hyperlink{engine_8h_a6974d08a74da681b3957b2fead2608b8_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}~32
+\item 
+\#define \mbox{\hyperlink{engine_8h_a619e07239fb3b9b14d40646ab41d5b4f_a619e07239fb3b9b14d40646ab41d5b4f}{OLED\+\_\+\+RESET}}~4
+\item 
+\#define \mbox{\hyperlink{engine_8h_a4dc358585abdaa9531e340bab60ae0b5_a4dc358585abdaa9531e340bab60ae0b5}{SCREEN\+\_\+\+ADDRESS}}~0x3C
+\begin{DoxyCompactList}\small\item\em See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{engine_8h_a0f7332e8ccbc10c12b9ba16ff154b249_a0f7332e8ccbc10c12b9ba16ff154b249}{enable\+\_\+\+TTP229}}~false
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Adafruit\+\_\+\+SSD1306 \mbox{\hyperlink{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}{display}} (\mbox{\hyperlink{engine_8h_a2cd109632a6dcccaa80b43561b1ab700_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}, \mbox{\hyperlink{engine_8h_a6974d08a74da681b3957b2fead2608b8_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}, \&Wire, \mbox{\hyperlink{engine_8h_a619e07239fb3b9b14d40646ab41d5b4f_a619e07239fb3b9b14d40646ab41d5b4f}{OLED\+\_\+\+RESET}})
+\item 
+int \mbox{\hyperlink{engine_8h_af59e1e6a33728e25ba1d0c09ee652f6a_af59e1e6a33728e25ba1d0c09ee652f6a}{engine\+\_\+debug}} (int a, String b)
+\item 
+int \mbox{\hyperlink{engine_8h_abd4fccb8047e46c9ae7fc71b7d6999e9_abd4fccb8047e46c9ae7fc71b7d6999e9}{db}} (int a, String b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+TTP229 \mbox{\hyperlink{engine_8h_ab4e5e4cceacd25898e01398ce2dff649_ab4e5e4cceacd25898e01398ce2dff649}{ttp229}}
+\item 
+unsigned long \mbox{\hyperlink{engine_8h_a438ec62fe05e9c1310621e0b128ea98c_a438ec62fe05e9c1310621e0b128ea98c}{previous\+Millis1}} = 0
+\item 
+unsigned long \mbox{\hyperlink{engine_8h_abe0132646a68ac07662fe0b2f73351ad_abe0132646a68ac07662fe0b2f73351ad}{interval1}} = 10000
+\item 
+unsigned long \mbox{\hyperlink{engine_8h_a54d9405ce3c8bc472ceeadbc1a5a8cfe_a54d9405ce3c8bc472ceeadbc1a5a8cfe}{previous\+Millis2}} = 0
+\item 
+unsigned long \mbox{\hyperlink{engine_8h_a2fa5d88a6bd6931d668ef1b11a5f9b8d_a2fa5d88a6bd6931d668ef1b11a5f9b8d}{interval2}} = 5000
+\item 
+int \mbox{\hyperlink{engine_8h_aeed94fdf8c5efd193d500b9720afb0c8_aeed94fdf8c5efd193d500b9720afb0c8}{but\+\_\+1\+\_\+pin}} = 2
+\item 
+int \mbox{\hyperlink{engine_8h_a2df4fe7fb7da042720e24435519f5f03_a2df4fe7fb7da042720e24435519f5f03}{but\+\_\+2\+\_\+pin}} = 4
+\item 
+int \mbox{\hyperlink{engine_8h_ad667f62bbd2ce19ee1e016c9c3383b2f_ad667f62bbd2ce19ee1e016c9c3383b2f}{but\+\_\+3\+\_\+pin}} = 5
+\item 
+int \mbox{\hyperlink{engine_8h_ae8932208ad6742913a30434a65ac66d3_ae8932208ad6742913a30434a65ac66d3}{but\+\_\+4\+\_\+pin}} = 3
+\item 
+int \mbox{\hyperlink{engine_8h_a4b322bdf8940aa7d9db26e1b28ba07d2_a4b322bdf8940aa7d9db26e1b28ba07d2}{but\+\_\+5\+\_\+pin}} = 6
+\item 
+int \mbox{\hyperlink{engine_8h_a8df9096af5abb2118eb9e9dcf6f6d4cd_a8df9096af5abb2118eb9e9dcf6f6d4cd}{but\+\_\+6\+\_\+pin}} = 7
+\item 
+int \mbox{\hyperlink{engine_8h_aeca4aa98a44ce5368a0e73bd7f9be1be_aeca4aa98a44ce5368a0e73bd7f9be1be}{but\+\_\+7\+\_\+pin}} = 8
+\item 
+int \mbox{\hyperlink{engine_8h_a82c252a529dde59502ca8ff11b0cb755_a82c252a529dde59502ca8ff11b0cb755}{analog\+Pin\+\_\+joy\+\_\+x}} = A0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{engine_8h_a2d3d3f1b67e817d6f48fb923de30f989_a2d3d3f1b67e817d6f48fb923de30f989}\label{engine_8h_a2d3d3f1b67e817d6f48fb923de30f989_a2d3d3f1b67e817d6f48fb923de30f989}} 
+\index{engine.h@{engine.h}!\_\_ENGEN\_\_H\_\_@{\_\_ENGEN\_\_H\_\_}}
+\index{\_\_ENGEN\_\_H\_\_@{\_\_ENGEN\_\_H\_\_}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{\_\_ENGEN\_\_H\_\_}{\_\_ENGEN\_\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+ENGEN\+\_\+\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{engine_8h_ad72dbcf6d0153db1b8d8a58001feed83_ad72dbcf6d0153db1b8d8a58001feed83}\label{engine_8h_ad72dbcf6d0153db1b8d8a58001feed83_ad72dbcf6d0153db1b8d8a58001feed83}} 
+\index{engine.h@{engine.h}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG}{DEBUG}}
+{\footnotesize\ttfamily \#define DEBUG~True}
+
+\mbox{\Hypertarget{engine_8h_a0f7332e8ccbc10c12b9ba16ff154b249_a0f7332e8ccbc10c12b9ba16ff154b249}\label{engine_8h_a0f7332e8ccbc10c12b9ba16ff154b249_a0f7332e8ccbc10c12b9ba16ff154b249}} 
+\index{engine.h@{engine.h}!enable\_TTP229@{enable\_TTP229}}
+\index{enable\_TTP229@{enable\_TTP229}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{enable\_TTP229}{enable\_TTP229}}
+{\footnotesize\ttfamily \#define enable\+\_\+\+TTP229~false}
+
+\mbox{\Hypertarget{engine_8h_a619e07239fb3b9b14d40646ab41d5b4f_a619e07239fb3b9b14d40646ab41d5b4f}\label{engine_8h_a619e07239fb3b9b14d40646ab41d5b4f_a619e07239fb3b9b14d40646ab41d5b4f}} 
+\index{engine.h@{engine.h}!OLED\_RESET@{OLED\_RESET}}
+\index{OLED\_RESET@{OLED\_RESET}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_RESET}{OLED\_RESET}}
+{\footnotesize\ttfamily \#define OLED\+\_\+\+RESET~4}
+
+\mbox{\Hypertarget{engine_8h_a4dc358585abdaa9531e340bab60ae0b5_a4dc358585abdaa9531e340bab60ae0b5}\label{engine_8h_a4dc358585abdaa9531e340bab60ae0b5_a4dc358585abdaa9531e340bab60ae0b5}} 
+\index{engine.h@{engine.h}!SCREEN\_ADDRESS@{SCREEN\_ADDRESS}}
+\index{SCREEN\_ADDRESS@{SCREEN\_ADDRESS}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_ADDRESS}{SCREEN\_ADDRESS}}
+{\footnotesize\ttfamily \#define SCREEN\+\_\+\+ADDRESS~0x3C}
+
+
+
+See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32. 
+
+\mbox{\Hypertarget{engine_8h_a6974d08a74da681b3957b2fead2608b8_a6974d08a74da681b3957b2fead2608b8}\label{engine_8h_a6974d08a74da681b3957b2fead2608b8_a6974d08a74da681b3957b2fead2608b8}} 
+\index{engine.h@{engine.h}!SCREEN\_HEIGHT@{SCREEN\_HEIGHT}}
+\index{SCREEN\_HEIGHT@{SCREEN\_HEIGHT}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_HEIGHT}{SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily \#define SCREEN\+\_\+\+HEIGHT~32}
+
+\mbox{\Hypertarget{engine_8h_a2cd109632a6dcccaa80b43561b1ab700_a2cd109632a6dcccaa80b43561b1ab700}\label{engine_8h_a2cd109632a6dcccaa80b43561b1ab700_a2cd109632a6dcccaa80b43561b1ab700}} 
+\index{engine.h@{engine.h}!SCREEN\_WIDTH@{SCREEN\_WIDTH}}
+\index{SCREEN\_WIDTH@{SCREEN\_WIDTH}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_WIDTH}{SCREEN\_WIDTH}}
+{\footnotesize\ttfamily \#define SCREEN\+\_\+\+WIDTH~128}
+
+\mbox{\Hypertarget{engine_8h_a891962bc36e10a714150026f133d0977_a891962bc36e10a714150026f133d0977}\label{engine_8h_a891962bc36e10a714150026f133d0977_a891962bc36e10a714150026f133d0977}} 
+\index{engine.h@{engine.h}!ttp229\_statue@{ttp229\_statue}}
+\index{ttp229\_statue@{ttp229\_statue}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{ttp229\_statue}{ttp229\_statue}}
+{\footnotesize\ttfamily \#define ttp229\+\_\+statue~false}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{engine_8h_abd4fccb8047e46c9ae7fc71b7d6999e9_abd4fccb8047e46c9ae7fc71b7d6999e9}\label{engine_8h_abd4fccb8047e46c9ae7fc71b7d6999e9_abd4fccb8047e46c9ae7fc71b7d6999e9}} 
+\index{engine.h@{engine.h}!db@{db}}
+\index{db@{db}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{db()}{db()}}
+{\footnotesize\ttfamily int db (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{String}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00494}00494                         \{}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00495}00495 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00496}00496     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *c = b.c\_str();}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00497}00497 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00498}00498     Serial.print(c); \textcolor{comment}{// inputstring}}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00499}00499     Serial.println(a); \textcolor{comment}{// payload was not delivered}}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00500}00500 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00501}00501     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00502}00502  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}\label{engine_8h_ae780a76d06cb56e14435ebfe3db3f6d3_ae780a76d06cb56e14435ebfe3db3f6d3}} 
+\index{engine.h@{engine.h}!display@{display}}
+\index{display@{display}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily Adafruit\+\_\+\+SSD1306 display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{engine_8h_a2cd109632a6dcccaa80b43561b1ab700_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}}]{,  }\item[{\mbox{\hyperlink{engine_8h_a6974d08a74da681b3957b2fead2608b8_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}}]{,  }\item[{\&}]{Wire,  }\item[{\mbox{\hyperlink{engine_8h_a619e07239fb3b9b14d40646ab41d5b4f_a619e07239fb3b9b14d40646ab41d5b4f}{OLED\+\_\+\+RESET}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by \mbox{\hyperlink{l00309}{engen\+::display\+\_\+8()}}, \mbox{\hyperlink{l00097}{debug\+::\+IO()}}, \mbox{\hyperlink{l00100}{nrf24\+\_\+setup()}}, \mbox{\hyperlink{l00133}{debug\+::nrf24error()}}, \mbox{\hyperlink{l00029}{setup()}}, and \mbox{\hyperlink{l00031}{debug\+::$\sim$debug()}}.
+
+\mbox{\Hypertarget{engine_8h_af59e1e6a33728e25ba1d0c09ee652f6a_af59e1e6a33728e25ba1d0c09ee652f6a}\label{engine_8h_af59e1e6a33728e25ba1d0c09ee652f6a_af59e1e6a33728e25ba1d0c09ee652f6a}} 
+\index{engine.h@{engine.h}!engine\_debug@{engine\_debug}}
+\index{engine\_debug@{engine\_debug}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{engine\_debug()}{engine\_debug()}}
+{\footnotesize\ttfamily int engine\+\_\+debug (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{String}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00448}00448                                   \{}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00449}00449 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00450}00450     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *c = b.c\_str();}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00451}00451 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00452}00452     Serial.print(c);   \textcolor{comment}{// inputstring}}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00453}00453     Serial.print(\textcolor{stringliteral}{"{} "{}});   \textcolor{comment}{// space}}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00454}00454     Serial.println(a); \textcolor{comment}{// payload was not delivered}}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00455}00455 }
+\DoxyCodeLine{\Hypertarget{engine_8h_l00456}00456     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{engine_8h_l00457}00457  \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{engine_8h_a82c252a529dde59502ca8ff11b0cb755_a82c252a529dde59502ca8ff11b0cb755}\label{engine_8h_a82c252a529dde59502ca8ff11b0cb755_a82c252a529dde59502ca8ff11b0cb755}} 
+\index{engine.h@{engine.h}!analogPin\_joy\_x@{analogPin\_joy\_x}}
+\index{analogPin\_joy\_x@{analogPin\_joy\_x}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{analogPin\_joy\_x}{analogPin\_joy\_x}}
+{\footnotesize\ttfamily int analog\+Pin\+\_\+joy\+\_\+x = A0}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_aeed94fdf8c5efd193d500b9720afb0c8_aeed94fdf8c5efd193d500b9720afb0c8}\label{engine_8h_aeed94fdf8c5efd193d500b9720afb0c8_aeed94fdf8c5efd193d500b9720afb0c8}} 
+\index{engine.h@{engine.h}!but\_1\_pin@{but\_1\_pin}}
+\index{but\_1\_pin@{but\_1\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_1\_pin}{but\_1\_pin}}
+{\footnotesize\ttfamily int but\+\_\+1\+\_\+pin = 2}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_a2df4fe7fb7da042720e24435519f5f03_a2df4fe7fb7da042720e24435519f5f03}\label{engine_8h_a2df4fe7fb7da042720e24435519f5f03_a2df4fe7fb7da042720e24435519f5f03}} 
+\index{engine.h@{engine.h}!but\_2\_pin@{but\_2\_pin}}
+\index{but\_2\_pin@{but\_2\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_2\_pin}{but\_2\_pin}}
+{\footnotesize\ttfamily int but\+\_\+2\+\_\+pin = 4}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_ad667f62bbd2ce19ee1e016c9c3383b2f_ad667f62bbd2ce19ee1e016c9c3383b2f}\label{engine_8h_ad667f62bbd2ce19ee1e016c9c3383b2f_ad667f62bbd2ce19ee1e016c9c3383b2f}} 
+\index{engine.h@{engine.h}!but\_3\_pin@{but\_3\_pin}}
+\index{but\_3\_pin@{but\_3\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_3\_pin}{but\_3\_pin}}
+{\footnotesize\ttfamily int but\+\_\+3\+\_\+pin = 5}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_ae8932208ad6742913a30434a65ac66d3_ae8932208ad6742913a30434a65ac66d3}\label{engine_8h_ae8932208ad6742913a30434a65ac66d3_ae8932208ad6742913a30434a65ac66d3}} 
+\index{engine.h@{engine.h}!but\_4\_pin@{but\_4\_pin}}
+\index{but\_4\_pin@{but\_4\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_4\_pin}{but\_4\_pin}}
+{\footnotesize\ttfamily int but\+\_\+4\+\_\+pin = 3}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_a4b322bdf8940aa7d9db26e1b28ba07d2_a4b322bdf8940aa7d9db26e1b28ba07d2}\label{engine_8h_a4b322bdf8940aa7d9db26e1b28ba07d2_a4b322bdf8940aa7d9db26e1b28ba07d2}} 
+\index{engine.h@{engine.h}!but\_5\_pin@{but\_5\_pin}}
+\index{but\_5\_pin@{but\_5\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_5\_pin}{but\_5\_pin}}
+{\footnotesize\ttfamily int but\+\_\+5\+\_\+pin = 6}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}, and \mbox{\hyperlink{l00183}{engen\+::push\+\_\+buttons\+\_\+joystick()}}.
+
+\mbox{\Hypertarget{engine_8h_a8df9096af5abb2118eb9e9dcf6f6d4cd_a8df9096af5abb2118eb9e9dcf6f6d4cd}\label{engine_8h_a8df9096af5abb2118eb9e9dcf6f6d4cd_a8df9096af5abb2118eb9e9dcf6f6d4cd}} 
+\index{engine.h@{engine.h}!but\_6\_pin@{but\_6\_pin}}
+\index{but\_6\_pin@{but\_6\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_6\_pin}{but\_6\_pin}}
+{\footnotesize\ttfamily int but\+\_\+6\+\_\+pin = 7}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}.
+
+\mbox{\Hypertarget{engine_8h_aeca4aa98a44ce5368a0e73bd7f9be1be_aeca4aa98a44ce5368a0e73bd7f9be1be}\label{engine_8h_aeca4aa98a44ce5368a0e73bd7f9be1be_aeca4aa98a44ce5368a0e73bd7f9be1be}} 
+\index{engine.h@{engine.h}!but\_7\_pin@{but\_7\_pin}}
+\index{but\_7\_pin@{but\_7\_pin}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{but\_7\_pin}{but\_7\_pin}}
+{\footnotesize\ttfamily int but\+\_\+7\+\_\+pin = 8}
+
+
+
+Referenced by \mbox{\hyperlink{l00166}{engen\+::\+Arduino\+\_\+digital\+\_\+analog\+\_\+int()}}.
+
+\mbox{\Hypertarget{engine_8h_abe0132646a68ac07662fe0b2f73351ad_abe0132646a68ac07662fe0b2f73351ad}\label{engine_8h_abe0132646a68ac07662fe0b2f73351ad_abe0132646a68ac07662fe0b2f73351ad}} 
+\index{engine.h@{engine.h}!interval1@{interval1}}
+\index{interval1@{interval1}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{interval1}{interval1}}
+{\footnotesize\ttfamily unsigned long interval1 = 10000}
+
+\mbox{\Hypertarget{engine_8h_a2fa5d88a6bd6931d668ef1b11a5f9b8d_a2fa5d88a6bd6931d668ef1b11a5f9b8d}\label{engine_8h_a2fa5d88a6bd6931d668ef1b11a5f9b8d_a2fa5d88a6bd6931d668ef1b11a5f9b8d}} 
+\index{engine.h@{engine.h}!interval2@{interval2}}
+\index{interval2@{interval2}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{interval2}{interval2}}
+{\footnotesize\ttfamily unsigned long interval2 = 5000}
+
+\mbox{\Hypertarget{engine_8h_a438ec62fe05e9c1310621e0b128ea98c_a438ec62fe05e9c1310621e0b128ea98c}\label{engine_8h_a438ec62fe05e9c1310621e0b128ea98c_a438ec62fe05e9c1310621e0b128ea98c}} 
+\index{engine.h@{engine.h}!previousMillis1@{previousMillis1}}
+\index{previousMillis1@{previousMillis1}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{previousMillis1}{previousMillis1}}
+{\footnotesize\ttfamily unsigned long previous\+Millis1 = 0}
+
+\mbox{\Hypertarget{engine_8h_a54d9405ce3c8bc472ceeadbc1a5a8cfe_a54d9405ce3c8bc472ceeadbc1a5a8cfe}\label{engine_8h_a54d9405ce3c8bc472ceeadbc1a5a8cfe_a54d9405ce3c8bc472ceeadbc1a5a8cfe}} 
+\index{engine.h@{engine.h}!previousMillis2@{previousMillis2}}
+\index{previousMillis2@{previousMillis2}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{previousMillis2}{previousMillis2}}
+{\footnotesize\ttfamily unsigned long previous\+Millis2 = 0}
+
+\mbox{\Hypertarget{engine_8h_ab4e5e4cceacd25898e01398ce2dff649_ab4e5e4cceacd25898e01398ce2dff649}\label{engine_8h_ab4e5e4cceacd25898e01398ce2dff649_ab4e5e4cceacd25898e01398ce2dff649}} 
+\index{engine.h@{engine.h}!ttp229@{ttp229}}
+\index{ttp229@{ttp229}!engine.h@{engine.h}}
+\doxysubsubsection{\texorpdfstring{ttp229}{ttp229}}
+{\footnotesize\ttfamily TTP229 ttp229}
+
+
+
+Referenced by \mbox{\hyperlink{l00413}{engen\+::ttp229\+\_\+get\+\_\+any\+\_\+\+Pressed()}}, \mbox{\hyperlink{l00381}{engen\+::ttp229\+\_\+get\+\_\+\+Pressed()}}, \mbox{\hyperlink{l00367}{engen\+::ttp229\+\_\+get\+\_\+states()}}, and \mbox{\hyperlink{l00402}{engen\+::ttp229\+\_\+is\+\_\+\+Key\+\_\+\+Press()}}.
+
