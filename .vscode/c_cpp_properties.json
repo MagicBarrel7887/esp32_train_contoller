@@ -1,0 +1,72 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/Github/esp32_train_contoller/include",
+                "D:/Github/esp32_train_contoller/src",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/TTP229",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit SSD1306",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit GFX Library",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit BusIO",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit Keypad",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/RF24",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/RF24/utility",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/variants/standard",
+                "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit NeoPixel",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/Github/esp32_train_contoller/include",
+                    "D:/Github/esp32_train_contoller/src",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/TTP229",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit SSD1306",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit GFX Library",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit BusIO",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit Keypad",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/RF24",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/RF24/utility",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/variants/standard",
+                    "D:/Github/esp32_train_contoller/.pio/libdeps/uno/Adafruit NeoPixel",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/coste/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60106",
+                "ARDUINO_AVR_UNO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/coste/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
