@@ -17,6 +17,7 @@
 #include "RF24.h"
 #include "engine.h"
 #include "config.h"
+#include <Wire.h>
 
 engen DT500;
 
