@@ -3,7 +3,7 @@
 #ifndef __WIRELESS__H__
 #define __WIRELESS__H__
 
-#define debug_wireless false
+#define debug_wireless true
 
 /*
 //#include <RH_NRF24.h>
@@ -30,7 +30,7 @@ engen DT500;
 //nrf_csn:24
 //nrf_ce:25
 
-RF24 radio(9,10); // Set up nRF24L01 radio on SPI bus plus pins 7 & 8
+RF24 radio(10,2); // Set up nRF24L01 radio on SPI bus plus pins 7 & 8
 
 //RF24 radio(9, 10); // Set up nRF24L01 radio on SPI bus plus pins 7 & 8
 

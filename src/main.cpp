@@ -31,6 +31,7 @@ void setup() {
 
   // put your setup code here, to run once:
     pinMode(LED_BUILTIN, OUTPUT);
+    SPI.begin(14, 12, 13, 15);
 
     digitalWrite(LED_BUILTIN, 255);
 
@@ -55,7 +56,10 @@ void setup() {
       digitalWrite(LED_BUILTIN, 0);
     }
 
+    
+
     DH500_radio.int_PayloadStruct();
+
       
     DT500.Arduino_digital_analog_int();
 
