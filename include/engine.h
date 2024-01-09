@@ -11,7 +11,6 @@
 #endif
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
-
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
 // The pins for I2C are defined by the Wire-library.
 // On an arduino UNO:       A4(SDA), A5(SCL)
@@ -20,20 +19,14 @@
 #define OLED_RESET 4        // Reset pin # (or -1 if sharing Arduino reset pin)
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-
 //#include "wireless.h"
 #if ttp229_statue == true
-
 TTP229 ttp229;
-
 #endif
-
 unsigned long previousMillis1 = 0; //will store last time LED was updated
 unsigned long interval1 = 10000;   //interval at which to blink (milliseconds)
-
 unsigned long previousMillis2 = 0; //will store last time LED was updated
 unsigned long interval2 = 5000;    //interval at which to blink (milliseconds)
-
 int but_1_pin = 2; // Boton Amarillo - A
 int but_2_pin = 4; // Boton Amarillo - C
 int but_3_pin = 5; // Boton Azul     - D
@@ -41,20 +34,13 @@ int but_4_pin = 3; // Boton Azul     - B
 int but_5_pin = 6; // Boton F
 int but_6_pin = 7; // Boton E
 int but_7_pin = 8; // analog_button
-
 int analogPin_joy_x = A0;
-
-
 unsigned int dot_duration = 200;
-
 class engen
 {
 private:
-    
-
     int R_Reverse_Key;
     int L_Reverse_Key;
-
     int DISP_Key;
     int FUNC_Key;
     int FUNC_data[9];
@@ -68,13 +54,8 @@ private:
     int but_3;
     int but_4;
     int but_5;
-
    unsigned long debounceDelay = 50;    // the debounce time; increase if the output flickers
-
-
-
 public:
-
    unsigned long lastDebounceTime = 0; // the last time the output pin was toggled
    int e_db();
    int Function(/* args */);
@@ -111,36 +92,24 @@ public:
    unsigned long loopCount;
    unsigned long startTime;
    int get_count();
-
     #if ttp229_statue == true
-
     int ttp229_get_states();
-
     int ttp229_get_any_Pressed();
-
     /// Return true if key is pressed
     /// \param key Number of key
     /// \return True if key is pressed
     int ttp229_get_Pressed();
-
     /// Return true if key is pressed
     /// \param key Number of key
     /// \return True if key is pressed
     int ttp229_is_Key_Press(int key);
-
     #define enable_TTP229 false
-
     int engine_debug();
-
     #endif
-
     int analog_joystick_x;
 };
-
 int engen::Arduino_digital_analog_int(){
-
   pinMode(analogPin_joy_x, INPUT);
-
   pinMode(but_1_pin, INPUT_PULLUP);
   pinMode(but_2_pin, INPUT_PULLUP);
   pinMode(but_3_pin, INPUT_PULLUP);
@@ -154,7 +123,6 @@ int engen::Arduino_digital_analog_int(){
 int engen::push_buttons_joystick(){
    analog_joystick_x = analogRead(analogPin_joy_x);
    analog_joystick_map = analogRead(analogPin_joy);
-
    if(analog_joystick_map >= 0){
       analog_joystick_map = map(analog_joystick_map, 0, 1023, 0, 255);
    }
@@ -172,9 +140,7 @@ int engen::push_buttons_joystick(){
  int engen::Function(/* args */)
  {
     for (int i = 0; i < 9; ++i) {
-
     }
-
     return 0;
  }
  int engen::Loco_Selection(/* args */)
@@ -250,51 +216,35 @@ int engen::push_buttons_joystick(){
  {
     if (display_Function == 0)
     {
-
         display.clearDisplay();
-
         display.setTextSize(0.5);            // Normal 1:1 pixel scale
         display.setTextColor(SSD1306_WHITE); // Draw white text
-
         display.setCursor(1, 0);  // Start at top-left corner
         display.println(F("sl")); //L Semaphore
-
         display.setCursor(115, 0);
         display.println(F("sr")); //R Semaphore
-
         display.setCursor(40, 10); // Start at top-left corner
         display.println(F("messages"));
-
         display.setCursor(0, 15);
         display.println(lts); //L Loco Icon
-
         display.setCursor(109, 15);
         display.println(F("rli")); //R Loco Icon
-
         display.setCursor(27, 25);
         display.println(F("lta")); //L Throttle Address
-
         display.setCursor(75, 25);
         display.println(F("rta")); //R Throttle Address
-
         display.setCursor(55, 25);
         display.println(temp_code); //Mode Indicator
-
         display.display();
     }
-
     if (display_Function == 1){
         display.clearDisplay();
-
         display.setTextSize(1);              // Normal 1:1 pixel scale
         display.setTextColor(SSD1306_WHITE); // Draw white text
-
         display.setCursor(0, 10);
         display.println(F("enter Fn_code:")); //L Loco Icon
-
         display.setCursor(55, 20);
         display.println(temp_code); //Mode Indicator
-
         display.display();
     }
         return 0;
@@ -364,7 +314,6 @@ int engen::push_buttons_joystick(){
     Serial.println(a); // payload was not delivered
     return 1;
  }
-
  int engen::e_db() // engine debug Serial
  {
     engine_debug(L_Throttle, "L_Throttle");
