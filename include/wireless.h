@@ -84,11 +84,8 @@ private:
     unsigned long interval3 = 10000;      // interval at which to blink (milliseconds)
 
 public:
-
-
     int role = 0;   // 0 broadcast 1 LocoNET 3 Advanced Consisting
     int responding; // 0 broadcast 1 TX 2 RX 3 Advanced Consisting
-
     int recieved(/* args */);
     int setup(/* args */);
     int brodcast(/* args */);
@@ -97,7 +94,6 @@ public:
     int int_PayloadStruct();
     int isChipConnect();
     int e_db();
-
 };
 
 int wireless::e_db() // engine debug Serial
@@ -233,7 +229,6 @@ int wireless::Transmit(/* args */)
             Serial.print(end_timer - start_timer); // print the timer result
             Serial.println(F(" us"));
             #endif 
-          
         }
         else
         {
@@ -292,12 +287,10 @@ int wireless::brodcast()
             Serial.print(F(" Time to transmit: "));
             Serial.print(end_timer - start_timer); // print the timer result
             Serial.println(F(" us"));
-
         }
         else
         {
             Serial.println(F("Transmission failed or timed out")); // payload was not delivered
-
         }
         TX_RX_BC.payloadID++; // increment payload number
     }
